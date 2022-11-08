@@ -17,10 +17,11 @@ Member 4 : Rajendra Patel
   <br>
 TeamLead : Priyanka Dora
 </p>
- 
-<h2>Our Logo :</h2>
-<img src="https://drive.google.com/file/d/1bZLp5RgNPjbwhdhNRaOXag1VvTjjOMQf/view?usp=sharing"/>
 <h2> KITCHEN CORNER</H2>
+<h2>Our Logo :</h2>
+
+
+![foodf](https://user-images.githubusercontent.com/105920094/200612352-d5d40575-2896-46b4-8632-b3aef0ed8875.jpg)
 
 We have made this website with the help of ReactJS.
 Our website is resposible for mobile ,tablet , laptop.
