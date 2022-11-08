@@ -1,6 +1,5 @@
 <h1>Kindmeal.my clone app </h1>
-<img src=`https://user-images.githubusercontent.com/105920094/200581187-76cec1e4-3792-422b-b070-18408fa599b7.png
-`/>
+<img src="https://www.kindmeal.my/images/logo-kindmeal.png"/>
 
 KindMeal.my is Malaysia's leading meat-free lifestyle platform , indulging you with delicious discounted vegetarian meals to save animals, health, environment and money.
 
