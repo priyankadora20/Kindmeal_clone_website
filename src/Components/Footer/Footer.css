@@ -1,0 +1,49 @@
+.Foote-div{
+    justify-content: space-around;
+    display:flex;
+    width: 65%;
+    margin: auto;
+}
+.fdd{
+    line-height: 6px;
+    font-size: 13px;
+    color: white;
+    text-align: left;
+}
+.fddh{
+    line-height: 8px;
+    font-size: 10px;
+    color: white;
+}
+
+@media (min-width: 724px)  and (max-width: 1024px) {
+    .Foote-div{
+        justify-content: space-around;
+        display: grid;
+       grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: a;
+        width: 65%;
+        margin: auto;
+    }
+}
+@media (min-width: 424px)  and (max-width: 724px) {
+    .Foote-div{
+        justify-content: space-around;
+        display: grid;
+       grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: a;
+        width: 65%;
+        margin: auto;
+    }  
+}
+
+@media  (min-width: 1024px)  and (max-width: 424px) {
+    .Foote-div{
+        justify-content: space-around;
+        display: grid;
+       grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        width: 65%;
+        margin: auto;
+    }
+}
