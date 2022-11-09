@@ -1,0 +1,672 @@
+#Mealdealtop{
+    /* min-height: auto; */
+    background-color:#f0f0f0;
+}
+
+#topfooterimg>img{
+    width: 100%;
+}
+#topfooterimg{
+    margin-top: 4rem;
+    background-color: #f0f0f0;
+}
+
+#heading_mealdeal{
+    width: 50%;
+    height: 4rem;
+    /* border: 1px solid red; */
+    /* margin-top: 1rem; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+    /* margin: auto; */
+    text-align: left;
+}
+#heading_mealdealptag{
+    width: 80%;
+    height: 3rem;
+    /* border: 1px solid red; */
+    margin-left: 4rem;
+    font-weight: lighter;
+    text-align: left;
+    line-height: 1.5rem;
+    
+}
+#inputtags{
+    width: 90%;
+    height: 3rem;
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2rem;
+    margin: auto;
+    /* color: white; */
+    
+
+}
+input{
+    /* width: 100%; */
+    height: 2rem;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+    /* border-radius: 2rem; */
+}
+.browse{
+    
+    width: 100%;
+    height: 2.5rem;
+    line-height: 19px;
+    background-color: #04be5a;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 15px 8px 15px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.Deal{
+    
+    width: 100%;
+    height: 2.5rem;
+    line-height: 19px;
+    background-color: #f53838;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 15px 8px 15px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.search{
+    height: 2rem;
+    line-height: 19px;
+    background-color: #ffffff;
+    border-radius: 6px;
+   
+}
+select{
+    width: 100%;
+    height: 2.5rem;
+    line-height: 19px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.browse:hover{
+    background-color:green;
+
+}
+.Deal:hover{
+    background-color: red;
+}
+
+#mainimage{
+    width: 90%;
+    margin-top: 3rem;
+  }
+  #nutritious{
+    margin-top: 5rem;
+  }
+  #nutritiousimg{
+    width: 100%;
+  }
+  #nutritious>div{
+
+    width: 90%;
+    height: auto;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin: auto;
+  }
+  #nutritious>div>div{
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 2rem;
+
+  }
+  #nutritiousimg{
+    border-radius: 2rem;
+  }
+  #nutritiousptag{
+    text-align: left;
+    line-height: 1.5rem;
+    /* left: 30%; */
+  }
+  div>#nutritiousptag{
+    width: 85%;
+    /* border: 1px solid red; */
+    /* margin: auto; */
+  }
+  div>#nutritioush1tag{
+    width: 85%;
+    /* border: 1px solid green; */
+    text-align: left;
+    /* margin-left: 2.5rem; */
+  }
+  #nutritiousamlet{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* border: 1px solid green; */
+  }
+  #nutritiousamlet>div:nth-child(1){
+    /* border: 1px solid red; */
+    margin-top: 1rem;
+  }
+  #nutritiousdiscount{
+    color: red;
+  }
+  #nutritiousmiddle{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  #nutritiousmiddle>div>button{
+    background-color: red;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 1rem;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  }
+  #nutritiousexpires{
+    color: green;
+  }
+
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+    #heading_mealdeal{
+        width: 50%;
+        height: 7rem;
+        /* border: 1px solid red; */
+        margin-left: 2rem;
+        text-align: left;
+    }
+
+    #heading_mealdealptag{
+        width: 80%;
+        height: 6rem;
+        /* border: 1px solid red; */
+        margin-left: 2rem;
+        font-weight: lighter;
+        text-align: left;
+        line-height: 1.5rem;
+        
+    }
+
+    #inputtags{
+        width: 90%;
+        height: 3rem;
+        /* border: 1px solid green; */
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 2rem;
+        margin-left: 2rem;
+        /* color: white; */
+        
+    
+    }
+    .browse{
+        width: 100%;
+        height: 3rem;
+    }
+    .Deal{
+        width: 100%;
+        height: 3rem;
+
+    }
+    select{
+        width: 100%;
+        height: 3rem;
+    }
+    input{
+        width: 100%;
+        height: 4rem;
+    }
+  }
+  #nutritiousamlet>div:nth-child(1)>img{
+       
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #heading_mealdeal{
+        width: 80%;
+        height: 7rem;
+        /* border: 1px solid red; */
+        /* margin-top: 1rem; */
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+        text-align: left;
+    }
+
+    #heading_mealdealptag{
+        width: 80%;
+        height: 6rem;
+        /* border: 1px solid red; */
+        margin-left: 2rem;
+        font-weight: lighter;
+        text-align: left;
+        line-height: 1.5rem;
+        
+    }
+
+    #inputtags{
+        width: 90%;
+        height: 9rem;
+        /* border: 1px solid green; */
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+       gap: 2rem;
+        margin: auto;
+        /* color: white; */
+        
+    
+    }
+    .browse{
+    
+        width: 100%;
+        height: 3rem;
+        line-height: 19px;
+        background-color: #04be5a;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 8px 15px 8px 15px;
+        text-align: center;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .Deal{
+        
+        width: 100%;
+        height: 3rem;
+        line-height: 19px;
+        /* background-color: #f53838; */
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 8px 15px 8px 15px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .search{
+        width: 100%;
+        height: 3rem;
+        line-height: 19px;
+        background-color: #ffffff;
+        border-radius: 6px;
+       
+    }
+    select{
+        width: 100%;
+        height: 3rem;
+        line-height: 19px;
+        background-color: #ffffff;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+  }
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    #heading_mealdeal{
+        width: 80%;
+        height: 9rem;
+        /* border: 1px solid red; */
+        /* margin-top: 1rem; */
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+        text-align: left;
+    }
+
+    #heading_mealdealptag{
+        width: 80%;
+        height: 9rem;
+        /* border: 1px solid red; */
+        margin-left: 2rem;
+        font-weight: lighter;
+        text-align: left;
+        line-height: 1.5rem;
+        
+    }
+
+    #inputtags{
+        width: 80%;
+        height: 15rem;
+        /* border: 1px solid green; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        margin-left: 2rem;
+                /* color: white; */
+        
+    
+    }
+    .browse{
+    
+        width: 100%;
+        height: 3rem;
+        line-height: 19px;
+        background-color: #04be5a;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 8px 15px 8px 15px;
+        text-align: center;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .Deal{
+        
+        width: 100%;
+        height: 3rem;
+        line-height: 19px;
+        background-color: #f53838;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 8px 15px 8px 15px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .search{
+        width: 100%;
+        height: 3rem;
+        line-height: 19px;
+        background-color: #ffffff;
+        border-radius: 6px;
+       
+    }
+    select{
+        width: 100%;
+        height: 3rem;
+        line-height: 19px;
+        background-color: #ffffff;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    #mainimage{
+        width: 90%;
+        height: auto;
+        margin-top: 3rem;
+      }
+      #nutritious{
+        margin-top: 5rem;
+      }
+      #nutritiousimg{
+        width: 100%;
+      }
+      #nutritious>div{
+        width: 90%;
+        height: auto;
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        margin: auto;
+      }
+      #nutritious>div>div{
+        /* border: 1px solid red; */
+      }
+      #nutritiousimg{
+        height: auto;
+        border-radius: 2rem;
+      }
+      #nutritiousptag{
+        text-align: left;
+        line-height: 1.5rem;
+        /* left: 30%; */
+      }
+      div>#nutritiousptag{
+        width: 100%;
+        /* border: 1px solid red; */
+        /* margin: auto; */
+      }
+      div>#nutritioush1tag{
+        width: 100%;
+        height: auto;
+        /* border: 1px solid green; */
+        text-align: left;
+        /* margin-left: 2.5rem; */
+      }
+      #nutritiousamlet{
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+      }
+      #nutritiousamlet>div{
+        /* border: 1px solid black; */
+      
+      }
+      #nutritiousamlet>div:nth-child(1){
+        /* border: 1px solid red; */
+        margin-top: 1rem;
+        
+      }
+      #nutritiousamlet>div:nth-child(1)>img{
+       
+        margin-left: 20px;
+      }
+      
+      #nutritiousdiscount{
+        color: red;
+      }
+      #nutritiousmiddle{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        margin-top: 1rem;
+        margin-bottom: 1rem; 
+       
+   
+      }
+      #nutritiousmiddle>div>button{
+        background-color: red;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 1rem;
+      cursor: pointer;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      }
+      #nutritiousexpires{
+        color: green;
+      }
+    
+    
+    
+  }
+  @media (min-width: 0px) and (max-width: 480px) {
+    #heading_mealdeal{
+        width: 80%;
+        height: 14rem;
+        /* border: 1px solid red; */
+        /* margin-top: 1rem; */
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+        text-align: left;
+    }
+
+    #heading_mealdealptag{
+        width: 80%;
+        height: 16rem;
+        /* border: 1px solid red; */
+        margin-left: 2rem;
+        font-weight: lighter;
+        text-align: left;
+        line-height: 1.5rem;
+        
+    }
+
+    #inputtags{
+        width: 80%;
+        height: 15rem;
+        /* border: 1px solid green; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        margin-left: 2rem;
+                /* color: white; */
+        
+    
+    }
+    .browse{
+    
+        width:auto;
+        height: 3.5rem;
+        line-height: 19px;
+        background-color: #04be5a;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 8px 15px 8px 15px;
+        text-align: center;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .Deal{
+        
+        width: auto;
+        height: 3.5rem;
+        line-height: 19px;
+        background-color: #f53838;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 8px 15px 8px 15px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .search{
+        width: 100%;
+        height: 3rem;
+        line-height: 19px;
+        background-color: #ffffff;
+        border-radius: 6px;
+       
+    }
+    select{
+        width: 70%;
+        height: 3rem;
+        line-height: 19px;
+        background-color: #ffffff;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    #mainimage{
+        width: 90%;
+        height: auto;
+        margin-top: 3rem;
+      }
+      #nutritious{
+        margin-top: 5rem;
+      }
+      #nutritiousimg{
+        width: 100%;
+      }
+      #nutritious>div{
+        width: 90%;
+        height: auto;
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 2rem;
+        margin: auto;
+      }
+      #nutritious>div>div{
+        /* border: 1px solid red; */
+      }
+      #nutritiousimg{
+        height: auto;
+        border-radius: 2rem;
+      }
+      #nutritiousptag{
+        text-align: left;
+        line-height: 1.5rem;
+        /* left: 30%; */
+      }
+      div>#nutritiousptag{
+        width: 100%;
+        /* border: 1px solid red; */
+        /* margin: auto; */
+      }
+      div>#nutritioush1tag{
+        width: 100%;
+        height: auto;
+        /* border: 1px solid green; */
+        text-align: left;
+        /* margin-left: 2.5rem; */
+      }
+      #nutritiousamlet{
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+      }
+      #nutritiousamlet>div{
+        /* border: 1px solid black; */
+      
+      }
+      #nutritiousamlet>div:nth-child(1){
+        /* border: 1px solid red; */
+        margin-top: 1rem;
+        
+      }
+      #nutritiousamlet>div:nth-child(1)>img{
+       
+        margin-left: 20px;
+      }
+      
+      #nutritiousdiscount{
+        color: red;
+      }
+      #nutritiousmiddle{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        margin-top: 1rem;
+        margin-bottom: 1rem; 
+       
+   
+      }
+      #nutritiousmiddle>div>button{
+        background-color: red;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 1rem;
+      cursor: pointer;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      }
+      #nutritiousexpires{
+        color: green;
+      }
+  }
+ 
