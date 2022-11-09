@@ -6,10 +6,8 @@ import {
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
   ModalFooter,
   ModalBody,
-  ModalCloseButton,
   useDisclosure,
   Button,
   Box,
@@ -17,6 +15,7 @@ import {
   Text,
   Grid,
 } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const NavRef = useRef();
@@ -26,6 +25,12 @@ const Navbar = () => {
   };
 
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const Navigaters = useNavigate();
+
+  const restaurantClick = () => {
+    Navigaters("/user_signup");
+  };
 
   return (
     <div className="Maindiv">
@@ -100,10 +105,11 @@ const Navbar = () => {
                 bg="white"
                 mb={5}
                 onClick={() => {
-                  console.log("Hello Rahendra Patel");
+                  restaurantClick(), onClose();
                 }}
                 cursor="pointer"
                 alignContent={"center"}
+                // onClick={}
               >
                 <Grid
                   templateColumns={{
@@ -137,7 +143,7 @@ const Navbar = () => {
                 bg="white"
                 mb={5}
                 onClick={() => {
-                  console.log("Hello Rahendra Patel");
+                  Navigaters("/restaurant_signup"), onClose();
                 }}
                 cursor="pointer"
               >
@@ -206,6 +212,7 @@ const Navbar = () => {
           <div className="login_signup_insider">
             <button>Login</button>
             <button onClick={onOpen}>Signup</button>
+            <div></div>
           </div>
         </ul>
       </div>

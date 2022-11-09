@@ -8,8 +8,10 @@ const Router = () => {
       <Route path="/mealDeals" element="Meal Deals Page" />
       <Route path="/kindmoments" element="Kind Moments" />
       <Route path="/recipes" element="Recipes" />
-      <Route path="/login" element="login" />
-      <Route path="/Signup" element="signup" />
+      <Route path="/restaurant_login" element="Restaurant_login" />
+      <Route path="/restaurant_signup" element="restaurant_signup" />
+      <Route path="/user_signup" element="user_signup" />
+      <Route path="/user_login" element="user_login" />
     </Routes>
   );
 };
