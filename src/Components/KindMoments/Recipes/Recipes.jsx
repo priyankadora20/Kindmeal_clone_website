@@ -38,8 +38,5 @@ const Recipes = () => {
 }
 export default Recipes
 
-function sum (a , b){
-    return a+b;
-}
-console.log(sum(4, 6))
+
 
