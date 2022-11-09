@@ -5,10 +5,16 @@
     padding: 10px 5rem 5px 5rem;
 }
 
-.social img{
-    width: 15%;
-    margin: 10px;
+.social a{
+    max-width: 15%;
+} 
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
+
 .login_signup{
     display: flex;
 }
@@ -61,7 +67,6 @@
 
 .login_signup_insider button{
     margin: 0rem 10px;
-    padding: 7px;
     border-radius: 5px;
     border: none;
     width: 5rem;
@@ -91,9 +96,10 @@
     .secondDiv ul{
         width: 70%;
     }
-    .social img {
+    .social{
         display: none;
     }
+    
 }
 
 @media screen and (max-width: 768px) {
