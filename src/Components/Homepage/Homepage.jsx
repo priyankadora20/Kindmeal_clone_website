@@ -13,6 +13,7 @@ export const Homepage = () => {
 
                         <img src={img}/>
                         <p>{describe}</p>
+                        <div></div>
                     </div>
                 }
             })}
