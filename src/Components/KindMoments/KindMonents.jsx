@@ -4,7 +4,7 @@ import React from "react";
 import { Box, Button, Input, Select, Stack, Text,Image, Grid, GridItem, Flex, Avatar} from "@chakra-ui/react";
 import {AiOutlineCamera, AiOutlineHeart} from "react-icons/ai";
 import {FaRegCommentDots} from "react-icons/fa";
-import list from "./list";
+import data from "./kinddata";
 
 
 const KindMonents =()=>{
@@ -105,20 +105,41 @@ function AirbnbCard() {
       name:'Pawan',
       title: 'Modern home in city center in the heart of historic Los Angeles',
     }
-  
+   
     return (
       
 
-      <Box maxW='sm' ml='16%'
-       borderWidth='1px' 
-       borderRadius='lg' 
-       overflow='hidden'
+      <Grid 
+      // maxW='sm'
+       ml='16%'
+      //  borderWidth='1px' 
+      //  borderRadius='lg' 
+      //  overflow='hidden'
+       templateColumns='repate(3,1fr)'
+       gap={10}
        boxShadow='md'
        border='1px solid red'
        >
+<GridItem w="100%"  h='400px' bg="blue"></GridItem>
+<GridItem w="100%" h='400px' bg="blue"></GridItem>
+<GridItem w="100%" h='400px' bg="blue"></GridItem>
+<GridItem w="100%" h='400px' bg="blue"></GridItem>
+<GridItem w="100%" h='400px' bg="blue"></GridItem>
+<GridItem w="100%" h='400px' bg="blue"></GridItem>
+<GridItem w="100%" h='400px' bg="blue"></GridItem>
+<GridItem w="100%" h='400px' bg="blue"></GridItem>
+<GridItem w="100%" h='400px' bg="blue"></GridItem>
 
+      
 
-      <Box border='' mb='5' display='flex'>
+      </Grid>
+    )
+   
+  }
+ 
+export {KindMonents,AirbnbCard}
+
+{/* <Box border='' mb='5' >
         <Avatar ml='2' mt='1' src={property.img} alt="" />
        <Box>
         <Text fontSize='md' ml='0'>{property.name}</Text>
@@ -138,21 +159,14 @@ function AirbnbCard() {
   </Box>
   
   <Box  >
-    <AiOutlineCamera style={{ fontSize:'2rem',marginLeft:'-6'}}/>
-     </Box>
+    <AiOutlineCamera style={{ fontSize:'2rem',marginLeft:'-6'}} />
+  </Box>
 
-  <Box  > 
-  <FaRegCommentDots style={{ fontSize:'2rem',marginLeft:'-60',cursor:"pointer"}}/>
+  <Box > 
+  <FaRegCommentDots style={{ fontSize:'2rem',marginLeft:'-60',cursor:"pointer"}} />
   </Box>
  
   </Grid>
 <Box>
   {property.title}
-</Box>
-
-      </Box>
-    )
-   
-  }
- 
-export {KindMonents,AirbnbCard}
+</Box> */}
