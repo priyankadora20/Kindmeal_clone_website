@@ -619,19 +619,18 @@ select{
       #nutritiousptag{
         text-align: left;
         line-height: 1.5rem;
-        /* left: 30%; */
+      
       }
       div>#nutritiousptag{
         width: 100%;
-        /* border: 1px solid red; */
-        /* margin: auto; */
+      
       }
       div>#nutritioush1tag{
         width: 100%;
         height: auto;
-        /* border: 1px solid green; */
+        
         text-align: left;
-        /* margin-left: 2.5rem; */
+        
       }
       #nutritiousamlet{
          display: flex;
