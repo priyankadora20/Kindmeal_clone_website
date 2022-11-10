@@ -1,4 +1,5 @@
 import './App.css';
+import { Question } from './Components/KindMoments/icon';
 import { AirbnbCard, KindMonents } from './Components/KindMoments/KindMonents';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       {/* <p>Make Your respective pages and Link it over here.</p> */}
       <KindMonents />
       <AirbnbCard />
+      {/* <Question /> */}
     </div>
   );
 }

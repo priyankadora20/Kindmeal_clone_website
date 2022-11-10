@@ -1,8 +1,12 @@
 import "./Kind.css"
 import {Link} from "react-router-dom";
 import React from "react";
-import { Badge, Box, Button, Input, Select, Stack, Text,Image} from "@chakra-ui/react";
-import { StarIcon } from "@chakra-ui/icons";
+import { Box, Button, Input, Select, Stack, Text,Image, Grid, GridItem, Flex, Avatar} from "@chakra-ui/react";
+import {AiOutlineCamera, AiOutlineHeart} from "react-icons/ai";
+import {FaRegCommentDots} from "react-icons/fa";
+import list from "./list";
+
+
 const KindMonents =()=>{
 return(
     <>
@@ -88,15 +92,6 @@ return(
 
 
 
-  
-
-  
-    
-        
-      
-      
-
-
 </>
 )
 }
@@ -105,69 +100,59 @@ function AirbnbCard() {
     const property = {
       imageUrl: 'https://bit.ly/2Z4KKcF',
       imageAlt: 'Rear view of modern home with pool',
-      
-      beds: 3,
-      baths: 2,
+      img:'https://avatars.githubusercontent.com/u/101585236?v=4',
+      date:'Nov 9th 2022',
       name:'Pawan',
       title: 'Modern home in city center in the heart of historic Los Angeles',
-      formattedPrice: '$1,900.00',
-      reviewCount: 34,
-      rating: 4,
     }
   
     return (
+      
+
       <Box maxW='sm' ml='16%'
        borderWidth='1px' 
        borderRadius='lg' 
        overflow='hidden'
        boxShadow='md'
+       border='1px solid red'
        >
-      
-      
-      <Box 
-            mt='1'
-            fontWeight='semibold'
-            as='h4'
-            lineHeight='tight'
-            noOfLines={1}
-          >
-            {property.name}
-          </Box>
-        <Image src={property.imageUrl} alt={property.imageAlt} />
-  
-        <Box p='6'>
-          <Box display='flex' alignItems='baseline'>
 
-            <Badge borderRadius='full' px='2' colorScheme='teal'>
-              New
-            </Badge>
-            
-          </Box>
+
+      <Box border='' mb='5' display='flex'>
+        <Avatar ml='2' mt='1' src={property.img} alt="" />
+       <Box>
+        <Text fontSize='md' ml='0'>{property.name}</Text>
+        <Text fontSize='xs' ml='5' >{property.date}</Text>
+       </Box>
+        <Button ml='36%' h='9' mt='3' colorScheme='red' w='21%' >View</Button>
+      </Box>
+
+        <Image mt='-4' src={property.imageUrl} alt={property.imageAlt} />
+ 
+      
+
+  <Grid templateColumns='repeat(3, 1fr)' gap={10} h='auto' >
+
+  <Box ml='20'  border='' >
+  <AiOutlineHeart style={{fontSize:'2rem',marginLeft:'30'}} />
+  </Box>
   
-  
-          <Box>
-            {property.formattedPrice}
-            <Box as='span' color='gray.600' fontSize='sm'>
-              / wk
-            </Box>
-          </Box>
-  
-          <Box display='flex' mt='2' alignItems='center'>
-            {Array(5)
-              .fill('')
-              .map((_, i) => (
-                <StarIcon
-                  key={i}
-                  color={i < property.rating ? 'teal.500' : 'gray.300'}
-                />
-              ))}
-            <Box as='span' ml='2' color='gray.600' fontSize='sm'>
-              {property.reviewCount} reviews
-            </Box>
-          </Box>
-        </Box>
+  <Box  >
+    <AiOutlineCamera style={{ fontSize:'2rem',marginLeft:'-6'}}/>
+     </Box>
+
+  <Box  > 
+  <FaRegCommentDots style={{ fontSize:'2rem',marginLeft:'-60',cursor:"pointer"}}/>
+  </Box>
+ 
+  </Grid>
+<Box>
+  {property.title}
+</Box>
+
       </Box>
     )
+   
   }
-
+ 
 export {KindMonents,AirbnbCard}
