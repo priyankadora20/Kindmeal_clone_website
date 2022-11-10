@@ -17,11 +17,21 @@ import {
   InputRightAddon,
   Textarea,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const ShopCreation = () => {
   const Navigaters = useNavigate();
+  const [RestaurantEmail, setREstaurantEmail] = useState([]);
+
+  const getrestaruantownerdata = () => {
+    let value = JSON.parse(localStorage.getItem("RestaurantDetails"));
+    setREstaurantEmail(value);
+  };
+
+  useEffect(() => {
+    getrestaruantownerdata();
+  }, []);
 
   return (
     <div>
@@ -67,60 +77,42 @@ const ShopCreation = () => {
             <Text fontSize="xl" fontWeight={"bold"}>
               Dashboard
             </Text>
-            <Text fontSize="sm" cursor="pointer" width="32%" margin={"auto"}>
+            <Text fontSize="sm" cursor="pointer" margin={"auto"}>
               Merchant Overview
             </Text>
-            <Text
-              fontSize="sm"
-              cursor="pointer"
-              width="32%"
-              margin={"auto"}
-              mb={4}
-            >
+            <Text fontSize="sm" cursor="pointer" margin={"auto"} mb={4}>
               Upgrade Merchant Plan
             </Text>
             {/* second Text  */}
             <Text fontSize="xl" fontWeight={"bold"}>
               My Shops
             </Text>
-            <Text fontSize="sm" cursor="pointer" width="32%" margin={"auto"}>
+            <Text fontSize="sm" cursor="pointer" margin={"auto"}>
               Manage Deals
             </Text>
-            <Text fontSize="sm" cursor="pointer" width="32%" margin={"auto"}>
+            <Text fontSize="sm" cursor="pointer" margin={"auto"}>
               Manage Food Menu
             </Text>
-            <Text fontSize="sm" cursor="pointer" width="32%" margin={"auto"}>
+            <Text fontSize="sm" cursor="pointer" margin={"auto"}>
               Manage Shop Branches
             </Text>
-            <Text fontSize="sm" cursor="pointer" width="32%" margin={"auto"}>
+            <Text fontSize="sm" cursor="pointer" margin={"auto"}>
               Update Shop Profile
             </Text>
-            <Text
-              fontSize="sm"
-              cursor="pointer"
-              width="32%"
-              margin={"auto"}
-              mb={4}
-            >
+            <Text fontSize="sm" cursor="pointer" margin={"auto"} mb={4}>
               Create New Shop
             </Text>
             {/* Third Box  */}
             <Text fontSize="xl" fontWeight={"bold"}>
               Coupons & Transactions
             </Text>
-            <Text fontSize="sm" cursor="pointer" width="32%" margin={"auto"}>
+            <Text fontSize="sm" cursor="pointer" margin={"auto"}>
               Coupons & Transactions
             </Text>
-            <Text fontSize="sm" cursor="pointer" width="32%" margin={"auto"}>
+            <Text fontSize="sm" cursor="pointer" margin={"auto"}>
               Check / Redeem Coupons
             </Text>
-            <Text
-              fontSize="sm"
-              cursor="pointer"
-              width="32%"
-              margin={"auto"}
-              mb={4}
-            >
+            <Text fontSize="sm" cursor="pointer" margin={"auto"} mb={4}>
               Generate Transaction Report
             </Text>
           </Box>
@@ -139,9 +131,16 @@ const ShopCreation = () => {
           borderTop="8px"
         >
           <Text fontSize="sm" mb={5}>
-            Congratulations Fssdfsdfdsf, you're now ready to begin promoting
-            your food on KindMeal.my. An activation email has been sent to
-            sdfsdf@gmail.com.
+            Congratulations{" "}
+            <span style={{ color: "red", fontWeight: "bold" }}>
+              {RestaurantEmail.Name}
+            </span>{" "}
+            , you're now ready to begin promoting your food on KindMeal.my. An
+            activation email has been sent to{" "}
+            <span style={{ color: "orange", fontWeight: "bold" }}>
+              {RestaurantEmail.Email}
+            </span>
+            .
           </Text>
           <Text fontSize="2xl">My Shop Profile</Text>
           <Text fontSize="sm" textDecoration={"ButtonFace"} mt={3}>
@@ -252,12 +251,17 @@ const ShopCreation = () => {
                   <InputRightAddon children=".com" />
                 </InputGroup>
               </FormControl>
+              {/* *******************************************&  */}
+              <FormControl isRequired mt={4}>
+                <FormLabel color={"black"}>Enter Image Url</FormLabel>
+                <Input placeholder="Image URL" size="sm" />
+              </FormControl>
               {/* ******************************************* */}
               <FormControl isRequired mt={4}>
                 <FormLabel color={"black"}>About The Shop : </FormLabel>
                 <Textarea placeholder="Some Thing About Your shop" size="sm" />
               </FormControl>
-              {/* *******************************************&  */}
+              {/* ******************************************** */}
               <Button colorScheme="red" mt="5" type="submit" color={"black"}>
                 Create shop
               </Button>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import CoustomerSignup from "../Login_SignUp/Coustomer/CoustomerSignup";
+import RestaurantDashboard from "../Login_SignUp/Restaurant/RestaurantDashboard";
 import RestaurantSignup from "../Login_SignUp/Restaurant/RestaurantSignup";
 import ShopCreation from "../Login_SignUp/Restaurant/ShopCreation";
 
@@ -16,6 +17,7 @@ const Router = () => {
       <Route path="/user_signup" element={<CoustomerSignup />} />
       <Route path="/user_login" element="user_login" />
       <Route path="/ShopCreation" element={<ShopCreation />} />
+      <Route path="/RestaurantDashboard" element={<RestaurantDashboard />} />
     </Routes>
   );
 };

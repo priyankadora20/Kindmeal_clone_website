@@ -19,16 +19,35 @@ import { useNavigate } from "react-router-dom";
 const RestaurantSignup = () => {
   const Navigaters = useNavigate();
 
-  const [useData, setUserData] = useState({
-    name: "",
-    email: "",
+  const [Restaurant, setRestaurant] = useState({
+    Name: "",
+    Email: "",
     Re_enter_email: "",
     Password: "",
     Username: "",
     BirthDate: "",
-    Gender: "",
     Country: "",
+    Type: "Restaurant_Details",
   });
+
+  const HandleChange = (e) => {
+    const { name, value } = e.target;
+    setRestaurant({
+      ...Restaurant,
+      [name]: value,
+    });
+  };
+
+  const HandleSubmit = (e) => {
+    e.preventDefault();
+
+    if (Restaurant.Email !== Restaurant.Re_enter_email) {
+      alert("Email does't Match");
+    } else {
+      localStorage.setItem("RestaurantDetails", JSON.stringify(Restaurant));
+      Navigaters("/ShopCreation");
+    }
+  };
 
   return (
     <div>
@@ -178,11 +197,17 @@ const RestaurantSignup = () => {
           </Text>
           {/* Getting the Details from here  */}
           <Box>
-            <form>
+            <form onSubmit={HandleSubmit}>
               {/* first */}
               <FormControl isRequired mt={4}>
                 <FormLabel color={"black"}>Name</FormLabel>
-                <Input placeholder="First name" color={"black"} name="name" />
+                <Input
+                  placeholder="First name"
+                  color={"black"}
+                  name="Name"
+                  value={Restaurant.Name}
+                  onChange={HandleChange}
+                />
               </FormControl>
               {/* two  */}
               <FormControl isRequired mt={4}>
@@ -193,8 +218,10 @@ const RestaurantSignup = () => {
                 <Input
                   placeholder="Email"
                   color={"black"}
-                  name="email"
+                  name="Email"
                   type={"email"}
+                  value={Restaurant.Email}
+                  onChange={HandleChange}
                 />
               </FormControl>
               {/* three */}
@@ -205,6 +232,8 @@ const RestaurantSignup = () => {
                   color={"black"}
                   name="Re_enter_email"
                   type={"email"}
+                  value={Restaurant.Re_enter_email}
+                  onChange={HandleChange}
                 />
               </FormControl>
               {/* four */}
@@ -215,6 +244,8 @@ const RestaurantSignup = () => {
                   color={"black"}
                   name="Password"
                   type={"password"}
+                  value={Restaurant.Password}
+                  onChange={HandleChange}
                 />
               </FormControl>
               {/* fifth */}
@@ -223,7 +254,13 @@ const RestaurantSignup = () => {
                 <FormHelperText color={"red.600"} fontWeight="bold">
                   http://KindMeal.my/username
                 </FormHelperText>
-                <Input placeholder="Username" color={"black"} name="Username" />
+                <Input
+                  placeholder="Username"
+                  color={"black"}
+                  name="Username"
+                  value={Restaurant.Username}
+                  onChange={HandleChange}
+                />
               </FormControl>
               {/* sixth */}
               <FormControl isRequired mt={4}>
@@ -233,12 +270,14 @@ const RestaurantSignup = () => {
                   color={"black"}
                   name="BirthDate"
                   type={"date"}
+                  value={Restaurant.BirthDate}
+                  onChange={HandleChange}
                 />
               </FormControl>
               {/* seventh */}
               <FormControl as="fieldset" mt={4}>
                 <FormLabel as="legend">Gender</FormLabel>
-                <RadioGroup defaultValue="Itachi">
+                <RadioGroup defaultValue="Select">
                   <HStack spacing="24px">
                     <Radio value="Male">Male</Radio>
                     <Radio value="Female">Female</Radio>
@@ -249,9 +288,11 @@ const RestaurantSignup = () => {
               <FormControl mt={4} isRequired>
                 <FormLabel color={"black"}>Country</FormLabel>
                 <Select
-                  placeholder="Select Role"
+                  placeholder="Select Country"
                   color={"green.600"}
                   name="Country"
+                  value={Restaurant.Country}
+                  onChange={HandleChange}
                 >
                   <option>India</option>
                   <option>USA</option>
