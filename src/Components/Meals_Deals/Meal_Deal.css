@@ -638,10 +638,7 @@ select{
          flex-direction: column;
          gap: 20px;
       }
-      #nutritiousamlet>div{
-        /* border: 1px solid black; */
-      
-      }
+     
       #nutritiousamlet>div:nth-child(1){
         /* border: 1px solid red; */
         margin-top: 1rem;
