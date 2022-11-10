@@ -28,10 +28,6 @@ const Navbar = () => {
 
   const Navigaters = useNavigate();
 
-  const restaurantClick = () => {
-    Navigaters("/user_signup");
-  };
-
   return (
     <div className="Maindiv">
       <div className="firstDiv">
@@ -105,7 +101,7 @@ const Navbar = () => {
                 bg="white"
                 mb={5}
                 onClick={() => {
-                  restaurantClick(), onClose();
+                  Navigaters("/user_signup"), onClose();
                 }}
                 cursor="pointer"
                 alignContent={"center"}
