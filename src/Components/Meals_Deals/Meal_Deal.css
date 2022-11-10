@@ -442,9 +442,7 @@ select{
         gap: 2rem;
         margin: auto;
       }
-      #nutritious>div>div{
-        /* border: 1px solid red; */
-      }
+    
       #nutritiousimg{
         height: auto;
         border-radius: 2rem;
