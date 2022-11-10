@@ -1,0 +1,80 @@
+#getfreecouponimg{
+    width: 90%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-bottom: 2rem;
+}
+#getfreecouponimg>img{
+    width: 100%;
+}
+
+#getfreecouponheading{
+    width: 90%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+#linksection{
+    width: 90%;
+    display: grid;
+    height: auto;
+    grid-template-columns:repeat(auto-fit, minmax(150px,3fr)) ;
+    /* border: 1px solid red; */
+    margin-top: 2rem;
+    margin: auto;
+}
+
+#linksection>div{
+    /* border: 1px solid green; */
+}
+#sharebtn{
+    margin: auto;
+    padding: 8px 10px 8px 10px;
+}
+#twitter{
+    margin: auto;
+    padding: 8px 10px 8px 10px;
+}
+#like{
+    margin: auto;
+    padding: 8px 10px 8px 10px;
+}
+#sharebtn>button{
+    padding: 8px 10px 8px 10px;
+    background-color:blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#getfreemiddle{
+    /* border: 1px solid red; */
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+#getfreecouponalldata{
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+    gap: 2rem;
+    margin: auto;
+}
+#getfreecouponalldata>div{
+    /* border: 1px solid red; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+#getfreecouponalldata>div>img{
+    width: 100%;
+    border-radius: 1.5rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+

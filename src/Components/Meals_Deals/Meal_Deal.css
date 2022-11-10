@@ -10,7 +10,22 @@
     margin-top: 4rem;
     background-color: #f0f0f0;
 }
-
+#paginationbutton{
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 2rem;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: none;
+}
+#paginationbutton:hover{
+    background-color: red;
+    color: white;
+    border: none;
+}
 #heading_mealdeal{
     width: 50%;
     height: 4rem;
@@ -109,6 +124,7 @@ select{
 #mainimage{
     width: 90%;
     margin-top: 3rem;
+    margin-bottom: 3rem;
   }
   #nutritious{
     margin-top: 5rem;

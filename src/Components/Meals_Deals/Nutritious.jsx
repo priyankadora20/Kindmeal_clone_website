@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { AiFillStar } from "react-icons/ai";
 import {FaStarHalfAlt,FaStar} from "react-icons/fa"
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import Main from './Main';
 import Paginationmealdeal from './Paginationmealdeal';
 // let data=[
@@ -172,7 +173,14 @@ function Nutritious(props) {
         return state.data
        
     })
-   
+    let pages=useSelector((state)=>{
+        return state.current
+        console.log(state)
+    })
+    let navigate=useNavigate()
+    let handlegetfreecoupon=()=>{
+        navigate("/Getfreecoupon")
+    }   
     
     
     return (
@@ -183,7 +191,7 @@ function Nutritious(props) {
         <div>
             
             {
-                maindata.map((el)=>{
+                pages.map((el)=>{
                     return (
                         <div key={el.id}>
                             <img id='nutritiousimg'  src={el.image} alt="" />
@@ -195,7 +203,7 @@ function Nutritious(props) {
                             </div>
                             <div id='nutritiousmiddle' >
                                 <div>
-                                <button>{el.button}</button>
+                                <button onClick={handlegetfreecoupon}>{el.button}</button>
                                 </div>
                                 <div>
                                    <FaStar size={25} color="#fbff00" />

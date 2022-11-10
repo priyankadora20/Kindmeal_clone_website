@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { successdata } from './actiontype';
 import { Success } from './Types';
 
 function Paginationmealdeal() {
@@ -9,7 +10,7 @@ function Paginationmealdeal() {
     console.log(data)
     let dispatch=useDispatch()
     let [currentpage,setcurrentpage]=useState(1)
-    let [postperpage,setpostperpage]=useState(2)
+    let [postperpage,setpostperpage]=useState(10)
 
     let lastPostIndex=currentpage*postperpage;
     let firstpostindex=lastPostIndex-postperpage;
@@ -25,14 +26,14 @@ function Paginationmealdeal() {
     let handleclick=(el)=>{
         setcurrentpage(el)
         console.log(el)
-        console.log(currentposts)
+        dispatch(successdata(currentposts))
 
     }
     return (
         <div>
             {pages.map((el,index)=>{
             return (
-               <button key={index} onClick={()=>handleclick(el)} >{el}</button>
+               <button id='paginationbutton' key={index} onClick={()=>handleclick(el)} >{el}</button>
             )
         })}
             
