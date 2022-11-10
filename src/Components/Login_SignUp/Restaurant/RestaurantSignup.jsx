@@ -13,11 +13,22 @@ import {
   Radio,
   FormHelperText,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const RestaurantSignup = () => {
   const Navigaters = useNavigate();
+
+  const [useData, setUserData] = useState({
+    name: "",
+    email: "",
+    Re_enter_email: "",
+    Password: "",
+    Username: "",
+    BirthDate: "",
+    Gender: "",
+    Country: "",
+  });
 
   return (
     <div>
@@ -171,11 +182,7 @@ const RestaurantSignup = () => {
               {/* first */}
               <FormControl isRequired mt={4}>
                 <FormLabel color={"black"}>Name</FormLabel>
-                <Input
-                  placeholder="First name"
-                  color={"black"}
-                  name="firstname"
-                />
+                <Input placeholder="First name" color={"black"} name="name" />
               </FormControl>
               {/* two  */}
               <FormControl isRequired mt={4}>
@@ -196,7 +203,7 @@ const RestaurantSignup = () => {
                 <Input
                   placeholder="Email"
                   color={"black"}
-                  name="email"
+                  name="Re_enter_email"
                   type={"email"}
                 />
               </FormControl>
@@ -224,7 +231,7 @@ const RestaurantSignup = () => {
                 <Input
                   placeholder="Choose Date"
                   color={"black"}
-                  name="email"
+                  name="BirthDate"
                   type={"date"}
                 />
               </FormControl>
@@ -233,19 +240,18 @@ const RestaurantSignup = () => {
                 <FormLabel as="legend">Gender</FormLabel>
                 <RadioGroup defaultValue="Itachi">
                   <HStack spacing="24px">
-                    <Radio value="Sasuke">Male</Radio>
-                    <Radio value="Nagato">Female</Radio>
-                    {/* <Radio value="Itachi">Others</Radio> */}
+                    <Radio value="Male">Male</Radio>
+                    <Radio value="Female">Female</Radio>
                   </HStack>
                 </RadioGroup>
               </FormControl>
               {/* eighth */}
               <FormControl mt={4} isRequired>
-                <FormLabel color={"black"}>Role</FormLabel>
+                <FormLabel color={"black"}>Country</FormLabel>
                 <Select
                   placeholder="Select Role"
                   color={"green.600"}
-                  name="role"
+                  name="Country"
                 >
                   <option>India</option>
                   <option>USA</option>
