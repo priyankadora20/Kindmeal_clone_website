@@ -3,12 +3,12 @@
     min-height: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(500px,2fr));
-    /* border: 1px solid red; */
+   
     margin: auto;
     gap: 1rem;
 }
 #overviewmiddle>div{
-    /* border: 1px solid red; */
+   
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 2rem;
 }
@@ -33,7 +33,7 @@
 #overviewtext{
     width: 90%;
     height: auto;
-    /* border: 1px solid red; */
+    
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 2rem;
@@ -45,7 +45,7 @@
     min-height: 200px;
     margin: auto;
     grid-template-columns: repeat(auto-fit,minmax(200px,5fr));
-    /* border: 1px solid red; */
+    
     gap: 2rem;
     margin-top: 2rem;
     border-radius: 2rem;
