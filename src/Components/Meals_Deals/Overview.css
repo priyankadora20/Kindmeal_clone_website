@@ -76,7 +76,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(500px,2fr));
     min-height: 200px;
-    /* border: 1px solid red; */
+    
     margin: auto;
     margin-top: 2rem;
     gap:10px;
