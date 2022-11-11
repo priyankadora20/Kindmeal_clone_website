@@ -6,8 +6,8 @@ import Router from './Components/Navbar_Routing/Router';
 function App() {
   return (
     <div className="App">
-      {/*<Navbar />*/}
-    {/*<Router />*/}
+      <Navbar />
+    <Router />
       <Homepage />
     </div>
   );
