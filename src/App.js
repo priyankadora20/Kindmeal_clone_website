@@ -1,16 +1,14 @@
 import './App.css';
-import Navbar from './Components/Navbar_Routing/Navbar';
-import Router from './Components/Navbar_Routing/Router';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-    <Router />
-    
-    
+      <h1>Welcome Team</h1>
+      <p>Make Your respective pages and Link it over here.</p>
     </div>
   );
 }
+
+
 
 export default App;
