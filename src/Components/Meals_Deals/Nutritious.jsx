@@ -207,9 +207,9 @@ function Nutritious(props) {
                                 </div>
                                 <div>
                                    <FaStar size={25} color="#fbff00" />
-                                   <FaStar size={25}  color="#fbff00"/>
-                                   <FaStar size={25}  color="#fbff00"/>
-                                   <FaStar size={25}  color="#fbff00"/>
+                                   <FaStar size={25} color="#fbff00"/>
+                                   <FaStar size={25} color="#fbff00"/>
+                                   <FaStar size={25} color="#fbff00"/>
                                    <FaStarHalfAlt size={25}  color="#fbff00"/>
                 
                                 </div>
