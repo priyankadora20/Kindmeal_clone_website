@@ -16,13 +16,13 @@ function InsideMealdeal(props) {
             <img src="https://www.kindmeal.my/photos/shop/3/392-c.jpg" alt="" />
            </div>
            <div id='getfreecouponheading' >
-            <h1>Ring Zing Vegetatian Restaurant 灵芝素食饭店</h1>
+            <h1>Hyderabad Recipes</h1>
            </div>
 
            <div id='linksection'>
            <div>
 
-            <a href=''>
+            <a href='/Overview'>
             <h3>Overview</h3>
             </a>
            </div>
