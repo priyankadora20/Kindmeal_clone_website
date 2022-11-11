@@ -17,26 +17,34 @@ function Location(props) {
            <div>
 
             <a href='/Overview'>
-            <h3>Overview</h3>
+            <button className='overviewbutton'><h3>Overview</h3></button>
             </a>
            </div>
 
            <div>
             <a href="/InsideMealdeal" >
-               
-            <h3>Meal Deals</h3>
+                <button className='overviewbutton'>
+                <h3>Meal Deals</h3>
+                </button> 
+           
             </a>
             </div>
 
             <div>
             <a href='/Getfreecoupon'>
+                <button className='overviewbutton'>
+
             <h3>Food Menu</h3>
+                </button>
             </a>
             </div>
 
             <div>
             <a href='/Location'>
+                <button className='overviewbutton' >
+
             <h3>Location</h3>
+                </button>
             </a>
             </div>
             <div id='twitter' >

@@ -5,6 +5,8 @@
     grid-template-columns: repeat(auto-fit,minmax(500px,2fr));
    
     margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     gap: 1rem;
 }
 #overviewmiddle>div{
@@ -38,6 +40,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 2rem;
     margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 #overviewyummyfood{
     display: grid;
@@ -83,4 +86,15 @@
    background-color:#f0f0f0;
 
 
+}
+.overviewbutton{
+    border-radius: 1rem;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    padding: 0 15px 0 15px;
+}
+.overviewbutton:hover{
+    background-color: red;
 }
