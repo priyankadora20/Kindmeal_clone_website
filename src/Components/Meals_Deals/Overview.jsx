@@ -34,7 +34,7 @@ function Overview(props) {
             </div>
 
             <div>
-            <a href=''>
+            <a href='/Location'>
             <h3>Location</h3>
             </a>
             </div>

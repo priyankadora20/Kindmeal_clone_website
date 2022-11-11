@@ -1,0 +1,16 @@
+#bottomlocation{
+    width: 90%;
+    min-height: 200px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(500px,2fr)) ;
+    /* border: 1px solid red; */
+    margin: auto;
+    gap: 2rem;
+    margin-top: 2rem;
+   
+}
+#bottomlocation>div{
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 2rem;
+}

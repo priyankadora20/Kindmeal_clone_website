@@ -41,7 +41,7 @@ function InsideMealdeal(props) {
             </div>
 
             <div>
-            <a href=''>
+            <a href='/Location'>
             <h3>Location</h3>
             </a>
             </div>
@@ -61,7 +61,7 @@ function InsideMealdeal(props) {
 
            </div>
            <div id="getfreemiddle">
-            <h4>Here are exciting deals brought to you by Ring Zhi Vegetarian Restaurant 灵芝素食饭店.
+            <h4>Here are exciting deals brought to you by Hyderabad Restaurant.
 To take advantage of a deal, just click into it and obtain the corresponding coupon.</h4>
            </div>
 

@@ -51,7 +51,7 @@ function Getfreecoupon(props) {
             </div>
 
             <div>
-            <a href=''>
+            <a href='/Location'>
             <h3>Location</h3>
             </a>
             </div>
@@ -71,7 +71,7 @@ function Getfreecoupon(props) {
 
            </div>
            <div id="getfreemiddle">
-            <h4>Below are mouth-watering food and cuisine at Ring Zhi Vegetarian Restaurant 灵芝素食饭店. Please click on the photos to view full details.</h4>
+            <h4>Below are mouth-watering food and cuisine at Hyderabad Restaurant. Please click on the photos to view full details.</h4>
            </div>
            <div id='getfreecouponalldata'>
              {
