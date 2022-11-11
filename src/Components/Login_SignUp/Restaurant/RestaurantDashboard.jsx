@@ -57,6 +57,7 @@ const RestaurantDashboard = () => {
           margin="auto"
           marginRight={5}
           marginLeft={5}
+          // mt="4"
         >
           <Button colorScheme="teal" size="lg">
             Profile
@@ -69,6 +70,7 @@ const RestaurantDashboard = () => {
           </Button>
         </Grid>
       </Flex>
+      {/* (******************************************************************************************) */}
     </Box>
   );
 };

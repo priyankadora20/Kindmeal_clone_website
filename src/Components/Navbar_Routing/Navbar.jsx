@@ -105,7 +105,6 @@ const Navbar = () => {
                 }}
                 cursor="pointer"
                 alignContent={"center"}
-                // onClick={}
               >
                 <Grid
                   templateColumns={{

@@ -17,6 +17,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const RestaurantSignup = () => {
+  const [Gender, setGender] = useState("Male");
+
   const Navigaters = useNavigate();
 
   const [Restaurant, setRestaurant] = useState({
@@ -27,8 +29,10 @@ const RestaurantSignup = () => {
     Username: "",
     BirthDate: "",
     Country: "",
+    Gender: Gender,
     Type: "Restaurant_Details",
   });
+  console.log(Gender);
 
   const HandleChange = (e) => {
     const { name, value } = e.target;
@@ -45,7 +49,7 @@ const RestaurantSignup = () => {
       alert("Email does't Match");
     } else {
       localStorage.setItem("RestaurantDetails", JSON.stringify(Restaurant));
-      Navigaters("/ShopCreation");
+      // Navigaters("/ShopCreation");
     }
   };
 
@@ -278,7 +282,10 @@ const RestaurantSignup = () => {
               <FormControl as="fieldset" mt={4}>
                 <FormLabel as="legend">Gender</FormLabel>
                 <RadioGroup defaultValue="Select">
-                  <HStack spacing="24px">
+                  <HStack
+                    spacing="24px"
+                    onChange={({ target }) => setGender(target.value)}
+                  >
                     <Radio value="Male">Male</Radio>
                     <Radio value="Female">Female</Radio>
                   </HStack>

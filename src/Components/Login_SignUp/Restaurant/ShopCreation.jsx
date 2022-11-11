@@ -29,6 +29,9 @@ const ShopCreation = () => {
     setREstaurantEmail(value);
   };
 
+  const [veg, setVeg] = useState("select");
+
+  console.log(veg);
   useEffect(() => {
     getrestaruantownerdata();
   }, []);
@@ -197,7 +200,10 @@ const ShopCreation = () => {
               <FormControl as="fieldset" mt={4}>
                 <FormLabel as="legend">Type :</FormLabel>
                 <RadioGroup defaultValue="select">
-                  <HStack spacing="24px">
+                  <HStack
+                    spacing="24px"
+                    onChange={({ target }) => setVeg(target.value)}
+                  >
                     <Radio value="Vegan">Vegan</Radio>
                     <Radio value="Non_veg">Non-Veg</Radio>
                     <Radio value="Mixed">Mixed</Radio>
