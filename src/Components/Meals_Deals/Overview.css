@@ -1,0 +1,88 @@
+#overviewmiddle{
+    width: 90%;
+    min-height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,2fr));
+    border: 1px solid red;
+    margin: auto;
+    gap: 1rem;
+}
+#overviewmiddle>div{
+    border: 1px solid red;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 2rem;
+}
+
+#imagename{
+    width: 100%;
+    border-radius: 2rem;
+}
+#overviewleftside{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,2fr));
+    gap: 2rem;
+    
+}
+#overviewleftside>div:nth-child(2){
+    margin-top: 1rem;
+}
+#overviewleftside>div:nth-child(2)>h4{
+    margin-top: 1.3rem;
+}
+#overviewtext{
+    width: 90%;
+    height: auto;
+    border: 1px solid red;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 2rem;
+    margin-top: 2rem;
+}
+#overviewyummyfood{
+    display: grid;
+    width: 90%;
+    min-height: 200px;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit,minmax(200px,5fr));
+    border: 1px solid red;
+    gap: 2rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+}
+#overviewyummyfood>div>img{
+    width: 100%;
+    border-radius: 2rem;
+}
+
+#overviewyummyfood>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 2rem;
+}
+#overviewmaster{
+    width: 90%;
+    border: 1px solid red;
+    margin: auto;
+    height: auto;
+    margin-top: 2rem;
+    
+}
+#overviewmaster>img{
+    border-radius: 2rem;
+    cursor: pointer;
+}
+#overviewbottomdiv{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,2fr));
+    min-height: 200px;
+    border: 1px solid red;
+    margin: auto;
+    margin-top: 2rem;
+    gap:10px;
+
+
+}
+#overviewbottomdiv>div{
+    border: 1px solid red;
+}

@@ -28,14 +28,14 @@ function InsideMealdeal(props) {
            </div>
 
            <div>
-            <a href="/" >
+            <a href="/InsideMealdeal" >
                 {/* Meal Deal */}
             <h3>Meal Deals</h3>
             </a>
             </div>
 
             <div>
-            <a href=''>
+            <a href='/Getfreecoupon'>
             <h3>Food Menu</h3>
             </a>
             </div>
