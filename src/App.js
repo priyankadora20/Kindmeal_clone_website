@@ -1,5 +1,4 @@
 import './App.css';
-import { Homepage } from './Components/Homepage/Homepage';
 import Navbar from './Components/Navbar_Routing/Navbar';
 import Router from './Components/Navbar_Routing/Router';
 
@@ -8,7 +7,7 @@ function App() {
     <div className="App">
       <Navbar />
     <Router />
-      <Homepage />
+    
     </div>
   );
 }
