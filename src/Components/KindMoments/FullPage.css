@@ -1,0 +1,41 @@
+.main{
+    border: 1px solid red;
+    height: auto;
+
+}
+.firstimg{
+    border: 2px solid green;
+    height: 360px;
+    width: 100%;
+}
+.alldetails{
+    display: flex;
+    border: 4px solid pink;
+}
+.profile{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+}
+.namefollwer{
+    height: 80px;
+    width: 200px;
+    border: 2px solid teal;
+}
+.follwerbtn{
+    height: 50px;
+    width: 150px;
+    border: 1px solid orange;
+}
+.bigimg{
+    border: 2px solid blue;
+    height: 600px;
+    width: 450px;
+    display: flex;
+
+}
+.longimg{
+    border: 2px solid gold;
+    height: 700px;
+    width: 250px;
+}

@@ -1,6 +1,7 @@
 import './App.css';
-import { Question } from './Components/KindMoments/icon';
-import { AirbnbCard, KindMonents } from './Components/KindMoments/KindMonents';
+import FullPage from './Components/KindMoments/FullPage';
+import { Instgram } from './Components/KindMoments/instagram';
+import { KindMonents } from './Components/KindMoments/KindMonents';
 
 function App() {
   return (
@@ -9,8 +10,8 @@ function App() {
       {/* <p>Make Your respective pages and Link it over here.</p> */}
       
       <KindMonents />
-      <AirbnbCard />
-      {/* <Question /> */}
+      {/* <FullPage /> */}
+     <Instgram />
     </div>
   );
 }

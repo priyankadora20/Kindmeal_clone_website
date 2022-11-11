@@ -1,10 +1,11 @@
-import "./Kind.css"
+import "./kind.css"
 import {Link} from "react-router-dom";
 import React from "react";
-import { Box, Button, Input, Select, Stack, Text,Image, Grid, GridItem, Flex, Avatar} from "@chakra-ui/react";
-import {AiOutlineCamera, AiOutlineHeart} from "react-icons/ai";
-import {FaRegCommentDots} from "react-icons/fa";
-import data from "./kinddata";
+import { Box, Button, Input, Select, Stack, 
+  Text}
+   from "@chakra-ui/react";
+import Pagination from "./Pagination";
+
 
 
 const KindMonents =()=>{
@@ -87,7 +88,16 @@ return(
 </Stack>
 
 {/* Pagnisation ke liye or yk button */}
-<Box h='2rem'  m='auto' w='74%' border='1px solid red'></Box>
+
+<div style={{marginTop:'2%', display:'flex',width:'75%',marginLeft:'14%'}}  border='1px solid red'>
+  <div style={{border:'',width:'50%',marginLeft:'-6%'}}>
+  <Pagination />
+  </div>
+{/* <div  style={{border:'',width:'10%',
+marginLeft:'45%'}} >
+<Button colorScheme='gray'>Next</Button>
+</div> */}
+</div>
 
 
 
@@ -96,77 +106,7 @@ return(
 )
 }
 
-function AirbnbCard() {
-    const property = {
-      imageUrl: 'https://bit.ly/2Z4KKcF',
-      imageAlt: 'Rear view of modern home with pool',
-      img:'https://avatars.githubusercontent.com/u/101585236?v=4',
-      date:'Nov 9th 2022',
-      name:'Pawan',
-      title: 'Modern home in city center in the heart of historic Los Angeles',
-    }
-   
-    return (
-      
 
-      <Grid 
-      // maxW='sm'
-       ml='16%'
-      //  borderWidth='1px' 
-      //  borderRadius='lg' 
-      //  overflow='hidden'
-       templateColumns='repate(3,1fr)'
-       gap={10}
-       boxShadow='md'
-       border='1px solid red'
-       >
-<GridItem w="100%"  h='400px' bg="blue"></GridItem>
-<GridItem w="100%" h='400px' bg="blue"></GridItem>
-<GridItem w="100%" h='400px' bg="blue"></GridItem>
-<GridItem w="100%" h='400px' bg="blue"></GridItem>
-<GridItem w="100%" h='400px' bg="blue"></GridItem>
-<GridItem w="100%" h='400px' bg="blue"></GridItem>
-<GridItem w="100%" h='400px' bg="blue"></GridItem>
-<GridItem w="100%" h='400px' bg="blue"></GridItem>
-<GridItem w="100%" h='400px' bg="blue"></GridItem>
-
-      
-
-      </Grid>
-    )
-   
-  }
  
-export {KindMonents,AirbnbCard}
+export {KindMonents}
 
-{/* <Box border='' mb='5' >
-        <Avatar ml='2' mt='1' src={property.img} alt="" />
-       <Box>
-        <Text fontSize='md' ml='0'>{property.name}</Text>
-        <Text fontSize='xs' ml='5' >{property.date}</Text>
-       </Box>
-        <Button ml='36%' h='9' mt='3' colorScheme='red' w='21%' >View</Button>
-      </Box>
-
-        <Image mt='-4' src={property.imageUrl} alt={property.imageAlt} />
- 
-      
-
-  <Grid templateColumns='repeat(3, 1fr)' gap={10} h='auto' >
-
-  <Box ml='20'  border='' >
-  <AiOutlineHeart style={{fontSize:'2rem',marginLeft:'30'}} />
-  </Box>
-  
-  <Box  >
-    <AiOutlineCamera style={{ fontSize:'2rem',marginLeft:'-6'}} />
-  </Box>
-
-  <Box > 
-  <FaRegCommentDots style={{ fontSize:'2rem',marginLeft:'-60',cursor:"pointer"}} />
-  </Box>
- 
-  </Grid>
-<Box>
-  {property.title}
-</Box> */}
