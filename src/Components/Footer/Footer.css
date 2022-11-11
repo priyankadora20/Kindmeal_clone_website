@@ -37,7 +37,7 @@
     }  
 }
 
-@media  (min-width: 1024px)  and (max-width: 424px) {
+@media  (min-width: 124px)  and (max-width: 424px) {
     .Foote-div{
         justify-content: space-around;
         display: grid;
