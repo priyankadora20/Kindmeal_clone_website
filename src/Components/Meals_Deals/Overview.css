@@ -64,13 +64,13 @@
 }
 #overviewmaster{
     width: 90%;
-    
     margin: auto;
     height: auto;
     margin-top: 2rem;
     
 }
 #overviewmaster>img{
+    width: 100%;
     border-radius: 2rem;
     cursor: pointer;
 }
