@@ -9,7 +9,7 @@ function App() {
       {/* <h1>Welcome Team</h1> */}
       {/* <p>Make Your respective pages and Link it over here.</p> */}
       
-      <KindMonents />
+      {/* <KindMonents /> */}
       {/* <FullPage /> */}
      <Instgram />
     </div>

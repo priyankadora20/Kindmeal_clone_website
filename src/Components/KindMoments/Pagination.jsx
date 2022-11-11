@@ -2,7 +2,7 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { successdata } from './ActionTypes';
-import "./kind.css"
+// import "./kind.css"
 import { Success } from './Types';
 
 function Pagination() {
@@ -14,23 +14,31 @@ function Pagination() {
     let [currentpage,setcurrentpage]=useState(1)
 
     let [postperpage,setpostperpage]=useState(10)
-
     let lastPostIndex=currentpage*postperpage;
     let firstpostindex=lastPostIndex-postperpage;
     let currentposts=data.slice(firstpostindex,lastPostIndex)
+   
     let totalposts=data.length
     let pages=[]
+
     for(let i=1;i<=Math.ceil(totalposts/postperpage);i++){
         pages.push(i)
     }
     useEffect(()=>{
 
     },[currentpage])
+
     let handleclick=(el)=>{
         setcurrentpage(el)
+      
         console.log(el)
         dispatch(successdata(currentposts))
 
+    }
+
+    let handleclickback=(el)=>{
+        setcurrentpage(el)
+        dispatch(successdata(totalposts))
     }
     return (
         <div>
@@ -47,7 +55,7 @@ function Pagination() {
                    
         })}
            <div>
-           <Button disabled="setcurrentpage==1" onClick={()=>handleclick()} style={{marginLeft:'170%',marginTop:'-10%'}}>Preview</Button>
+           <Button disabled={currentpage==1} onClick={()=>handleclickback()} style={{marginLeft:'170%',marginTop:'-10%'}}>Preview</Button>
             <Button onClick={()=>handleclick()} style={{marginLeft:'190%',marginTop:'-18%'}}>Next</Button>
             </div> 
         </div>
