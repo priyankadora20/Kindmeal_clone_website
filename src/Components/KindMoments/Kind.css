@@ -1,0 +1,11 @@
+
+.p{
+    font-size: 15.2px;
+    color:#000000;
+    text-align: start;
+};
+
+.btn{
+    border: 1px solid red;
+ width: 2rem;
+}
