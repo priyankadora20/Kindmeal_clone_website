@@ -6,7 +6,8 @@ import datahompage from './homepagemapdata';
 export const Homepage = () => {
   return (
     <>
-            <MainpageCarosole/>
+        <MainpageCarosole/>
+
         <div className='lighblue_box'>
 
         
