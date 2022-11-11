@@ -39,7 +39,7 @@ function Getfreecoupon(props) {
 
            <div>
             <a href="/InsideMealdeal" >
-                {/* Meal Deal */}
+               
             <h3>Meal Deals</h3>
             </a>
             </div>
