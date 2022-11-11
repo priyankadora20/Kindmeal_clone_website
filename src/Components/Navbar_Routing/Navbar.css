@@ -1,0 +1,148 @@
+.firstDiv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 5rem 5px 5rem;
+}
+
+.social a{
+    max-width: 15%;
+} 
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.login_signup{
+    display: flex;
+}
+
+.login_signup button{
+    margin: 0rem 10px;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    width: 5rem;
+    font-size: 1rem;
+    background-color: #2bb673;
+}
+
+/* SECOND BOX DESIGNING PART OF THE WEBSITE  */
+
+.secondDiv{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #2bb673;
+    z-index: 10;
+}
+.secondDiv ul{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    height: 2.5rem;
+}
+
+.secondDiv ul li{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+
+.link:hover{
+    color: wheat;
+    transition: 0.2s;
+}
+
+.link{
+    color: white;
+    font-size: 20px;
+}
+.login_signup_insider{
+    display: none;
+}
+
+.login_signup_insider button{
+    margin: 0rem 10px;
+    border-radius: 5px;
+    border: none;
+    width: 5rem;
+    font-size: 1rem;
+    background-color: #029adb;
+    color: white;
+}
+
+/* MENU ICONS OF THE WEBSITE */
+
+.hamburger{
+    border: 2px solid #c4c4c4;
+    padding: 4px;
+    border-radius: 5px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.hamburger span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Media query for the website  */
+
+@media screen and (max-width: 1024px) {
+    .secondDiv ul{
+        width: 70%;
+    }
+    .social{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .logo{
+        width: 95%;
+    }
+    .login_signup_insider{
+        display: block;
+    }
+    .login_signup{
+        display: none;
+    }
+    .secondDiv{
+        display: none;
+    }
+    .secondDiv ul{
+        display: block;
+        line-height: 3rem;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        height: 16rem;
+    }
+    .hamburger{
+        visibility: visible;
+    }
+    .firstDiv{
+        justify-content: space-between;
+        padding: 4px 4px;
+    }
+    .showMenu {
+        display: block;
+        transition: 1s;
+        transform: translateY(0vh);
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 75%;
+    }
+    .imglogo{
+        display: flex;
+    }
+}
