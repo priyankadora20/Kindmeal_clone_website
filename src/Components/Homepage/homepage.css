@@ -8,7 +8,7 @@
     margin: 40px;
     color: #666666;
 }
-.homepage_box1>h2,h3{
+.headline__mainpage_h2{
     font-size: 20px;
 }
 .homepage_box1_cont{
@@ -37,6 +37,7 @@ grid-template-columns: 30% 70%;
     width:80%;
     margin:auto;
     color: #666666;
+    margin-top: 50px;
 }
 
 .homepage_box1_desc{

@@ -101,7 +101,10 @@ const Navbar = () => {
                 bg="white"
                 mb={5}
                 onClick={() => {
-                  Navigaters("/user_signup"), onClose();
+                  
+                    Navigaters("/user_signup"), onClose()
+                  
+                 
                 }}
                 cursor="pointer"
                 alignContent={"center"}
