@@ -5,9 +5,6 @@ import datahompage from './homepagemapdata';
 
 export const Homepage = () => {
   return (
-    <>
-       
-
-    </>
+    
   )
 }
