@@ -22,7 +22,7 @@ const RestaurantDashboard = () => {
       </Flex>
       <Flex
         gap={{
-          sm: "2",
+          sm: "5",
           md: "5",
           lg: "40",
         }}
@@ -36,21 +36,28 @@ const RestaurantDashboard = () => {
         }}
         marginTop="-14"
       >
-        <Image
-          src={MyImg}
-          alt="Dan Abramov"
-          boxSize={"200px"}
-          borderRadius="3xl"
-          //   width={{
-          //     sm: "40%",
-          //   }}
-          //   margin={{
-          //     sm: "auto",
-          //     md: "none",
-          //     lg: "none",
-          //   }}
-        />
-        <Grid templateColumns="repeat(3, 1fr)" gap={20}>
+        <Box>
+          <Image
+            src={MyImg}
+            alt="Dan Abramov"
+            boxSize="200px"
+            borderRadius="3xl"
+            width={{
+              sm: "40%",
+              md: "40%",
+              lg: "100%",
+            }}
+            // height="20%"
+            margin={"auto"}
+          />
+        </Box>
+        <Grid
+          templateColumns="repeat(3, 1fr)"
+          gap={8}
+          margin="auto"
+          marginRight={5}
+          marginLeft={5}
+        >
           <Button colorScheme="teal" size="lg">
             Profile
           </Button>
