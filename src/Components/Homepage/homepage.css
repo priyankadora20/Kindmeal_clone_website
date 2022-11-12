@@ -8,8 +8,14 @@
     margin: 40px;
     color: #666666;
 }
-.headline__mainpage_h2{
-    font-size: 20px;
+.headline__mainpage_h2
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+.yoyo{
+    color: rgb(80, 165, 255);
+    
 }
 .homepage_box1_cont{
    display: grid;
@@ -131,10 +137,434 @@ grid-template-columns: 30% 70%;
 }
 
 @media screen and (max-width: 1024px) {
-   
+    .homepage_box1{
+        border: 1px solid #dddddd;
+        padding: 15px 15px 25px 15px;
+        color: #333333;
+        box-shadow: 0px 0px 6px #e0e0e0;
+        font-size: 12px;
+        margin: auto;
+        margin: 40px;
+        color: #666666;
+    }
+    .headline__mainpage_h2
+    {
+        font-size:15px;
+        font-weight: bold;
+    }
+    .yoyo{
+        color: rgb(80, 165, 255);
+        
+    }
+    .homepage_box1_cont{
+       display: grid;
+       grid-template-columns: repeat(5,1fr);
+       width:100%;
+       margin: auto;
+       
+    }
+    .homepage_box1_img{
+        width:90%;
+        height: 80%;
+       
+    }
+    .homepage_box1_headline{
+    display:grid;
+    grid-template-columns: 30% 70%;
+    }
+    .homepage_box1_headline_right{
+        text-align: right;
+    }
+    .homepage_box1_headline_left{
+        text-align: left;
+    }
+    .lighblue_box{
+        width:80%;
+        margin:auto;
+        color: #666666;
+        margin-top: 50px;
+    }
+    
+    .homepage_box1_desc{
+        width:85%;
+        margin:auto;
+    }
+    #sideside{
+        display: grid;
+        grid-template-columns:40% 60%;
+        gap: -10px;
+    }
+    .bottom_section{
+        color: #666666;
+    }
+    .newsides{
+        width:75%;
+        margin: auto;
+    }
+    #flexes{
+        width:80%;
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        margin: auto;
+    }
+    #petfinderlogo{
+        width:70%;
+    
+    }
+    .bottom_section_divs_imgbox>img{
+        width:100%;
+    }
+    .bottom_section_divs_imgbox{
+    
+        border: 1px solid #d8d8d8;
+        border-radius: 10px;
+        box-shadow: 1px 1px 2px #cccccc;
+        padding: 10px;
+        text-align: center;
+        color: #666666;
+        vertical-align: middle;
+        margin-left: 20px;
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    .bottom_section_divs{
+        width:80%;
+        margin: auto;
+        font-size: 16px;
+    }
+    #redbutton_mainpage{
+        width:50%;
+        background-color: #f53838;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 8px 15px 8px 15px;
+        text-align: center;
+        vertical-align: middle;
+        font-family: 'Roboto', Arial;
+        border-radius: 10px;
+        
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+    
+    #redbutton_mainpage>a>h1{
+        color: white;
+       font-size: 30px;
+       text-decoration: none;
+    }
+    .images_maao{
+        width:100%;
+        margin-top: -50px;
+    }
+    .images_maao>img{
+        width:100%;
+    }
+    #redbutton_mainpage>a>p{
+        color: white;
+       text-decoration: none;
+       margin-top: -30px;
+    }
+    #redbutton_mainpage>a{
+        text-decoration: none;
+    }
+    #redbutton_mainpage:hover{
+        background-color: red;
+    }
+    #redbutton_mainpage{
+        border: 1px solid transparent;
+    }
+
+
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+
+    .homepage_box1{
+        border: 1px solid #dddddd;
+        padding: 15px 15px 25px 15px;
+        color: #333333;
+        box-shadow: 0px 0px 6px #e0e0e0;
+        font-size: 12px;
+        margin: auto;
+        margin: 40px;
+        color: #666666;
+    }
+    .headline__mainpage_h2
+    {
+        font-size:12px;
+        font-weight: bold;
+    }
+    .yoyo{
+        color: rgb(80, 165, 255);
+        
+    }
+    
+    .homepage_box1_cont{
+       display: grid;
+       grid-template-columns: repeat(5,1fr);
+       width:100%;
+       margin: auto;
+       
+    }
+    .homepage_box1_img{
+        width:90%;
+        height: 80%;
+       
+    }
+    .homepage_box1_headline{
+    display:grid;
+    grid-template-columns: 30% 70%;
+    }
+    .homepage_box1_headline_right{
+        text-align: right;
+    }
+    .homepage_box1_headline_left{
+        text-align: left;
+    }
+    .lighblue_box{
+        width:80%;
+        margin:auto;
+        color: #666666;
+        margin-top: 50px;
+    }
+    
+    .homepage_box1_desc{
+        width:85%;
+        margin:auto;
+        font-size: 10px;
+    }
+    #sideside{
+        display: grid;
+        grid-template-columns:40% 60%;
+        gap: -10px;
+    }
+    .bottom_section{
+        color: #666666;
+    }
+    .newsides{
+        width:75%;
+        margin: auto;
+    }
+    #flexes{
+        width:80%;
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        margin: auto;
+    }
+    #petfinderlogo{
+        width:70%;
+    
+    }
+    .bottom_section_divs_imgbox>img{
+        width:100%;
+    }
+    .bottom_section_divs_imgbox{
+    
+        border: 1px solid #d8d8d8;
+        border-radius: 10px;
+        box-shadow: 1px 1px 2px #cccccc;
+        padding: 10px;
+        text-align: center;
+        color: #666666;
+        vertical-align: middle;
+        margin-left: 20px;
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    .bottom_section_divs{
+        width:80%;
+        margin: auto;
+        font-size: 16px;
+    }
+    #redbutton_mainpage{
+        width:50%;
+        background-color: #f53838;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 8px 15px 8px 15px;
+        text-align: center;
+        vertical-align: middle;
+        font-family: 'Roboto', Arial;
+        border-radius: 10px;
+        
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+    
+    #redbutton_mainpage>a>h1{
+        color: white;
+       font-size: 30px;
+       text-decoration: none;
+    }
+    .images_maao{
+        width:100%;
+        margin-top: -50px;
+    }
+    .images_maao>img{
+        width:100%;
+    }
+    #redbutton_mainpage>a>p{
+        color: white;
+       text-decoration: none;
+       margin-top: -30px;
+    }
+    #redbutton_mainpage>a{
+        text-decoration: none;
+    }
+    #redbutton_mainpage:hover{
+        background-color: red;
+    }
+    #redbutton_mainpage{
+        border: 1px solid transparent;
+    }
 
 
-@media screen and (max-width: 480px) {}
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+    .homepage_box1{
+        border: 1px solid #dddddd;
+        padding: 15px 15px 5px 15px;
+        color: #333333;
+        box-shadow: 0px 0px 6px #e0e0e0;
+        font-size: 12px;
+        margin: auto;
+       
+        color: #666666;
+    }
+    .headline__mainpage_h2
+    {
+        font-size:18px;
+        font-weight: bold;
+    }
+    .yoyo{
+        display: none;
+        
+    }
+    
+    .homepage_box1_cont{
+       display: grid;
+       grid-template-columns: repeat(1,1fr);
+       width:100%;
+       margin: auto;
+       
+    }
+    .homepage_box1_img{
+        width:100%;
+        height: 80%;
+       
+    }
+    .homepage_box1_headline{
+    display:grid;
+    grid-template-columns: repeat(1 ,1fr);
+    }
+    
+    .lighblue_box{
+        width:80%;
+        margin:auto;
+        color: #666666;
+        margin-top: 50px;
+    }
+    
+    .homepage_box1_desc{
+        width:85%;
+        margin:auto;
+        font-size: 15px;
+    }
+    #sideside{
+        display: grid;
+        grid-template-columns:40% 60%;
+        gap: -10px;
+    }
+    .bottom_section{
+        color: #666666;
+    }
+    .newsides{
+        width:75%;
+        margin: auto;
+    }
+    #flexes{
+        width:80%;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+    }
+    .padpad_pad{
+        height:30px
+    }
+    #petfinderlogo{
+        width:70%;
+    
+    }
+    .bottom_section_divs_imgbox>img{
+        width:100%;
+    }
+    .bottom_section_divs_imgbox{
+    
+        border: 1px solid #d8d8d8;
+        border-radius: 10px;
+        box-shadow: 1px 1px 2px #cccccc;
+        padding: 10px;
+        text-align: center;
+        color: #666666;
+        vertical-align: middle;
+        margin-left: 20px;
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    .bottom_section_divs{
+        width:80%;
+        margin: auto;
+        font-size: 16px;
+    }
+    #redbutton_mainpage{
+        width:95%;
+        background-color: #f53838;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 8px 15px 8px 15px;
+        text-align: center;
+        vertical-align: middle;
+        font-family: 'Roboto', Arial;
+        border-radius: 10px;
+        
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+    
+    #redbutton_mainpage>a>h1{
+        color: white;
+       font-size: 30px;
+       text-decoration: none;
+    }
+    .images_maao{
+        width:100%;
+        margin-top: -50px;
+    }
+    .images_maao>img{
+        width:100%;
+    }
+    #redbutton_mainpage>a>p{
+        color: white;
+       text-decoration: none;
+       margin-top: -30px;
+    }
+    #redbutton_mainpage>a{
+        text-decoration: none;
+    }
+    #redbutton_mainpage:hover{
+        background-color: red;
+    }
+    #redbutton_mainpage{
+        border: 1px solid transparent;
+    }
+
+
+}

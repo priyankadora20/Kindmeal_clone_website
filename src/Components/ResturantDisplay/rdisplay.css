@@ -1,0 +1,151 @@
+.oldResturantDisplay{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px;
+    width:70%;
+    margin: auto;
+
+}
+.oldResturantDisplay_cards{
+    padding-bottom: 40px;
+    padding: 7px;
+    box-shadow: 0px 0px 6px #e0e0e0;
+    margin:10px;
+}
+.oldResturantDisplay_cards>img{
+    height: 250px;
+    width: 100%;
+}
+.oldResturantDisplay_cards>h1{
+    font-size: 25px;
+    color: grey;
+    font-weight: bolder;
+}
+.oldResturantDisplay_cards>p{
+    font-size: 12px;
+    color:gray;
+    font-weight: bold;
+
+}
+.NEWResturantDisplay{
+    font-size: 25px;
+    color: grey;
+    font-weight: bolder;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .oldResturantDisplay{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 20px;
+        width:80%;
+        margin: auto;
+    
+    }
+    .oldResturantDisplay_cards{
+        padding-bottom: 40px;
+        padding: 7px;
+        box-shadow: 0px 0px 6px #e0e0e0;
+        margin:10px;
+    }
+    .oldResturantDisplay_cards>img{
+        height: 250px;
+        width: 100%;
+    }
+    .oldResturantDisplay_cards>h1{
+        font-size: 25px;
+        color: grey;
+        font-weight: bolder;
+    }
+    .oldResturantDisplay_cards>p{
+        font-size: 12px;
+        color:gray;
+        font-weight: bold;
+    
+    }
+    .NEWResturantDisplay{
+        font-size: 25px;
+        color: grey;
+        font-weight: bolder;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .oldResturantDisplay{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 20px;
+        width:80%;
+        margin: auto;
+    
+    }
+    .oldResturantDisplay_cards{
+        padding-bottom: 40px;
+        padding: 7px;
+        box-shadow: 0px 0px 6px #e0e0e0;
+        margin:10px;
+    }
+    .oldResturantDisplay_cards>img{
+        height: 250px;
+        width: 100%;
+    }
+    .oldResturantDisplay_cards>h1{
+        font-size: 25px;
+        color: grey;
+        font-weight: bolder;
+    }
+    .oldResturantDisplay_cards>p{
+        font-size: 12px;
+        color:gray;
+        font-weight: bold;
+    
+    }
+    .NEWResturantDisplay{
+        font-size: 25px;
+        color: grey;
+        font-weight: bolder;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .oldResturantDisplay{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 20px;
+        width:80%;
+        margin: auto;
+    
+    }
+    .oldResturantDisplay_cards{
+        padding-bottom: 40px;
+        padding: 7px;
+        box-shadow: 0px 0px 6px #e0e0e0;
+        margin:10px;
+    }
+    .oldResturantDisplay_cards>img{
+        height: 250px;
+        width: 100%;
+    }
+    .oldResturantDisplay_cards>h1{
+        font-size: 25px;
+        color: grey;
+        font-weight: bolder;
+    }
+    .oldResturantDisplay_cards>p{
+        font-size: 12px;
+        color:gray;
+        font-weight: bold;
+    
+    }
+    .NEWResturantDisplay{
+        font-size: 25px;
+        color: grey;
+        font-weight: bolder;
+    }
+}

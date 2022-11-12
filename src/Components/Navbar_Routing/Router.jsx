@@ -1,9 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import Article from "../Article/Article";
 import { Homepage } from "../Homepage/Homepage";
 import CoustomerSignup from "../Login_SignUp/Coustomer/CoustomerSignup";
 import RestaurantSignup from "../Login_SignUp/Restaurant/RestaurantSignup";
 import ShopCreation from "../Login_SignUp/Restaurant/ShopCreation";
+import Rdisplay from "../ResturantDisplay/Rdisplay";
+import VideoDisplaypage from "../videodisplay/VideoDisplaypage";
 
 const Router = () => {
   return (
@@ -17,7 +20,10 @@ const Router = () => {
       <Route path="/user_signup" element={<CoustomerSignup />} />
       <Route path="/user_login" element="user_login" />
       <Route path="/ShopCreation" element={<ShopCreation />} />
-      
+      <Route path="/Article" element={<Article />} />
+      <Route path="/VideoDisplaypage" element={<VideoDisplaypage />} />
+      <Route path="/Rdisplay" element={<Rdisplay />} />
+
     </Routes>
   );
 };

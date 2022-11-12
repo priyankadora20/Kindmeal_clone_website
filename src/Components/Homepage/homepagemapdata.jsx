@@ -28,19 +28,19 @@ const datahompage=[
         id:1,
         category:"Latest News & Videos",
         img:elephant,
-        describe:"Mama And Baby Elephant Get Stuck In 7 Foot Hole",
+        describe:"Mama And Baby Elephant Get Stuck ",
     },
     {
         id:2,
         category:"Latest News & Videos",
         img:pegion,
-        describe:"Watch These White Fluffy Babies Turn Into The Most Gorgeous ",
+        describe:" White Fluffy Babies Turn  Gorgeous ",
     },
     {
         id:3,
         category:"Latest News & Videos",
         img:beans,
-        describe:"Goulash & Dumplings From Speedy Bosh!",
+        describe:"Goulash & Dumplings Speedy Bosh!",
     },
     {
         id:4,

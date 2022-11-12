@@ -8,14 +8,17 @@ import icon2 from '../Homepageimage/icon2.png';
 import icon3 from '../Homepageimage/icon3.png';
 import icon4 from '../Homepageimage/icon4.png';
 import Imgnew from './Imgnew';
+import { useNavigate } from 'react-router-dom';
 
 
 export const Homepage = () => {
-   
+   const navs =useNavigate()
     return (
       <> 
           <MainpageCarosole/>
+
           <Imgnew/>
+          
           <div className='lighblue_box'>
   
           
@@ -23,11 +26,11 @@ export const Homepage = () => {
         <div className='homepage_box1'>
           <div className='homepage_box1_headline'>
               <div className='homepage_box1_headline_left'><h2 className='headline__mainpage_h2'>Latest News & Videos</h2></div>
-              <div className='homepage_box1_headline_right'> <h3 className='headline__mainpage_h2'>Save Lives with Your Blog . News &Article . Follow Our Facebook </h3></div>
+              <div className='homepage_box1_headline_right'> <h3 className='headline__mainpage_h2 yoyo'>Save Lives with Your Blog . News &Article . Follow Our Facebook </h3></div>
               
              
           </div>
-          <div className='homepage_box1_cont' >
+          <div className='homepage_box1_cont' onClick={()=>{navs("/VideoDisplaypage")}} >
               
               {datahompage.map(({id,category,img,describe})=>{
                   if(category==="Latest News & Videos"){
@@ -43,13 +46,15 @@ export const Homepage = () => {
           </div>
         </div>
   
-  
+        <div className='padpad_pad'></div>
+
+
         <div className='homepage_box1'>
           <div className='homepage_box1_headline'>
           <div className='homepage_box1_headline_left'><h2 className='headline__mainpage_h2'>Yummylicious Moments</h2></div>
-              <div className='homepage_box1_headline_right'> <h3 className='headline__mainpage_h2'>Secret Recipes . Member Hot Picks .Photo Moments</h3></div>
+              <div className='homepage_box1_headline_right'> <h3 className='headline__mainpage_h2 yoyo'>Secret Recipes . Member Hot Picks .Photo Moments</h3></div>
           </div>
-          <div className='homepage_box1_cont' >
+          <div className='homepage_box1_cont' onClick={()=>{navs("/Article")}} >
               
               {datahompage.map(({id,category,img,describe})=>{
                   if(category==="Yummylicious Moments"){
@@ -64,13 +69,16 @@ export const Homepage = () => {
   
           </div>
         </div>
+
+
+        <div className='padpad_pad'></div>
   
         <div className='homepage_box1'>
           <div className='homepage_box1_headline'>
               <div  className='homepage_box1_headline_left'><h2 className='headline__mainpage_h2'>Discover Restaurants</h2></div>
-              <div className='homepage_box1_headline_right'> <h3 className='headline__mainpage_h2'>Vegetarian Directory . Resturant Menu . Food Map </h3></div>
+              <div className='homepage_box1_headline_right'> <h3 className='headline__mainpage_h2 yoyo'>Vegetarian Directory . Resturant Menu . Food Map </h3></div>
           </div>
-          <div className='homepage_box1_cont' >
+          <div className='homepage_box1_cont'  onClick={()=>{navs("/Article")}} >
               
               {datahompage.map(({id,category,img,describe})=>{
                   if(category==="Discover Restaurants"){
@@ -86,15 +94,15 @@ export const Homepage = () => {
           </div>
         </div>
         
-       
+       <div className='padpad_pad'></div>
   
         
         <div className='homepage_box1'>
           <div className='homepage_box1_headline'>
           <div className='homepage_box1_headline_left'><h2 className='headline__mainpage_h2'>Amazing Superheroes</h2></div>
-              <div className='homepage_box1_headline_right' > <h3 className='headline__mainpage_h2'>Latest Buzz . Lifestyle Ambassadors . Win Gifts!</h3></div>
+              <div className='homepage_box1_headline_right' > <h3 className='headline__mainpage_h2 yoyo'>Latest Buzz . Lifestyle Ambassadors . Win Gifts!</h3></div>
           </div>
-          <div className='homepage_box1_cont' >
+          <div className='homepage_box1_cont'  onClick={()=>{navs("/Article")}} >
               
               {datahompage.map(({id,category,img,describe})=>{
                   if(category==="Amazing Superheroes"){
@@ -112,7 +120,8 @@ export const Homepage = () => {
   
   
         </div>
-  
+        <div className='padpad_pad'></div>
+        
         <div className='bottom_section'>
   
           <div className='bottom_section_divs newsides' ><h1 >Introducing Malaysia's Pioneering Meat-Free Lifestyle Platform</h1></div>

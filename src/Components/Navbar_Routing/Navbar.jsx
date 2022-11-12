@@ -101,8 +101,10 @@ const Navbar = () => {
                 bg="white"
                 mb={5}
                 onClick={() => {
-                  
-                    Navigaters("/user_signup"), onClose()
+               return(
+                Navigaters("/user_signup"), onClose()
+               )  
+                   
                   
                  
                 }}
@@ -142,7 +144,10 @@ const Navbar = () => {
                 bg="white"
                 mb={5}
                 onClick={() => {
-                  Navigaters("/restaurant_signup"), onClose();
+                  return(
+                    Navigaters("/restaurant_signup"), onClose()
+                  )
+                 
                 }}
                 cursor="pointer"
               >
