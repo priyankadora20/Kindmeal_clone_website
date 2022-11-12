@@ -13,6 +13,17 @@
     padding: 10px;
     font-size: 20px;
     border: none;
+    width: px;
+    border-radius: 10px;
+    color: white;
+}
+.blue{
+    background-color: rgb(61, 105, 167);
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    /* width: 80px; */
     border-radius: 10px;
     color: white;
 }
@@ -23,6 +34,12 @@
     border: none;
     border-radius: 10px;
     color: white;
+}
+.order{
+    display: flex;
+    text-align: left;
+    margin:4px auto;
+    padding: 50px;
 }
 .sele{
     
@@ -149,7 +166,123 @@
     font-size: 19px;
     width: 40px;
 }
+.fetch{
+    width: 100%;
+   height: 400px;
+}
+.btn{
+    border: none;
+    background-color: white;
+}
+.fetch-recipe{
+    display: flex;
+    padding-top: -20px;
+    margin-top:-150px;
+    width: 70%;
 
+}
+.reci{
+    width: 70%;
+    margin: auto;
+    padding: 15px;
+}
+.recipesfllow{
+    display: flex;
+    margin: 30px;
+    padding: 20px;
+    justify-content: space-between;
+}
+.follow{
+    /* padding: 10px 30px; */
+    border-radius: 5px;
+    margin: 20px;
+    border: none;
+    font-size: 25px;
+}
+.div-fetch{
+    display: flex;
+    padding: 60px;
+    gap: 30px;
+    margin: auto;
+}
+.div-fetch>img{
+    width: 500px;
+}
+.div{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img6>div{
+    width: 20px;
+    
+}
+.divfetch{
+    display: flex;
+    justify-content: space-between;
+}
+.likeimg{
+    width: 40px;
+    background-color: blue;
+}
+.mitha{
+    display: flex;
+    gap: 20px;
+    color: gray;
+    justify-content: space-between;
+}
+.mitha>h3{
+    color: rgb(0, 123, 255);
+}
+.mitha>div>img{
+    width: 270px;
+    height: 240px;
+    display: flex;
+    gap: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.reci0{
+    width: 80%;
+    padding: 5px;
+    margin:20px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.limg{
+    padding: 5px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.raterecipe{
+    width: 80%;
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    
+}
+.star{
+    width: 150px;
+}
+.rate-div{
+    margin: 30px;
+    padding: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.rate-div>h1{
+     background-color: antiquewhite;
+}
+.rate-div>input{
+    width: 600px;
+    padding: 20px;
+    font-size: 20px;
+}
+.p{
+    font-size: 17px;
+    line-height: 30px;
+    margin: 30px 50px;
+    padding: 20px;
+}
 @media (min-width: 724px)  and (max-width: 1024px) {
     .recdiv{
         width: 80%;
@@ -174,6 +307,13 @@
         background-image: url();
         border-radius: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .mitha{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        justify-content: space-between;
     }
 }
 @media (min-width: 424px)  and (max-width: 724px) {
@@ -206,7 +346,38 @@
         display: grid;
         justify-content: space-between;
         padding: 10px;
-        width: 80%;
+        width: 85%;
+    }
+    .mitha{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .raterecipe{
+        width: 85%;
+        display: grid;
+        padding: 20px;
+        margin: auto;
+    }
+    .fetch-recipe{
+        display: grid;
+        padding-top: -20px;
+        margin-top:-150px;
+        width: 90%;
+    } 
+    .div-fetch{
+        display: grid;
+        padding: 30px;
+        gap: 20px;
+        margin: auto;
+    }
+    .order{
+        display: grid;
+        text-align: left;
+        margin:4px auto;
+        padding: 30px;
     }
 }
 
@@ -240,6 +411,31 @@
         display: grid;
         justify-content: space-between;
         padding: 10px;
-        width: 80%;
+        width: 90%;
+    }
+    .mitha{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .fetch-recipe{
+        display: grid;
+        padding-top: -20px;
+        margin-top:-150px;
+        width: 95%;
+    } 
+    .div-fetch{
+        display: grid;
+        padding: 20px;
+        gap: 20px;
+        margin: auto;
+    }
+    .order{
+        display: grid;
+        text-align: left;
+        margin:4px auto;
+        padding: 20px;
     }
 }

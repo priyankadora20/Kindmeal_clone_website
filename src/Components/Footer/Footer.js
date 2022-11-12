@@ -5,13 +5,13 @@ export default function Footer() {
   return (
     <div>
         <div className='footer'>
-            <div style={{width:"100%"  , backgroundColor:"#ececec"}}>
+            {/* <div style={{width:"100%"  , backgroundColor:"#ececec"}}>
                 <img src='https://www.kindmeal.my/images/banner_whykindmeal.png' alt='img' />
-            </div>
+            </div> */}
             <div style={{width:"100%" , height:"350px" , backgroundColor:"#2bb673"}}>
                 <div className='Foote-div' >
                     <div className='fdd'>
-                        <h3>General</h3>
+                        <h3 className='headhead_head'>General</h3>
                         <div className='fdd'>
                             <p>
                               Home
@@ -29,7 +29,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className='fdd'>
-                        <h3>Features</h3>
+                        <h3 className='headhead_head'>Features</h3>
                         <div className='fdd'>
                             <p>
                                Meat-Free Deals
@@ -46,7 +46,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className='fdd'>
-                        <h3>Social Media</h3>
+                        <h3 className='headhead_head'>Social Media</h3>
                         <div>
                             <p>KindMeal Widget</p>
                             <p>Facebook</p>
@@ -55,12 +55,12 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className='fdd'>
-                        <h3>Mobile</h3>
+                        <h3 className='headhead_head'>Mobile</h3>
                         <div>
                             <p>iPhone & ipod App</p>
                             <p>Android App</p>
                         </div>
-                        <h3>Exciting Proms</h3>
+                        <h3 className='headhead_head'>Exciting Proms</h3>
                         <div> 
                             <p>Gadhimai: Ending Mass Slaughter</p>
                             <p>
@@ -77,7 +77,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className='fdd'>
-                        <h3>PetFinder.my</h3>
+                        <h3 className='headhead_head'>PetFinder.my</h3>
                         <div>
                             <p>Adopt A Pet </p>
                             <p>Smartphone Apps</p>

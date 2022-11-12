@@ -1,17 +1,25 @@
 import React, { useEffect, useState } from 'react'
 import axois from "axios"
+
 import RecipesData from './data'
 import './recipes.css'
+import { useNavigate } from 'react-router-dom'
+
+
 
 
 const Recipes = () => {
     const [count, setCount] = useState(0)
+    const [count1, setCount1] = useState(0)
+    // const [data, setData]=useState([])
+    // const naviget=useNavigate()
 
     // const getdata= () =>{
-    //     axois.get("http://localhost:8080/sweetfood")
+    //     axois.get("https://www.themealdb.com/api/json/v1/1/search.php?s=chicken")
     //     .then((res)=>{
     //         setData(res.data)
     //         console.log(res.data)
+           
     //     }).catch((err) => {
     //         console.log(err)
     //     })
@@ -19,8 +27,29 @@ const Recipes = () => {
     // }
     // useEffect(() => {
     //     getdata()
-    // })
+    // }, [])
+    const [posts, setPosts] = useState([]);
+    const [loading, setLoading] = useState(false);
+    const [page, setPage] = useState(1);
+  
+    useEffect(() => {
+      fetchAdUpdateData(page);
+    }, [page]);
 
+    const fetchAdUpdateData = async (page = 1) => {
+        try {
+          setLoading(true);
+          const data = await RecipesData();
+          setPosts(data);
+          setLoading(false);
+        } catch (error) {
+          setLoading(false);
+          console.log(error);
+        }
+      };
+    const handlePage = (changeBy) => {
+        setPage(page + changeBy);
+      };
     return (
         <div>
             <div>
@@ -38,10 +67,15 @@ const Recipes = () => {
                             <div >
                                 <select className='sele' name="" id="">
                                     <option value="">All Categories</option>
-                                    <option value=""></option>
-                                    <option value=""></option>
-                                    <option value=""></option>
-                                    <option value=""></option>
+                                    <option value="">Appetizers</option>
+                                    <option value="">Beverages</option>
+                                    <option value="">Breakfast</option>
+                                    <option value="">Breads</option>
+                                    <option value="">Condiments</option>
+                                    <option value="">Desserts</option>
+                                    <option value="">Snacks</option>
+                                    <option value="">Main Dishes</option>
+                                    <option value="">Salads</option>
                                 </select>
                             </div>
                             <div >
@@ -68,10 +102,12 @@ const Recipes = () => {
                             <button>Soups</button>
                         </div>
                     </div>
-                    
+
+                    {/*  */}
                     
                     {
-                        <div className='recdiv'>
+                        <div className='recdiv'> 
+                       
 
                             {RecipesData.map(({ id, logo, catagory, img, name }) => {
 
@@ -87,13 +123,14 @@ const Recipes = () => {
                                         <h2 className='name'>{name}</h2>
                                         <div className='watch'>
                                             <img className='sot' src="https://www.kindmeal.my/images/icon_time_small.png" alt="" />
-                                            <p>{Math.floor(Math.random()*100)} Mint</p>
+                                            <p>{Math.floor(Math.random() * 100)} Mint</p>
                                             <div className='hot'>
-                                            <button  onClick={() => setCount(1)}><img className='sot' src="https://www.kindmeal.my/images/icon_heart_small.png" alt="" /></button>
-                                                
+                                                <button className='btn' onClick={() => setCount(count + 1)}><img className='sot' src="https://www.kindmeal.my/images/icon_heart_small.png" alt="" /></button>
+
                                                 <p className='cont'>{count}</p>
-                                                <img className='sot' src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="" />
-                                                <p className='cont'>{count}</p>
+                                                <button className='btn' onClick={() => setCount1(count1 + 1)}><img className='sot' src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="" /></button>
+
+                                                <p className='cont'>{count1}</p>
                                             </div>
 
                                         </div>
@@ -102,12 +139,15 @@ const Recipes = () => {
                                 )
 
                             })}
-
+                            
                         </div>
-
                     }
                 </div>
             </div>
+            <div>
+                                <img style={{width:"80%", margin:'auto'}} src="https://www.kindmeal.my/images/ads/banner_janegoodall_message.jpg" alt="" />
+                            </div>
+
         </div>
     )
 }

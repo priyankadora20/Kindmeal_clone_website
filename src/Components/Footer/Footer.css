@@ -2,10 +2,10 @@
     justify-content: space-around;
     display:flex;
     width: 65%;
-    margin: auto;
+    margin:10px auto;
 }
 .fdd{
-    line-height: 6px;
+    line-height: 20px;
     font-size: 13px;
     color: white;
     text-align: left;
@@ -14,6 +14,10 @@
     line-height: 8px;
     font-size: 10px;
     color: white;
+}
+.headhead_head{
+    font-weight: bold;
+    font-size: 15px;
 }
 
 @media (min-width: 724px)  and (max-width: 1024px) {
