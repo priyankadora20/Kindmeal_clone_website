@@ -100,12 +100,9 @@ const Navbar = () => {
                 rounded="md"
                 bg="white"
                 mb={5}
-                onClick={() => {
-                  
-                    Navigaters("/user_signup"), onClose()
-                  
-                 
-                }}
+                // onClick={() => {
+                //     Navigaters("/user_signup"), onClose()
+                // }}
                 cursor="pointer"
                 alignContent={"center"}
                 // onClick={}
@@ -141,9 +138,9 @@ const Navbar = () => {
                 rounded="md"
                 bg="white"
                 mb={5}
-                onClick={() => {
-                  Navigaters("/restaurant_signup"), onClose();
-                }}
+                // onClick={() => {
+                //    Navigaters("/restaurant_signup"), onClose();
+                // }}
                 cursor="pointer"
               >
                 <Grid
