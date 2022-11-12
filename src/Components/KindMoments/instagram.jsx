@@ -12,11 +12,11 @@ function Instgram() {
 
   const [count,setCount] = useState(0)
     let maindata = useSelector((state)=>{
-      return state.data;
+      return state.KindMoments.data;
     })
 
     let pages = useSelector((state)=>{
-      return state.current;
+      return state.KindMoments.current;
       // console.log(state);
     })
    

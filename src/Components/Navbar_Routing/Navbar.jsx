@@ -280,7 +280,10 @@ const Navbar = () => {
                 bg="white"
                 mb={5}
                 onClick={() => {
-                  Navigaters("/user_signup"), signupOnClose();
+                  return(
+                    Navigaters("/user_signup"), signupOnClose()
+                  )
+                  
                 }}
                 cursor="pointer"
                 alignContent={"center"}
@@ -317,7 +320,10 @@ const Navbar = () => {
                 bg="white"
                 mb={5}
                 onClick={() => {
-                  Navigaters("/restaurant_signup"), signupOnClose();
+                  return(
+                    Navigaters("/restaurant_signup"), signupOnClose()
+                  )
+                 
                 }}
                 cursor="pointer"
               >

@@ -8,6 +8,11 @@ import CoustomerSignup from "../Login_SignUp/Coustomer/CoustomerSignup";
 import RestaurantDashboard from "../Login_SignUp/Restaurant/RestaurantDashboard";
 import RestaurantSignup from "../Login_SignUp/Restaurant/RestaurantSignup";
 import ShopCreation from "../Login_SignUp/Restaurant/ShopCreation";
+import Getfreecoupon from "../Meals_Deals/Getfreecoupon";
+import InsideMealdeal from "../Meals_Deals/InsideMealdeal";
+import Location from "../Meals_Deals/Location";
+import Meals_Deals from "../Meals_Deals/Meals_Deals";
+import Overview from "../Meals_Deals/Overview";
 import Rdisplay from "../ResturantDisplay/Rdisplay";
 import VideoDisplaypage from "../videodisplay/VideoDisplaypage";
 
@@ -15,7 +20,7 @@ const Routers = () => {
   return (
     <Routes>
       <Route path="/" element={<Homepage/>} />
-      <Route path="/mealDeals" element="Meal Deals Page" />
+      <Route path="/mealDeals" element={<Meals_Deals/>} />
       <Route path="/kindmoments" element={<Instgram />} />
       <Route path="/recipes" element="Recipes" />
       <Route path="/restaurant_login" element="Restaurant_login" />
@@ -30,6 +35,16 @@ const Routers = () => {
       <Route path="/RestaurantDashboard" element={<RestaurantDashboard />} />
       <Route path="/Article" element={<Article/>} />
       <Route path="/fullpage" element={<FullPage />} />
+
+
+      //Mealdealroutes
+
+
+      {/* <Route path='/' element={<Meals_Deals/>}/> */}
+            <Route path='/Getfreecoupon' element={<Getfreecoupon/>}/>
+              <Route path='/InsideMealdeal' element={<InsideMealdeal/>}/>
+              <Route path='/Overview' element={<Overview/>}/>
+              <Route path="/Location" element={<Location/>}/>
     </Routes>
   );
 };
