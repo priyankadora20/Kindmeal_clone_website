@@ -1,7 +1,7 @@
 import { Grid } from "@chakra-ui/react"
 import {AiOutlineCamera, AiOutlineHeart} from "react-icons/ai";
 import {FaRegCommentDots} from "react-icons/fa";
-import React from "react";
+import React, { useState } from "react";
 import {useSelector} from "react-redux";
 import {useNavigate} from "react-router-dom";
 import { Box, Button, Text,Image ,Avatar} from "@chakra-ui/react";
@@ -9,20 +9,22 @@ import "./instgram.css";
 
 
 function Instgram() {
+
+  const [count,setCount] = useState(0)
     let maindata = useSelector((state)=>{
       return state.data;
     })
 
     let pages = useSelector((state)=>{
       return state.current;
-      console.log(state);
+      // console.log(state);
     })
    
 
     let navigate = useNavigate()
-    let handlegetfulldata = ()=>{
-      navigate("/")
-    }
+    // let handlegetfulldata = ()=>{
+    //   navigate("/")
+    // }
    
     return (
       
@@ -33,15 +35,20 @@ function Instgram() {
   {
     pages.map((property)=>{
       return(
-        <Box onClick={()=>{let obj ={ date : property.date,
-         name : property.name,
+        <Box onClick={()=>{let obj ={ 
+          bgimg:property.bgimg,
+          date : property.date,
+          name : property.name,
+          title:property.title,
           profile_image : property.profileimg, 
-          followers : property.followers, firstimg : property.img, 
-          secondimg : property.img1, thirdimg : property.img2 , 
+          followers : property.followers,
+          firstimg : property.img, 
+          secondimg : property.img1, 
+          thirdimg : property.img2 , 
           fourthimg : property.img3,
            fifthimg : property.img4 }
           localStorage.setItem("oneitemadd", JSON.stringify(obj))
-
+              navigate("/fullpage")
            }}   key={property.id} boxShadow='lg' borderRadius='1rem' bg='white' style={{border: '',width:'350px',height:'455px'}} >
  
  <div style={{border:'',display:'flex'}}  >
@@ -63,6 +70,7 @@ function Instgram() {
   <Grid templateColumns='repeat(3, 1fr)' gap={10} h='auto' >
 
   <Box ml='12'  border='' style={{cursor:"pointer"}} >
+  
   <AiOutlineHeart style={{fontSize:'2rem',marginLeft:'30'}} />
   </Box>
   
@@ -75,8 +83,8 @@ function Instgram() {
   </Box>
  
   </Grid>
-<Box>
-  {property.title}
+<Box >
+ <Text ml='2.5' noOfLines={[1, 2, 3]}>{property.title} </Text> 
 </Box> 
         </Box>
       )
