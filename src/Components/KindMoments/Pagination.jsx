@@ -42,7 +42,7 @@ function Pagination() {
     }
     return (
         <div>
-            Page:
+          <span style={{marginLeft:'12%'}}> Page: </span> 
             {pages.map((el,index)=>{
 
             return (
