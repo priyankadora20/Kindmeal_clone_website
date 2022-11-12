@@ -1,9 +1,43 @@
 import { Box, Button, Flex, Grid, Image } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Banner from "../Images/Banner.jpg";
-import MyImg from "../Images/MyImg.jpg";
+import AddItem from "./DashBoardPageDetails/AddItem";
+import Profile from "./DashBoardPageDetails/Profile";
+import YourItem from "./DashBoardPageDetails/YourItem";
 
 const RestaurantDashboard = () => {
+  const [shop_Img, setShop_Img] = useState("");
+  const getting_Img_Data = () => {
+    let shop_Imgs = JSON.parse(localStorage.getItem("ShopDetails"));
+    setShop_Img(shop_Imgs.ImageURL);
+  };
+
+  let [YouProfile, setProfile] = useState(true);
+  let [YourAdditem, setAdditem] = useState(false);
+  let [Youritems, setYouritem] = useState(false);
+
+  const ShowYourProfile = () => {
+    setProfile(true);
+    setAdditem(false);
+    setYouritem(false);
+  };
+
+  const showYourAdditem = () => {
+    setProfile(false);
+    setAdditem(true);
+    setYouritem(false);
+  };
+
+  const showYourItem = () => {
+    setProfile(false);
+    setAdditem(false);
+    setYouritem(true);
+  };
+
+  useEffect(() => {
+    getting_Img_Data();
+  }, []);
+
   return (
     <Box>
       <Flex
@@ -38,7 +72,7 @@ const RestaurantDashboard = () => {
       >
         <Box>
           <Image
-            src={MyImg}
+            src={shop_Img}
             alt="Dan Abramov"
             boxSize="200px"
             borderRadius="3xl"
@@ -59,18 +93,23 @@ const RestaurantDashboard = () => {
           marginLeft={5}
           // mt="4"
         >
-          <Button colorScheme="teal" size="lg">
+          <Button colorScheme="teal" size="lg" onClick={ShowYourProfile}>
             Profile
           </Button>
-          <Button colorScheme="teal" size="lg">
+          <Button colorScheme="teal" size="lg" onClick={showYourAdditem}>
             Add Item
           </Button>
-          <Button colorScheme="teal" size="lg">
+          <Button colorScheme="teal" size="lg" onClick={showYourItem}>
             Your Item
           </Button>
         </Grid>
       </Flex>
       {/* (******************************************************************************************) */}
+      <Box>
+        {YouProfile ? <Profile /> : null}
+        {YourAdditem ? <AddItem /> : null}
+        {Youritems ? <YourItem /> : null}
+      </Box>
     </Box>
   );
 };

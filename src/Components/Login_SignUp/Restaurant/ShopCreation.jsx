@@ -1,16 +1,12 @@
 import {
   Box,
   Text,
-  Image,
   Input,
   Flex,
-  HStack,
-  RadioGroup,
   FormControl,
   FormLabel,
   Select,
   Button,
-  Radio,
   FormHelperText,
   InputGroup,
   InputLeftAddon,
@@ -22,6 +18,7 @@ import { useNavigate } from "react-router-dom";
 
 const ShopCreation = () => {
   const Navigaters = useNavigate();
+
   const [RestaurantEmail, setREstaurantEmail] = useState([]);
 
   const getrestaruantownerdata = () => {
@@ -29,9 +26,42 @@ const ShopCreation = () => {
     setREstaurantEmail(value);
   };
 
-  const [veg, setVeg] = useState("select");
+  const [ShopDetails, setShopDetails] = useState({
+    Shop_Name: "",
+    Cuisine: "",
+    Type: "",
+    Opening: "",
+    Address: "",
+    City: "",
+    Phone: "",
+    Website: "",
+    AboutShop: "",
+    ImageURL: "",
+  });
 
-  console.log(veg);
+  // Handling shop data
+
+  const HandleShopData = (e) => {
+    const { name, value } = e.target;
+    setShopDetails({
+      ...ShopDetails,
+      [name]: value,
+    });
+  };
+
+  // Handle Shop Submit
+
+  const HandleShopSubmit = (e) => {
+    e.preventDefault();
+    let Phonevalue = ShopDetails.Phone.split("");
+    if (Phonevalue.length > 10) {
+      alert("Please Enter Right Number");
+    } else {
+      localStorage.setItem("ShopDetails", JSON.stringify(ShopDetails));
+      Navigaters("/RestaurantDashboard");
+    }
+  };
+
   useEffect(() => {
     getrestaruantownerdata();
   }, []);
@@ -155,7 +185,7 @@ const ShopCreation = () => {
           {/* SIGN UP PROCESS HAS BEEN STARTED FROM HERE  */}
           {/* Getting the Details from here  */}
           <Box>
-            <form>
+            <form onSubmit={HandleShopSubmit}>
               {/* **************************************** */}
               <FormControl isRequired mt={4}>
                 <FormLabel color={"black"}>Shop Name</FormLabel>
@@ -163,6 +193,8 @@ const ShopCreation = () => {
                   placeholder="Full name"
                   color={"black"}
                   name="Shop_Name"
+                  value={ShopDetails.Shop_Name}
+                  onChange={HandleShopData}
                 />
               </FormControl>
               {/* **************************************** */}
@@ -172,6 +204,8 @@ const ShopCreation = () => {
                   placeholder="Cuisine"
                   color={"green.600"}
                   name="Cuisine"
+                  value={ShopDetails.Cuisine}
+                  onChange={HandleShopData}
                 >
                   <option>Asian</option>
                   <option>Chinese</option>
@@ -197,55 +231,70 @@ const ShopCreation = () => {
                 </Select>
               </FormControl>
               {/* ****************************************  */}
-              <FormControl as="fieldset" mt={4}>
-                <FormLabel as="legend">Type :</FormLabel>
-                <RadioGroup defaultValue="select">
-                  <HStack
-                    spacing="24px"
-                    onChange={({ target }) => setVeg(target.value)}
-                  >
-                    <Radio value="Vegan">Vegan</Radio>
-                    <Radio value="Non_veg">Non-Veg</Radio>
-                    <Radio value="Mixed">Mixed</Radio>
-                  </HStack>
-                </RadioGroup>
+              <FormControl mt={4} isRequired>
+                <FormLabel color={"black"}>Type : </FormLabel>
+                <Select
+                  placeholder=""
+                  color={"blackAlpha.700"}
+                  name="Type"
+                  value={ShopDetails.Type}
+                  onChange={HandleShopData}
+                >
+                  <option>Vegan</option>
+                  <option>Vegetarian</option>
+                  <option>Vegetarian-Friendly</option>
+                  <option>Non-Veg</option>
+                  <option>Mixed</option>
+                </Select>
               </FormControl>
               {/* ***************************************** */}
-              <FormControl as="fieldset" mt={4}>
-                <FormLabel as="legend">Halal :</FormLabel>
-                <RadioGroup defaultValue="select">
-                  <HStack spacing="24px">
-                    <Radio value="Yes">Yes</Radio>
-                    <Radio value="No">No</Radio>
-                  </HStack>
-                </RadioGroup>
+              <FormControl isRequired mt={4}>
+                <FormLabel color={"black"}>Opening Hours : </FormLabel>
+                <FormHelperText color={"blackAlpha.500"}>
+                  Example: Mon - Fri: 10am - 9pm; Sat - Sun: 10am - 10pm
+                </FormHelperText>
+                <Input
+                  placeholder=""
+                  color={"black"}
+                  name="Opening"
+                  value={ShopDetails.Opening}
+                  onChange={HandleShopData}
+                />
               </FormControl>
-              {/* ***************************************** */}
-              <FormControl as="fieldset" mt={4}>
-                <FormLabel as="legend">Pork Free :</FormLabel>
-                <RadioGroup defaultValue="Select">
-                  <HStack spacing="24px">
-                    <Radio value="Yes">Yes</Radio>
-                    <Radio value="No">No</Radio>
-                  </HStack>
-                </RadioGroup>
+              {/* ********************************************* */}
+              <FormControl isRequired mt={4}>
+                <FormLabel color={"black"}>Address</FormLabel>
+                <Input
+                  placeholder=""
+                  color={"black"}
+                  name="Address"
+                  value={ShopDetails.Address}
+                  onChange={HandleShopData}
+                />
               </FormControl>
-              {/* *****************************************& */}
-              <FormControl as="fieldset" mt={4}>
-                <FormLabel as="legend">Air-Conditioned :</FormLabel>
-                <RadioGroup defaultValue="select">
-                  <HStack spacing="24px">
-                    <Radio value="Yes">Yes</Radio>
-                    <Radio value="No">No</Radio>
-                  </HStack>
-                </RadioGroup>
+              {/* ********************************************* */}
+              <FormControl isRequired mt={4}>
+                <FormLabel color={"black"}>City</FormLabel>
+                <Input
+                  placeholder=""
+                  color={"black"}
+                  name="City"
+                  value={ShopDetails.City}
+                  onChange={HandleShopData}
+                />
               </FormControl>
               {/* ******************************************* */}
               <FormControl isRequired mt={4}>
                 <FormLabel color={"black"}>Phone : </FormLabel>
                 <InputGroup>
                   <InputLeftAddon children="+234" />
-                  <Input type="tel" placeholder="phone number" />
+                  <Input
+                    type="number"
+                    placeholder="phone number"
+                    name="Phone"
+                    value={ShopDetails.Phone}
+                    onChange={HandleShopData}
+                  />
                 </InputGroup>
               </FormControl>
               {/* ******************************************* */}
@@ -253,21 +302,39 @@ const ShopCreation = () => {
                 <FormLabel color={"black"}>Website : </FormLabel>
                 <InputGroup size="sm">
                   <InputLeftAddon children="https://" />
-                  <Input placeholder="mysite" />
+                  <Input
+                    placeholder="mysite"
+                    name="Website"
+                    value={ShopDetails.Website}
+                    onChange={HandleShopData}
+                  />
                   <InputRightAddon children=".com" />
                 </InputGroup>
               </FormControl>
               {/* *******************************************&  */}
               <FormControl isRequired mt={4}>
                 <FormLabel color={"black"}>Enter Image Url</FormLabel>
-                <Input placeholder="Image URL" size="sm" />
+                <Input
+                  placeholder="Image URL"
+                  size="sm"
+                  name="ImageURL"
+                  value={ShopDetails.ImageURL}
+                  onChange={HandleShopData}
+                  isRequired
+                />
               </FormControl>
               {/* ******************************************* */}
               <FormControl isRequired mt={4}>
                 <FormLabel color={"black"}>About The Shop : </FormLabel>
-                <Textarea placeholder="Some Thing About Your shop" size="sm" />
+                <Textarea
+                  placeholder="Some Thing About Your shop"
+                  size="sm"
+                  name="AboutShop"
+                  value={ShopDetails.AboutShop}
+                  onChange={HandleShopData}
+                />
               </FormControl>
-              {/* ******************************************** */}
+              {/* ************************************************ */}
               <Button colorScheme="red" mt="5" type="submit" color={"black"}>
                 Create shop
               </Button>

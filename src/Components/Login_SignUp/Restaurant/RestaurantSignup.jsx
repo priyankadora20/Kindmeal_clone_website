@@ -4,13 +4,10 @@ import {
   Image,
   Input,
   Flex,
-  HStack,
-  RadioGroup,
   FormControl,
   FormLabel,
   Select,
   Button,
-  Radio,
   FormHelperText,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
@@ -29,7 +26,7 @@ const RestaurantSignup = () => {
     Username: "",
     BirthDate: "",
     Country: "",
-    Gender: Gender,
+    Gender: "",
     Type: "Restaurant_Details",
   });
   console.log(Gender);
@@ -49,7 +46,7 @@ const RestaurantSignup = () => {
       alert("Email does't Match");
     } else {
       localStorage.setItem("RestaurantDetails", JSON.stringify(Restaurant));
-      // Navigaters("/ShopCreation");
+      Navigaters("/ShopCreation");
     }
   };
 
@@ -279,17 +276,19 @@ const RestaurantSignup = () => {
                 />
               </FormControl>
               {/* seventh */}
-              <FormControl as="fieldset" mt={4}>
-                <FormLabel as="legend">Gender</FormLabel>
-                <RadioGroup defaultValue="Select">
-                  <HStack
-                    spacing="24px"
-                    onChange={({ target }) => setGender(target.value)}
-                  >
-                    <Radio value="Male">Male</Radio>
-                    <Radio value="Female">Female</Radio>
-                  </HStack>
-                </RadioGroup>
+              <FormControl mt={4} isRequired>
+                <FormLabel color={"black"}>Gender</FormLabel>
+                <Select
+                  placeholder="Select Gender"
+                  color={"blackAlpha.700"}
+                  name="Gender"
+                  value={Restaurant.Gender}
+                  onChange={HandleChange}
+                >
+                  <option>Male </option>
+                  <option>Female</option>
+                  <option>Others</option>
+                </Select>
               </FormControl>
               {/* eighth */}
               <FormControl mt={4} isRequired>

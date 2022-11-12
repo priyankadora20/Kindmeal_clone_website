@@ -30,7 +30,7 @@ const CoustomerSignup = () => {
     Username: "",
     Birth_data: "",
     Country: "",
-    // Gender: "",
+    Gender: "",
     type: "Customer_Details",
   });
 
@@ -258,19 +258,19 @@ const CoustomerSignup = () => {
                 </FormHelperText>
               </FormControl>
               {/* seventh */}
-              <FormControl as="fieldset" mt={4}>
-                <FormLabel as="legend">Gender</FormLabel>
-                <RadioGroup
-                  defaultValue="Select"
+              <FormControl mt={4} isRequired>
+                <FormLabel color={"black"}>Gender</FormLabel>
+                <Select
+                  placeholder="Select Gender"
+                  color={"blackAlpha.700"}
                   name="Gender"
-                  // value={CustomerData.Gender}
-                  // onChange={HandleData}
+                  value={CustomerData.Gender}
+                  onChange={HandleData}
                 >
-                  <HStack spacing="24px">
-                    <Radio value="Male">Male</Radio>
-                    <Radio value="Female">Female</Radio>
-                  </HStack>
-                </RadioGroup>
+                  <option>Male </option>
+                  <option>Female</option>
+                  <option>Others</option>
+                </Select>
               </FormControl>
               {/* eighth */}
               <FormControl mt={4} isRequired>
