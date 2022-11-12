@@ -1,11 +1,23 @@
 import React from 'react';
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { getsearch } from './actiontype';
 
 function Inputtag(props) {
+    let dispatch=useDispatch()
+    let [searchstate,searchsetstate]=useState("")
+     let handlechange=(e)=>{
+        searchsetstate(e.target.value)
+     }
+    //  console.log(searchstate)
+    let handledeal=()=>{
+        dispatch(getsearch(searchstate))
+    }
     return (
         <div id='inputtags' >
             <div>
 
-            <input className='search' type="text" placeholder='Search Shop ' />
+            <input className='search' type="text" placeholder='Search Shop ' onChange={handlechange} />
             </div>
             <div>
 
@@ -38,7 +50,7 @@ function Inputtag(props) {
             </div>
             <div>
 
-           <button className='Deal'>Search Deal</button>
+           <button className='Deal' onClick={handledeal} >Search Deal</button>
             </div>
             <div>
 

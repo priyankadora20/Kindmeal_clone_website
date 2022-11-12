@@ -1,4 +1,4 @@
-import { Get, Success } from "./Types"
+import { Get, Search, Success } from "./Types"
 
 let initstate={
     apidata:[],
@@ -12,6 +12,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'10% Off',
+            category:'chinesefood',
             expires:'7 Days'
         },
         {
@@ -23,6 +24,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'chinesefood',
             expires:'13 Days'
         },
         {
@@ -34,6 +36,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'japanesefood',
             expires:'7 Days'
         },
         {
@@ -45,6 +48,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'japanesefood',
             expires:'6 Days'
         },
         {
@@ -56,6 +60,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'10% Off',
+            category:'japanesefood',
             expires:'13 Days'
         },
         {
@@ -67,6 +72,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'japanesefood',
             expires:'7 Days'
         },
         {
@@ -111,6 +117,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'15% off',
+            category:'chinesefood',
             expires:'3 Days'
         },
         {
@@ -122,6 +129,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'15% Off',
+            category:'japanesefood',
             expires:'6 Days'
         },
         {
@@ -133,6 +141,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'10% Off',
+            category:'chinesefood',
             expires:'13 Days'
         },
         {
@@ -155,6 +164,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'15% Off',
+            category:'chinesefood',
             expires:'8 Days'
         },
 
@@ -167,6 +177,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'30% Off',
+            category:'japanesefood',
             expires:'4 Days '
         },
         {
@@ -200,6 +211,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'chinesefood',
             expires:'3 Days '
         },
         {
@@ -211,6 +223,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'chinesefood',
             expires:'3 Days '
         },
         {
@@ -222,6 +235,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'chinesefood',
             expires:'3 Days '
         },
         {
@@ -299,6 +313,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'chinesefood',
             expires:'3 Days '
         },
         {
@@ -332,6 +347,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'japanesefood',
             expires:'3 Days '
         },
         {
@@ -343,6 +359,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'japanesefood',
             expires:'3 Days '
         },
         {
@@ -530,6 +547,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'japanesefood',
             expires:'3 Days '
         },
         {
@@ -563,6 +581,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'vegitems',
             expires:'3 Days '
         },
         {
@@ -574,6 +593,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'vegitems',
             expires:'3 Days '
         },
         {
@@ -596,6 +616,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'vegitems',
             expires:'3 Days '
         },
         {
@@ -607,6 +628,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'vegitems',
             expires:'3 Days '
         },
         {
@@ -684,6 +706,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'vegitems',
             expires:'3 Days '
         },
         {
@@ -700,12 +723,13 @@ let initstate={
         {
             image:"https://www.kindmeal.my/photos/deal/7/716-5042-l.jpg",
             name:'Waffles & Sweet Treats',
-            description:"",
+            description:"vegitem",
             button:'Get FREE Coupon',
             amlet:'https://www.kindmeal.my/images/icon_egg.png',
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'vegitems',
             expires:'3 Days '
         },
 
@@ -751,6 +775,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'RM57.69',
+            category:'vegitems',
             expires:'5 Days'
         },
         {
@@ -795,6 +820,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'vegitems',
             expires:'7 Days'
         },
     ],
@@ -808,6 +834,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'vegitems',
             expires:'7 Days'
         },
         {
@@ -819,6 +846,8 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'15% Off',
+
+            category:'vegitems',
             expires:'8 Days'
         },
         {
@@ -826,6 +855,7 @@ let initstate={
             name:'affordable Quality Meals',
             description:"We strive to provide good food, good price and good service to our diners. Visit us to enjoy a wide variety of quality vegetarian ..",
             button:'Get FREE Coupon',
+            category:'vegitems',
             amlet:'https://www.kindmeal.my/images/icon_egg.png',
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
@@ -836,6 +866,7 @@ let initstate={
             image:"https://www.kindmeal.my/photos/deal/1/177-1118-l.jpg",
             name:'Pies Conquer The World',
             discount:"20% Off",
+            category:'vegitems',
             button:'Get FREE Coupon',
             amlet:'https://www.kindmeal.my/images/icon_egg.png',
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
@@ -852,6 +883,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'RM15.20',
+            category:'vegitems',
             expires:'6 Days'
         },
         {
@@ -863,6 +895,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'10% Off',
+            category:'indianfood',
             expires:'7 Days'
         },
         {
@@ -874,6 +907,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'10% Off',
+            category:'indianfood',
             expires:'8 Days'
         },
         {
@@ -885,6 +919,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'15% Off',
+            category:'indianfood',
             expires:'4 Hours'
         },
         {
@@ -907,6 +942,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'10% Off',
+            category:'indianfood',
             expires:'4 Hours'
         },
         {
@@ -918,6 +954,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'10% Off',
+            category:'indianfood',
             expires:'7 Days '
         },
         {
@@ -929,6 +966,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'indianfood',
             expires:'3 Days '
         },
         {
@@ -940,6 +978,7 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'indianfood',
             expires:'3 Days '
         },
         {
@@ -951,11 +990,13 @@ let initstate={
             bottle:"https://www.kindmeal.my/images/icon_milk.png",
             alchohal:'https://www.kindmeal.my/images/icon_alcohol_disabled.png',
             discount:'20% Off',
+            category:'indianfood',
             expires:'3 Days '
         },
         
 
-    ]
+    ],
+    throughsearch:''
 }
 
 let reducer=(state=initstate,action)=>{
@@ -971,6 +1012,13 @@ let reducer=(state=initstate,action)=>{
             ...state,
             apidata:action.payload
             
+        }
+    }
+    if(action.type==Search){
+        return {
+            ...state,
+            throughsearch:action.payload
+
         }
     }
     return state
