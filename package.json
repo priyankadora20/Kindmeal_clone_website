@@ -16,8 +16,8 @@
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
 <<<<<<< HEAD
-    "redux": "^4.2.0",
-    "video-react": "^0.16.0",
+   
+   
 =======
     "reducer": "^0.19.2",
     "redux": "^4.2.0",
