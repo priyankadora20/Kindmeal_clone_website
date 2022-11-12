@@ -15,7 +15,7 @@ function Getfreecoupon(props) {
         dispatch(getdata())
     },[])
     let apidata=useSelector((state)=>{
-        return state.apidata
+        return state.Meal_Deal.apidata
     })
     console.log(apidata)
     

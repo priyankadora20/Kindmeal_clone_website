@@ -2,11 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import {BrowserRouter} from "react-router-dom"
-// import {ChakraProvider} from "@chakra-ui/react"
-import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+import { ChakraProvider ,extendTheme} from '@chakra-ui/react';
 import { store } from './Components/Meals_Deals/store';
-import { ChakraProvider,extendTheme } from '@chakra-ui/react'
+import { Provider } from 'react-redux';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const theme = extendTheme({
@@ -20,15 +19,13 @@ const theme = extendTheme({
   });
   
 root.render(
-   
-    <ChakraProvider theme={theme} resetCSS={false}  >
-   <Provider store={store}>
+  <ChakraProvider theme={theme} resetCSS={false} >
+    <Provider store={store}>
 
-
-    <BrowserRouter>
+ <BrowserRouter>
     <App />
-    </BrowserRouter>
-   </Provider>
- </ChakraProvider>
+ </BrowserRouter>
+    </Provider>
+  </ChakraProvider>
 );
 

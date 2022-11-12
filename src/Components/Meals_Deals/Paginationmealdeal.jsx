@@ -5,7 +5,7 @@ import { Success } from './Types';
 
 function Paginationmealdeal() {
     let data=useSelector((state)=>{
-        return state.data
+        return state.Meal_Deal.data
     })
     console.log(data)
     let dispatch=useDispatch()

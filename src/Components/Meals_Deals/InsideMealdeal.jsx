@@ -7,7 +7,7 @@ import {FaStarHalfAlt,FaStar} from "react-icons/fa";
 
 function InsideMealdeal(props) {
     let pages=useSelector((state)=>{
-        return state.current
+        return state.Meal_Deal.current
         console.log(state)
     })
     return (

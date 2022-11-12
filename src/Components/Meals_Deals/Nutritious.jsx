@@ -17,14 +17,16 @@ function Nutritious(props) {
 
     let maindata=useSelector((state)=>{
         console.log(state)
-        return state.data
+        return state.Meal_Deal.data
+        console.log(state,"state")
        
     })
+    console.log(maindata,"maindata")
     let search=useSelector((state)=>{
-        return state.throughsearch
+        return state.Meal_Deal.throughsearch
     })
     let pages=useSelector((state)=>{
-        return state.current
+        return state.Meal_Deal.current
         
     })
     let navigate=useNavigate()
