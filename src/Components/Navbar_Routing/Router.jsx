@@ -4,6 +4,7 @@ import { Homepage } from "../Homepage/Homepage";
 import FullPage from "../KindMoments/FullPage";
 import { Instgram } from "../KindMoments/instagram";
 import CoustomerSignup from "../Login_SignUp/Coustomer/CoustomerSignup";
+import RestaurantDashboard from "../Login_SignUp/Restaurant/RestaurantDashboard";
 import RestaurantSignup from "../Login_SignUp/Restaurant/RestaurantSignup";
 import ShopCreation from "../Login_SignUp/Restaurant/ShopCreation";
 
@@ -19,6 +20,8 @@ const Routers = () => {
       <Route path="/user_signup" element={<CoustomerSignup />} />
       <Route path="/user_login" element="user_login" />
       <Route path="/ShopCreation" element={<ShopCreation />} />
+      <Route path="/RestaurantDashboard" element={<RestaurantDashboard />} />
+      <Route path="/Article" element={"Article"} />
       <Route path="/fullpage" element={<FullPage />} />
     </Routes>
   );
