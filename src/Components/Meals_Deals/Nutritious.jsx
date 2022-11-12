@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { AiFillStar } from "react-icons/ai";
 import {FaStarHalfAlt,FaStar} from "react-icons/fa"
+import {AiFillLike} from "react-icons/ai"
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import Main from './Main';
@@ -68,7 +69,7 @@ function Nutritious(props) {
                                <FaStar size={25} color="#fbff00"/>
                                <FaStar size={25} color="#fbff00"/>
                                <FaStarHalfAlt size={25}  color="#fbff00"/>
-            
+                               {/* <AiFillLike/> */}
                             </div>
                         </div>
                         <div  id='nutritiousamlet'>

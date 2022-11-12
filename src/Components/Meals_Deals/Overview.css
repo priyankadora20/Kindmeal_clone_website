@@ -3,7 +3,6 @@
     min-height: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(500px,2fr));
-   
     margin: auto;
     margin-top: 3rem;
     margin-bottom: 3rem;
