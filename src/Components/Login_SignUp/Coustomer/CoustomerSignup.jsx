@@ -12,13 +12,45 @@ import {
   Button,
   Radio,
   FormHelperText,
+  Alert,
+  AlertIcon,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+// ***************************************   Main Part of the website **************
 const CoustomerSignup = () => {
   const Navigaters = useNavigate();
 
+  const [CustomerData, setCustomerData] = useState({
+    firstname: "",
+    email: "",
+    Re_enter_email: "",
+    Password: "",
+    Username: "",
+    Birth_data: "",
+    Country: "",
+    Gender: "",
+    type: "Customer_Details",
+  });
+
+  const HandleData = (e) => {
+    const { name, value } = e.target;
+    setCustomerData({
+      ...CustomerData,
+      [name]: value,
+    });
+  };
+
+  const HandleSubmit = (e) => {
+    e.preventDefault();
+    if (CustomerData.email !== CustomerData.Re_enter_email) {
+      alert("Email does't Match");
+    } else {
+      localStorage.setItem("CustomerDetails", JSON.stringify(CustomerData));
+      Navigaters("/");
+    }
+  };
   return (
     <div>
       <Flex
@@ -145,7 +177,7 @@ const CoustomerSignup = () => {
           {/* SIGN UP PROCESS HAS BEEN STARTED FROM HERE  */}
           {/* Getting the Details from here  */}
           <Box>
-            <form>
+            <form onSubmit={HandleSubmit}>
               {/* first */}
               <FormControl isRequired mt={4}>
                 <FormLabel color={"black"}>Name</FormLabel>
@@ -153,6 +185,8 @@ const CoustomerSignup = () => {
                   placeholder="Full name"
                   color={"black"}
                   name="firstname"
+                  value={CustomerData.firstname}
+                  onChange={HandleData}
                 />
               </FormControl>
               {/* two  */}
@@ -166,6 +200,8 @@ const CoustomerSignup = () => {
                   color={"black"}
                   name="email"
                   type={"email"}
+                  value={CustomerData.email}
+                  onChange={HandleData}
                 />
               </FormControl>
               {/* three */}
@@ -174,8 +210,10 @@ const CoustomerSignup = () => {
                 <Input
                   placeholder="Email"
                   color={"black"}
-                  name="email"
+                  name="Re_enter_email"
                   type={"email"}
+                  value={CustomerData.Re_enter_email}
+                  onChange={HandleData}
                 />
               </FormControl>
               {/* four */}
@@ -186,6 +224,8 @@ const CoustomerSignup = () => {
                   color={"black"}
                   name="Password"
                   type={"password"}
+                  value={CustomerData.Password}
+                  onChange={HandleData}
                 />
               </FormControl>
               {/* fifth */}
@@ -194,7 +234,13 @@ const CoustomerSignup = () => {
                 <FormHelperText color={"red.600"} fontWeight="bold">
                   http://KindMeal.my/username
                 </FormHelperText>
-                <Input placeholder="Username" color={"black"} name="Username" />
+                <Input
+                  placeholder="Username"
+                  color={"black"}
+                  name="Username"
+                  value={CustomerData.Username}
+                  onChange={HandleData}
+                />
               </FormControl>
               {/* sixth */}
               <FormControl isRequired mt={4}>
@@ -202,30 +248,39 @@ const CoustomerSignup = () => {
                 <Input
                   placeholder="Choose Date"
                   color={"black"}
-                  name="email"
+                  name="Birth_data"
                   type={"date"}
+                  value={CustomerData.Birth_data}
+                  onChange={HandleData}
                 />
                 <FormHelperText>
                   Only your Age is visible on the Website
                 </FormHelperText>
               </FormControl>
               {/* seventh */}
-              <FormControl as="fieldset" mt={4}>
-                <FormLabel as="legend">Gender</FormLabel>
-                <RadioGroup defaultValue="Itachi">
-                  <HStack spacing="24px">
-                    <Radio value="Sasuke">Male</Radio>
-                    <Radio value="Nagato">Female</Radio>
-                  </HStack>
-                </RadioGroup>
+              <FormControl mt={4} isRequired>
+                <FormLabel color={"black"}>Gender</FormLabel>
+                <Select
+                  placeholder="Select Gender"
+                  color={"blackAlpha.700"}
+                  name="Gender"
+                  value={CustomerData.Gender}
+                  onChange={HandleData}
+                >
+                  <option>Male </option>
+                  <option>Female</option>
+                  <option>Others</option>
+                </Select>
               </FormControl>
               {/* eighth */}
               <FormControl mt={4} isRequired>
-                <FormLabel color={"black"}>Role</FormLabel>
+                <FormLabel color={"black"}>Select Country</FormLabel>
                 <Select
                   placeholder="Select Role"
                   color={"green.600"}
-                  name="role"
+                  name="Country"
+                  value={CustomerData.Country}
+                  onChange={HandleData}
                 >
                   <option>India</option>
                   <option>USA</option>

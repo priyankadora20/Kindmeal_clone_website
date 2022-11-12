@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { useRef } from "react";
@@ -14,19 +14,102 @@ import {
   Image,
   Text,
   Grid,
+  ModalHeader,
+  ModalCloseButton,
+  FormControl,
+  FormLabel,
+  Input,
+  Avatar,
+  Select,
 } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
+
+// *************************************************************************
 
 const Navbar = () => {
   const NavRef = useRef();
 
+  const [showLogin, setshowLogin] = useState(true);
+  const [CheckType, setCheckType] = useState(false);
+  const [shownname, setShowname] = useState("No data");
+  const [optionvalue, setoptionvalue] = useState("");
   const showNavbar = () => {
     NavRef.current.classList.toggle("showMenu");
   };
 
+  const [email, setemail] = useState("");
+  const [password, setpassword] = useState("");
+
+  const {
+    isOpen: signupIsOpen,
+    onOpen: signupOnOpen,
+    onClose: signupOnClose,
+  } = useDisclosure();
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const Navigaters = useNavigate();
+
+  // CHECKING THE AUTHTICATION OF THE USER
+
+  const Handlelogin = () => {
+    let ShopOwner_Data;
+    let User_Data;
+    if (email === "" || password === "") {
+      alert("Please Enter Proper Details");
+    } else {
+      ShopOwner_Data =
+        JSON.parse(localStorage.getItem("RestaurantDetails")) || null;
+      User_Data = JSON.parse(localStorage.getItem("CustomerDetails")) || null;
+    }
+
+    let shop_Owner_Email = "";
+    let shop_Owner_password = "";
+    if (ShopOwner_Data !== null) {
+      shop_Owner_Email = ShopOwner_Data.Email;
+      shop_Owner_password = ShopOwner_Data.Password;
+    }
+    // ***********************************************************
+    let User_Email = "";
+    let user_password = "";
+    if (User_Data !== null) {
+      User_Email = User_Data.email;
+      user_password = User_Data.Password;
+    }
+    // ***********************************************************
+    // CHECKING THE USER DETAILS ENTER
+
+    if (email === shop_Owner_Email && password === shop_Owner_password) {
+      setShowname(ShopOwner_Data.Name);
+      setshowLogin(false);
+      setCheckType(true);
+      Navigaters("/RestaurantDashboard");
+      onClose();
+    }
+
+    if (email === User_Email && password === user_password) {
+      setShowname(User_Data.firstname);
+      setshowLogin(false);
+      Navigaters("/");
+      onClose();
+    }
+  };
+
+  const functionredirect = (e) => {
+    setoptionvalue(e.target.value);
+  };
+
+  useEffect(() => {
+    if (optionvalue === "Menu") {
+      Navigaters("/mealDeals");
+    } else if (optionvalue === "Article") {
+      Navigaters("/Article");
+    } else if (optionvalue === "KindMonents") {
+      Navigaters("/kindmoments");
+    } else if (optionvalue === "DashBoard") {
+      Navigaters("/RestaurantDashboard");
+    }
+  }, [optionvalue]);
+  // *********************        Main code start from here
 
   return (
     <div className="Maindiv">
@@ -63,13 +146,109 @@ const Navbar = () => {
             />
           </a>
         </div>
-        <div className="login_signup">
-          <button>Login</button>
-          <button onClick={onOpen}>Signup</button>
-        </div>
-        {/* POPUP DIALOG OF THE WEBSITE  */}
 
-        <Modal closeOnOverlayClick={false} isOpen={isOpen} onClose={onClose}>
+        {/* ******************  LOGIN BUTTON *************************** */}
+        {showLogin ? (
+          <div className="login_signup">
+            <button onClick={onOpen}>Login</button>
+            <button onClick={signupOnOpen}>Signup</button>
+          </div>
+        ) : CheckType ? (
+          <div
+            className="login_signup"
+            style={{
+              gap: "15px",
+            }}
+          >
+            <Avatar bg="teal.500" />
+            <Select
+              placeholder={shownname}
+              value={optionvalue}
+              onChange={functionredirect}
+            >
+              <option value="Menu">Menu</option>
+              <option value="DashBoard">DashBoard</option>
+              <option value="Article">Article</option>
+              <option value="KindMonents">KindMonents</option>
+            </Select>
+          </div>
+        ) : (
+          <div
+            className="login_signup"
+            style={{
+              gap: "15px",
+            }}
+          >
+            <Avatar bg="teal.500" />
+            <Select
+              placeholder={shownname}
+              value={optionvalue}
+              onChange={functionredirect}
+            >
+              <option value="Menu">Menu</option>
+              <option value="Article">Article</option>
+              <option value="KindMonents">KindMonents</option>
+            </Select>
+          </div>
+        )}
+
+        {/* ****************************  Login function *******************************  */}
+        <Modal isOpen={isOpen} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent>
+            <ModalHeader>Log In To Your Account</ModalHeader>
+            <ModalCloseButton />
+            <ModalBody pb={6}>
+              <FormControl>
+                <FormLabel>Email id</FormLabel>
+                <Input
+                  placeholder="Enter Email id"
+                  name="email"
+                  value={email}
+                  type="email"
+                  onChange={(e) => {
+                    setemail(e.target.value);
+                  }}
+                />
+              </FormControl>
+
+              <FormControl mt={4}>
+                <FormLabel>Password</FormLabel>
+                <Input
+                  placeholder="Enter Password"
+                  name="password"
+                  value={password}
+                  type="password"
+                  onChange={(e) => {
+                    setpassword(e.target.value);
+                  }}
+                />
+              </FormControl>
+            </ModalBody>
+
+            <ModalFooter>
+              <Button
+                colorScheme="blue"
+                mr={3}
+                onClick={() => {
+                  Handlelogin();
+                }}
+              >
+                Submit
+              </Button>
+
+              <Button onClick={onClose}>Cancel</Button>
+            </ModalFooter>
+          </ModalContent>
+        </Modal>
+        {/* ***********************  signup function  ******************************* */}
+        {/* POPUP DIALOG OF THE WEBSITE   */}
+
+        <Modal
+          closeOnOverlayClick={false}
+          isOpen={signupIsOpen}
+          onClose={signupOnClose}
+        >
           <ModalOverlay />
           <ModalContent>
             {/* <ModalCloseButton /> */}
@@ -101,16 +280,10 @@ const Navbar = () => {
                 bg="white"
                 mb={5}
                 onClick={() => {
-               return(
-                Navigaters("/user_signup"), onClose()
-               )  
-                   
-                  
-                 
+                  Navigaters("/user_signup"), signupOnClose();
                 }}
                 cursor="pointer"
                 alignContent={"center"}
-                // onClick={}
               >
                 <Grid
                   templateColumns={{
@@ -144,10 +317,7 @@ const Navbar = () => {
                 bg="white"
                 mb={5}
                 onClick={() => {
-                  return(
-                    Navigaters("/restaurant_signup"), onClose()
-                  )
-                 
+                  Navigaters("/restaurant_signup"), signupOnClose();
                 }}
                 cursor="pointer"
               >
@@ -178,7 +348,7 @@ const Navbar = () => {
             </ModalBody>
 
             <ModalFooter>
-              <Button onClick={onClose}>Cancel</Button>
+              <Button onClick={signupOnClose}>Cancel</Button>
             </ModalFooter>
           </ModalContent>
         </Modal>
@@ -213,10 +383,45 @@ const Navbar = () => {
               Recipes
             </Link>
           </li>
+          <li>
+            <Link to={"/Article"} className="link">
+              Article
+            </Link>
+          </li>
           <div className="login_signup_insider">
-            <button>Login</button>
-            <button onClick={onOpen}>Signup</button>
-            <div></div>
+            {showLogin ? (
+              <div>
+                <button onClick={onOpen}>Login</button>
+                <button onClick={signupOnOpen}>Signup</button>
+              </div>
+            ) : (
+              // <>
+              <div
+                className="login_signup"
+                style={{
+                  gap: "15px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "70%",
+                  margin: "auto",
+                }}
+              >
+                <Avatar bg="teal.500" />
+                <Select
+                  placeholder={shownname}
+                  value={optionvalue}
+                  onChange={functionredirect}
+                >
+                  <option value="Menu">Menu</option>
+                  <option value="Article">Article</option>
+                  <option value="KindMonents">KindMonents</option>
+                </Select>
+              </div>
+            )}
+
+            {/* <button onClick={onOpen}>Login</button>
+            <button onClick={signupOnOpen}>Signup</button> */}
           </div>
         </ul>
       </div>
