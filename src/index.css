@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#mainimageimage {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+#paginationbuttonbutton {
+  width: 90%;
+  height: auto;
+  /* border: 1px solid red; */
+  margin: auto;
+}
