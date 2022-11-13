@@ -32,16 +32,18 @@ const AddItem = () => {
     console.log(Restaurant);
     getvalue.push(Restaurant);
     localStorage.setItem("AddingDish", JSON.stringify(getvalue));
+    setRestaurant({
+      Name: "",
+      images: "",
+      Type_of_food: "",
+      Special: "",
+    });
   };
 
   // *************************************************
   return (
     <Box
-      w={{
-        sm: "90%",
-        md: "80%",
-        lg: "60%",
-      }}
+      w={"60%"}
       p={10}
       color="white"
       margin={"auto"}
@@ -69,6 +71,8 @@ const AddItem = () => {
             name="Name"
             value={Restaurant.Name}
             onChange={HandleChange}
+            textAlign="left"
+            width={"95%"}
           />
         </FormControl>
         {/* ************************************************************** */}
@@ -80,6 +84,8 @@ const AddItem = () => {
             name="Type_of_food"
             value={Restaurant.Type_of_food}
             onChange={HandleChange}
+            textAlign="left"
+            width={"100%"}
           >
             <option>Vegan</option>
             <option>Vegetarian</option>
@@ -97,6 +103,8 @@ const AddItem = () => {
             name="Special"
             value={Restaurant.Special}
             onChange={HandleChange}
+            textAlign="left"
+            width={"95%"}
           />
         </FormControl>
         {/* *********************************************************** */}
@@ -109,6 +117,8 @@ const AddItem = () => {
             type={"url"}
             value={Restaurant.images}
             onChange={HandleChange}
+            textAlign="left"
+            width={"95%"}
           />
         </FormControl>
         {/* ******************************************************  */}

@@ -195,6 +195,8 @@ const ShopCreation = () => {
                   name="Shop_Name"
                   value={ShopDetails.Shop_Name}
                   onChange={HandleShopData}
+                  textAlign="left"
+                  width={"80%"}
                 />
               </FormControl>
               {/* **************************************** */}
@@ -206,6 +208,8 @@ const ShopCreation = () => {
                   name="Cuisine"
                   value={ShopDetails.Cuisine}
                   onChange={HandleShopData}
+                  textAlign="left"
+                  width={"85%"}
                 >
                   <option>Asian</option>
                   <option>Chinese</option>
@@ -239,6 +243,8 @@ const ShopCreation = () => {
                   name="Type"
                   value={ShopDetails.Type}
                   onChange={HandleShopData}
+                  textAlign="left"
+                  width={"85%"}
                 >
                   <option>Vegan</option>
                   <option>Vegetarian</option>
@@ -259,6 +265,8 @@ const ShopCreation = () => {
                   name="Opening"
                   value={ShopDetails.Opening}
                   onChange={HandleShopData}
+                  textAlign="left"
+                  width={"80%"}
                 />
               </FormControl>
               {/* ********************************************* */}
@@ -270,6 +278,8 @@ const ShopCreation = () => {
                   name="Address"
                   value={ShopDetails.Address}
                   onChange={HandleShopData}
+                  textAlign="left"
+                  width={"80%"}
                 />
               </FormControl>
               {/* ********************************************* */}
@@ -280,6 +290,8 @@ const ShopCreation = () => {
                   color={"black"}
                   name="City"
                   value={ShopDetails.City}
+                  textAlign="left"
+                  width={"80%"}
                   onChange={HandleShopData}
                 />
               </FormControl>
@@ -294,6 +306,8 @@ const ShopCreation = () => {
                     name="Phone"
                     value={ShopDetails.Phone}
                     onChange={HandleShopData}
+                    textAlign="left"
+                    width={"80%"}
                   />
                 </InputGroup>
               </FormControl>
@@ -307,6 +321,8 @@ const ShopCreation = () => {
                     name="Website"
                     value={ShopDetails.Website}
                     onChange={HandleShopData}
+                    textAlign="left"
+                    width={"80%"}
                   />
                   <InputRightAddon children=".com" />
                 </InputGroup>
@@ -320,6 +336,8 @@ const ShopCreation = () => {
                   name="ImageURL"
                   value={ShopDetails.ImageURL}
                   onChange={HandleShopData}
+                  textAlign="left"
+                  width={"80%"}
                   isRequired
                 />
               </FormControl>
@@ -332,6 +350,8 @@ const ShopCreation = () => {
                   name="AboutShop"
                   value={ShopDetails.AboutShop}
                   onChange={HandleShopData}
+                  textAlign="left"
+                  width={"80%"}
                 />
               </FormControl>
               {/* ************************************************ */}

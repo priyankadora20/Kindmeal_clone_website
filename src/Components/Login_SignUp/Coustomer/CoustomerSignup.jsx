@@ -77,13 +77,15 @@ const CoustomerSignup = () => {
             rounded="md"
             bg="white"
             p="7"
-            width="100%"
+            width="85%"
             cursor="pointer"
             margin={"auto"}
             mb={4}
             onClick={() => {
               Navigaters("/user_signup");
             }}
+            alignItems="center"
+            textAlign={"center"}
           >
             <Image
               src="https://www.kindmeal.my/images/join_normal.png"
@@ -99,13 +101,15 @@ const CoustomerSignup = () => {
             rounded="md"
             bg="white"
             p="7"
-            width="100%"
+            width="85%%"
             cursor="pointer"
             margin={"auto"}
             mb={4}
             onClick={() => {
               Navigaters("/restaurant_signup");
             }}
+            alignItems="center"
+            textAlign={"center"}
           >
             <Image
               src="https://www.kindmeal.my/images/join_shop.png"
@@ -121,31 +125,29 @@ const CoustomerSignup = () => {
             rounded="md"
             bg="white"
             p="1.5"
-            width="100%"
-            textAlign="left"
+            width="96%"
             margin={"auto"}
             mb="8"
+            alignItems="center"
+            textAlign={"center"}
           >
             <Text fontSize="2xl" textAlign={"center"}>
               Why KindMeal?
             </Text>
             <Text fontSize="sm" textDecoration={"ButtonFace"} textAlign="left">
-              <li>Exclusive meat-free deals</li>
+              <li>Exclusive meat-free deals at your wish and at your place</li>
             </Text>
             <Text fontSize="sm" textDecoration={"ButtonFace"} textAlign="left">
-              <li>Share yummy food moments</li>
+              <li>Share yummy food moments with your family and friends</li>
             </Text>
             <Text fontSize="sm" textDecoration={"ButtonFace"} textAlign="left">
-              <li>Meet friendly food lovers</li>
+              <li>Meet friendly food lovers from all over the world</li>
             </Text>
             <Text fontSize="sm" textDecoration={"ButtonFace"} textAlign="left">
-              <li>Discover cool restaurants</li>
+              <li>Discover cool restaurants that are world famous</li>
             </Text>
             <Text fontSize="sm" textDecoration={"ButtonFace"} textAlign="left">
-              <li>Email updates on tasty deals</li>
-            </Text>
-            <Text fontSize="sm" textDecoration={"ButtonFace"} textAlign="left">
-              <li>Instant coupons & dining</li>
+              <li>Email updates on tasty deals and Instant coupons & dining</li>
             </Text>
           </Box>
         </Box>
@@ -187,6 +189,8 @@ const CoustomerSignup = () => {
                   name="firstname"
                   value={CustomerData.firstname}
                   onChange={HandleData}
+                  textAlign="left"
+                  width={"80%"}
                 />
               </FormControl>
               {/* two  */}
@@ -202,6 +206,8 @@ const CoustomerSignup = () => {
                   type={"email"}
                   value={CustomerData.email}
                   onChange={HandleData}
+                  textAlign="left"
+                  width={"80%"}
                 />
               </FormControl>
               {/* three */}
@@ -214,6 +220,8 @@ const CoustomerSignup = () => {
                   type={"email"}
                   value={CustomerData.Re_enter_email}
                   onChange={HandleData}
+                  textAlign="left"
+                  width={"80%"}
                 />
               </FormControl>
               {/* four */}
@@ -226,6 +234,8 @@ const CoustomerSignup = () => {
                   type={"password"}
                   value={CustomerData.Password}
                   onChange={HandleData}
+                  textAlign="left"
+                  width={"80%"}
                 />
               </FormControl>
               {/* fifth */}
@@ -240,6 +250,8 @@ const CoustomerSignup = () => {
                   name="Username"
                   value={CustomerData.Username}
                   onChange={HandleData}
+                  textAlign="left"
+                  width={"80%"}
                 />
               </FormControl>
               {/* sixth */}
@@ -252,6 +264,8 @@ const CoustomerSignup = () => {
                   type={"date"}
                   value={CustomerData.Birth_data}
                   onChange={HandleData}
+                  textAlign="left"
+                  width={"80%"}
                 />
                 <FormHelperText>
                   Only your Age is visible on the Website
@@ -266,6 +280,8 @@ const CoustomerSignup = () => {
                   name="Gender"
                   value={CustomerData.Gender}
                   onChange={HandleData}
+                  textAlign="left"
+                  width={"85%"}
                 >
                   <option>Male </option>
                   <option>Female</option>
@@ -281,6 +297,8 @@ const CoustomerSignup = () => {
                   name="Country"
                   value={CustomerData.Country}
                   onChange={HandleData}
+                  textAlign="left"
+                  width={"85%"}
                 >
                   <option>India</option>
                   <option>USA</option>

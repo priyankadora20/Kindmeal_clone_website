@@ -50,7 +50,6 @@ const YourItem = () => {
         {getRestaurant.length > 0
           ? getRestaurant.map((elem) => (
               <Box
-                maxW="sm"
                 borderWidth="3px"
                 borderRadius="lg"
                 overflow="hidden"
@@ -59,13 +58,13 @@ const YourItem = () => {
                 rounded="md"
                 bg="white"
               >
-                <Image src={elem.images} alt="Dan Abramov" />
-                <Text m={2} fontWeight="bold" fontSize={"4xl"}>
+                <Image src={elem.images} alt="Dan Abramov" width={"100%"} />
+                <Text m={2} fontWeight="bold" fontSize={"xl"}>
                   {elem.Name}
                 </Text>
                 <Flex gap={3}>
                   <Text>🍒</Text>
-                  <Text textAlign={"left"} fontSize="lg">
+                  <Text textAlign={"left"} fontSize="lg" width={"85%"}>
                     {elem.Special}
                   </Text>
                 </Flex>
