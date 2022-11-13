@@ -41,7 +41,7 @@ fully resposive website
 <h2>Deployed Link </h2>
 <p>Versal link : https://blessed-toes-567-ten.vercel.app/</p>
 
-<h2>ScreenShot of the clone Website</h2>
+<h2>ScreenShot of the clone Website.</h2>
 
 ![s1](https://user-images.githubusercontent.com/105920094/201532839-36a7bb13-512a-40cf-a463-276991abb001.png)
 ![s2](https://user-images.githubusercontent.com/105920094/201532841-d75eb24d-19c5-4252-8b50-3f185e54936b.png)
