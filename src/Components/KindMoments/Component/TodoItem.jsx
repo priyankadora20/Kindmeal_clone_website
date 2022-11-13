@@ -14,24 +14,14 @@ function Todo() {
       };
       setTodos([...todos, newItem]);
     };
-    // const handleToggle = (id) => {
-    //   const updatedTodo = todos.map((todo) =>
-    //     todo.id === id ? { ...todo, status: !todo.status } : todo
-    //   );
-  
-    //   setTodos(updatedTodo);
-    // };
-    // const handleDelete = (id) => {
-    //   setTodos(todos.filter((todo) => todo.id !== id));
-    // };
+
     return (
       <div>
-        <Box  w='100%' p={4} color='white' height='auto'>
+        <Box  w='100%' p={4}  color='white' 
+        height='auto' border=''>
           {todos.map((item) => (
             <TodoItem
               key={item.id}
-            //   handleToggle={() => handleToggle(item.id)}
-            //   handleDelete={() => handleDelete(item.id)}
               title={item.title}
               status={item.status}
             />

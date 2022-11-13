@@ -42,7 +42,7 @@ function Pagination() {
     }
     return (
         <div>
-            Page:
+          <span style={{marginLeft:'15%'}}>Page:</span>  
             {pages.map((el,index)=>{
 
             return (
@@ -55,8 +55,11 @@ function Pagination() {
                    
         })}
            <div>
-           <Button disabled={currentpage==1} onClick={()=>handleclickback()} style={{marginLeft:'170%',marginTop:'-10%'}}>Preview</Button>
-            <Button onClick={()=>handleclick()} style={{marginLeft:'190%',marginTop:'-18%'}}>Next</Button>
+           <Button disabled={currentpage==1} style={{marginLeft:'170%',marginTop:'-10%',
+           color:'gray',height:'35px',width:'80px'}}>Preview</Button>
+           
+            <Button onClick={()=>handleclick()} style={{marginLeft:'190%',marginTop:'-18%',
+            color:'gray',height:'35px',width:'80px'}} >Next</Button>
             </div> 
         </div>
     );

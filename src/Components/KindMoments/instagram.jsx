@@ -6,6 +6,8 @@ import {useSelector} from "react-redux";
 import {useNavigate} from "react-router-dom";
 import { Box, Button, Text,Image ,Avatar} from "@chakra-ui/react";
 import "./instgram.css";
+import { KindMonents } from "./KindMonents";
+
 
 
 function Instgram() {
@@ -27,7 +29,8 @@ function Instgram() {
     // }
    
     return (
-      
+ 
+   
 <div style={{ width: "100%" }}>
   <div className='product-cards'>
 
@@ -49,13 +52,14 @@ function Instgram() {
            fifthimg : property.img4 }
           localStorage.setItem("oneitemadd", JSON.stringify(obj))
               navigate("/fullpage")
-           }}   key={property.id} boxShadow='lg' borderRadius='1rem' bg='white' style={{border: '',width:'350px',height:'455px'}} >
+           }}   key={property.id} boxShadow='lg' borderRadius='1rem' bg='white' 
+           style={{border: '',width:'350px',height:'auto',marginBottom:'3%'}} >
  
  <div style={{border:'',display:'flex'}}  >
-        <Avatar  mt='1' ml='' src={property.profileimg} alt="" />
+        <Avatar  mt='1' ml='1.5' src={property.profileimg} alt="" />
        <Box border='' ml='' width=''>
-        <Text fontSize='md' ml='2' >{property.name}</Text>
-        <Text fontSize='xs' ml='5' >{property.date}</Text>
+        <Text fontSize='md' ml='2' mt='-0.5px' border="">{property.name}</Text>
+        <Text fontSize='xs' ml='2'mt='-4' border="">{property.date}</Text>
        </Box>
        <div style={{width:'21%',marginLeft:'38%'}} >
        <Button ml='' h='9' mt='1' colorScheme='red' w='' >View</Button>
@@ -93,7 +97,7 @@ function Instgram() {
 
 </div>
 </div>
-     
+    
     )
    
   }
