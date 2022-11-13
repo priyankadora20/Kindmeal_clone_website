@@ -3,11 +3,16 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 10px 5rem 5px 5rem;
+    /* border: 2px solid blue; */
 }
 
 .social a{
-    max-width: 15%;
+    max-width: 30%;
 } 
+
+.anchortagimage{
+    width: 60%;
+}
 
 .social{
     display: flex;

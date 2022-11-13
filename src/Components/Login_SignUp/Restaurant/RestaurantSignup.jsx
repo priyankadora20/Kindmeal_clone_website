@@ -76,13 +76,15 @@ const RestaurantSignup = () => {
             rounded="md"
             bg="white"
             p="7"
-            width="100%"
+            width="85%"
             cursor="pointer"
             margin={"auto"}
             mb={4}
             onClick={() => {
               Navigaters("/user_signup");
             }}
+            alignItems="center"
+            textAlign={"center"}
           >
             <Image
               src="https://www.kindmeal.my/images/join_normal.png"
@@ -98,13 +100,15 @@ const RestaurantSignup = () => {
             rounded="md"
             bg="white"
             p="7"
-            width="100%"
+            width="85%"
             cursor="pointer"
             margin={"auto"}
             mb={4}
             onClick={() => {
               Navigaters("/restaurant_signup");
             }}
+            alignItems="center"
+            textAlign={"center"}
           >
             <Image
               src="https://www.kindmeal.my/images/join_shop.png"
@@ -120,7 +124,7 @@ const RestaurantSignup = () => {
             rounded="md"
             bg="white"
             p="1.5"
-            width="100%"
+            width="90%"
             textAlign="left"
             margin={"auto"}
             mb="8"
@@ -129,22 +133,19 @@ const RestaurantSignup = () => {
               Why KindMeal?
             </Text>
             <Text fontSize="sm" textDecoration={"ButtonFace"} textAlign="left">
-              <li>Exclusive meat-free deals</li>
+              <li>Exclusive meat-free deals at your wish and at your place</li>
             </Text>
             <Text fontSize="sm" textDecoration={"ButtonFace"} textAlign="left">
-              <li>Share yummy food moments</li>
+              <li>Share yummy food moments with your family and friends</li>
             </Text>
             <Text fontSize="sm" textDecoration={"ButtonFace"} textAlign="left">
-              <li>Meet friendly food lovers</li>
+              <li>Meet friendly food lovers from all over the world</li>
             </Text>
             <Text fontSize="sm" textDecoration={"ButtonFace"} textAlign="left">
-              <li>Discover cool restaurants</li>
+              <li>Discover cool restaurants that are world famous</li>
             </Text>
             <Text fontSize="sm" textDecoration={"ButtonFace"} textAlign="left">
-              <li>Email updates on tasty deals</li>
-            </Text>
-            <Text fontSize="sm" textDecoration={"ButtonFace"} textAlign="left">
-              <li>Instant coupons & dining</li>
+              <li>Email updates on tasty deals and Instant coupons & dining</li>
             </Text>
           </Box>
         </Box>
@@ -165,7 +166,12 @@ const RestaurantSignup = () => {
             Improve your business, build brand loyalty, and save precious animal
             lives! Join KindMeal now to enjoy the following features:
           </Text>
-          <Text fontSize="sm" textDecoration={"ButtonFace"} mt={3}>
+          <Text
+            fontSize="sm"
+            textDecoration={"ButtonFace"}
+            mt={3}
+            textAlign="left"
+          >
             <li>Effectively reach over 200,000 consumers</li>
             <li>
               Feature your shop across premium partner platforms & media
@@ -208,6 +214,8 @@ const RestaurantSignup = () => {
                   name="Name"
                   value={Restaurant.Name}
                   onChange={HandleChange}
+                  textAlign="left"
+                  width={"80%"}
                 />
               </FormControl>
               {/* two  */}
@@ -223,6 +231,8 @@ const RestaurantSignup = () => {
                   type={"email"}
                   value={Restaurant.Email}
                   onChange={HandleChange}
+                  textAlign="left"
+                  width={"80%"}
                 />
               </FormControl>
               {/* three */}
@@ -235,6 +245,8 @@ const RestaurantSignup = () => {
                   type={"email"}
                   value={Restaurant.Re_enter_email}
                   onChange={HandleChange}
+                  textAlign="left"
+                  width={"80%"}
                 />
               </FormControl>
               {/* four */}
@@ -247,6 +259,8 @@ const RestaurantSignup = () => {
                   type={"password"}
                   value={Restaurant.Password}
                   onChange={HandleChange}
+                  textAlign="left"
+                  width={"80%"}
                 />
               </FormControl>
               {/* fifth */}
@@ -261,6 +275,8 @@ const RestaurantSignup = () => {
                   name="Username"
                   value={Restaurant.Username}
                   onChange={HandleChange}
+                  textAlign="left"
+                  width={"80%"}
                 />
               </FormControl>
               {/* sixth */}
@@ -273,6 +289,8 @@ const RestaurantSignup = () => {
                   type={"date"}
                   value={Restaurant.BirthDate}
                   onChange={HandleChange}
+                  textAlign="left"
+                  width={"80%"}
                 />
               </FormControl>
               {/* seventh */}
@@ -284,6 +302,8 @@ const RestaurantSignup = () => {
                   name="Gender"
                   value={Restaurant.Gender}
                   onChange={HandleChange}
+                  textAlign="left"
+                  width={"85%"}
                 >
                   <option>Male </option>
                   <option>Female</option>
@@ -299,6 +319,8 @@ const RestaurantSignup = () => {
                   name="Country"
                   value={Restaurant.Country}
                   onChange={HandleChange}
+                  textAlign="left"
+                  width={"85%"}
                 >
                   <option>India</option>
                   <option>USA</option>

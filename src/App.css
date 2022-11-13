@@ -7,20 +7,6 @@
   pointer-events: none;
 }
 
-            #mainimageimage {
-              /* border: 1px solid red; */
-              width: 90%;
-              height: auto;
-              margin: auto;
-            }
-
-            #paginationbuttonbutton{
-              width: 90%;
-              height: auto;
-              /* border: 1px solid red; */
-              margin: auto;
-            }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
