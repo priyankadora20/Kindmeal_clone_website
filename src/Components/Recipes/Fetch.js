@@ -111,6 +111,7 @@ export default function Fetch() {
                       </ul>
                     </div>
                     <div className="p">
+
                       <h1>Directions</h1>
                         <ol>
                           <li>  Cut whole wheat bread into square then add one tea spoon of olive oil and get into baked. Slice spinach put in spinach into the bowl and then add some chickpeas (canned or boilled). add cut whole wheat bread into the bowl together with the spinach. For dressing add one clove, tea spoon of olive, tea spoon of lemon juice, salt and pepper then add dressing into the bowl.</li>
@@ -138,6 +139,7 @@ export default function Fetch() {
                 <p>No Rating</p>
                 <button className="red" >Comment</button>
               </div>
+              
             </div>
           </div>
           <div className="reci0">
