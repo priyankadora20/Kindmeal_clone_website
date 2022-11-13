@@ -21,11 +21,12 @@ function AddTodo({ handleAddTodo }) {
           variant="outline"
            placeholder="Enter Comment..."
             width='90%'
-         
+         height=''
+         ml='2'
           >
           
         </Input>
-        <Button colorScheme='red' ml='7' mt='3' onClick={onClick}>
+        <Button colorScheme='red' ml='10' mt='3' onClick={onClick}>
          Comment
         </Button>
       </div>

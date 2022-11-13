@@ -6,6 +6,7 @@ import { Box, Button, Input, Select, Stack,
    from "@chakra-ui/react";
 import Pagination from "./Pagination";
 import "./instgram.css"
+import { Instgram } from "./instagram";
 
 
 const KindMonents =()=>{
@@ -92,7 +93,7 @@ return(
 {/* Pagnisation ke liye or yk button */}
 
 <div style={{marginTop:'2%', display:'flex',width:'75%',marginLeft:'14%'}}  border='1px solid red'>
-  <div style={{border:'1px solid red',height:'40px',width:'50%',marginLeft:'-6%'}}>
+  <div style={{border:'',height:'40px',width:'50%',marginLeft:'-6%'}}>
   <Pagination />
   </div>
 {/* <div  style={{border:'',width:'10%',
@@ -100,7 +101,7 @@ marginLeft:'45%'}} >
 <Button colorScheme='gray'>Next</Button>
 </div> */}
 </div>
-
+<Instgram />
 
 
 

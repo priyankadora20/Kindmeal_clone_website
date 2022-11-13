@@ -29,9 +29,8 @@ const FullPage = ()=>{
                 <img style={{ width: '100%', height: "100%" }} src={Data.profile_image} alt="" />
             </div>
             <div className="namefollwer">
-                <h1 style={{display:"block",fontSize:'2rem',
-
-                width:'50%',border:'',marginTop:'-2%'}}>{Data.name}</h1>
+                <h1 style={{display:"block",fontSize:'1.5rem',
+                width:'50%',border:'',marginTop:'2%'}}>{Data.name}</h1>
                  <span style={{fontSize:'20px',marginTop:'2%',marginLeft:'8%'}}>
                     {Data.followers} Follower</span>
             </div>
@@ -57,12 +56,12 @@ const FullPage = ()=>{
 </div>
 
 <div>
-    <Text mt='20'>Be the first to comment on this delicious KindMoment</Text>
+    <Text mt='10' ml='5'>Be the first to comment on this delicious KindMoment</Text>
     {/* <Input mt='' placeholder="Enter Comment..." variant="outline" color='gray'></Input>
     <Button ml='7' mt='3' colorScheme='red'>Comment</Button> */}
-    <Todo />
+<Todo />
+   
 </div>
-
                 </div>
            </Box>
 

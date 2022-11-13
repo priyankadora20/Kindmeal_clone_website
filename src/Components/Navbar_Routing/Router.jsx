@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Article from "../Article/Article";
 import { Homepage } from "../Homepage/Homepage";
 import FullPage from "../KindMoments/FullPage";
-import { Instgram } from "../KindMoments/instagram";
+import { KindMonents } from "../KindMoments/KindMonents";
 import CoustomerSignup from "../Login_SignUp/Coustomer/CoustomerSignup";
 import RestaurantDashboard from "../Login_SignUp/Restaurant/RestaurantDashboard";
 import RestaurantSignup from "../Login_SignUp/Restaurant/RestaurantSignup";
@@ -23,7 +23,7 @@ const Routers = () => {
     <Routes>
       <Route path="/" element={<Homepage/>} />
       <Route path="/mealDeals" element={<Meals_Deals/>} />
-      <Route path="/kindmoments" element={<Instgram />} />
+      <Route path="/kindmoments" element={<KindMonents />} />
       <Route path="/recipes" element={<Recipes/>} />
       <Route path="/restaurant_login" element="Restaurant_login" />
       <Route path="/restaurant_signup" element={<RestaurantSignup />} />
