@@ -13,14 +13,14 @@ const Recipes = () => {
     const [count, setCount] = useState(0)
     const [count1, setCount1] = useState(0)
     // const [data, setData]=useState([])
-    const navigate=useNavigate()
+    const navigate = useNavigate()
 
     // const getdata= () =>{
     //     axois.get("https://www.themealdb.com/api/json/v1/1/search.php?s=chicken")
     //     .then((res)=>{
     //         setData(res.data)
     //         console.log(res.data)
-           
+
     //     }).catch((err) => {
     //         console.log(err)
     //     })
@@ -29,7 +29,7 @@ const Recipes = () => {
     // useEffect(() => {
     //     getdata()
     // }, [])
-    
+
     return (
         <div>
             <div>
@@ -84,54 +84,55 @@ const Recipes = () => {
                     </div>
 
                     {/*  */}
-                    
+
                     {
-                        <div className='recdiv'> 
-                       
+                        <div className='recdiv'>
+
 
                             {RecipesData.map(({ id, logo, catagory, img, name }) => {
 
                                 return (
-                                    <Link to="/fetch" className='text-d'>
-                                    <div key={id} className="divfood" onClick={()=>{let obj ={ id, logo, catagory, img, name }
-          localStorage.setItem("itemadd", JSON.stringify(obj))
-              navigate("/fetch")
-           }}>
-                                        <div className='title'>
-                                            <img src={logo} alt="" />
-                                            <p>{catagory}</p>
-                                            <button className='rec-btn' onClick={() => setCount(1)}>View</button>
-                                        </div>
+                                    // <Link to="/fetch" className='text-d'>
+                                        <div key={id} className="divfood" onClick={() => {
+                                            let obj = { id, logo, catagory, img, name }
+                                            localStorage.setItem("itemadd", JSON.stringify(obj))
+                                            navigate("/fetch")
+                                        }}>
+                                            <div className='title'>
+                                                <img src={logo} alt="" />
+                                                <p>{catagory}</p>
+                                                <button className='rec-btn' onClick={() => setCount(1)}>View</button>
+                                            </div>
 
-                                        <img className='img' src={img} alt='' />
-                                        <h2 className='name'>{name}</h2>
-                                        <div className='watch'>
-                                            <img className='sot' src="https://www.kindmeal.my/images/icon_time_small.png" alt="" />
-                                            <p>{Math.floor(Math.random() * 100)} Mint</p>
-                                            <div className='hot'>
-                                                <button className='btn' onClick={() => setCount(count + 1)}><img className='sot' src="https://www.kindmeal.my/images/icon_heart_small.png" alt="" /></button>
+                                            <img className='img' src={img} alt='' />
+                                            <h2 className='name'>{name}</h2>
+                                            <div className='watch'>
+                                                <img className='sot' src="https://www.kindmeal.my/images/icon_time_small.png" alt="" />
+                                                <p>{Math.floor(Math.random() * 100)} Mint</p>
+                                                <div className='hot'>
+                                                    <button className='btn' onClick={() => setCount(count + 1)}><img className='sot' src="https://www.kindmeal.my/images/icon_heart_small.png" alt="" /></button>
 
-                                                <p className='cont'>{count}</p>
-                                                <button className='btn' onClick={() => setCount1(count1 + 1)}><img className='sot' src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="" /></button>
+                                                    <p className='cont'>{count}</p>
+                                                    <button className='btn' onClick={() => setCount1(count1 + 1)}><img className='sot' src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="" /></button>
 
-                                                <p className='cont'>{count1}</p>
+                                                    <p className='cont'>{count1}</p>
+                                                </div>
+
                                             </div>
 
                                         </div>
-
-                                    </div>
-                                    </Link>
+                                   
                                 )
 
                             })}
-                            
+
                         </div>
                     }
                 </div>
             </div>
             <div>
-                                <img  className="lastimg" src="https://www.kindmeal.my/images/ads/banner_janegoodall_message.jpg" alt="" />
-                            </div>
+                <img className="lastimg" src="https://www.kindmeal.my/images/ads/banner_janegoodall_message.jpg" alt="" />
+            </div>
 
         </div>
     )

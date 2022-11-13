@@ -172,8 +172,10 @@ export const Homepage = () => {
   
   
         </div>
-   
-         
+        <div style={{width:"100%"  , backgroundColor:"#ececec"}}>
+                <img className='lastimage' src='https://www.kindmeal.my/images/banner_whykindmeal.png' alt='img' />
+            </div>
+        
       </>
     )
   }
