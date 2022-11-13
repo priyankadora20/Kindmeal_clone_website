@@ -283,6 +283,12 @@
     margin: 30px 50px;
     padding: 20px;
 }
+.lastimg{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
 @media (min-width: 724px)  and (max-width: 1024px) {
     .recdiv{
         width: 80%;
@@ -380,6 +386,7 @@
         padding: 30px;
     }
 }
+
 
 @media  (min-width: 124px)  and (max-width: 424px) {
     .recdiv{

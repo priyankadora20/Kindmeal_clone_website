@@ -4,6 +4,7 @@ import axois from "axios"
 import RecipesData from './data'
 import './recipes.css'
 import { useNavigate } from 'react-router-dom'
+import { Link } from '@chakra-ui/react'
 
 
 
@@ -12,7 +13,7 @@ const Recipes = () => {
     const [count, setCount] = useState(0)
     const [count1, setCount1] = useState(0)
     // const [data, setData]=useState([])
-    // const naviget=useNavigate()
+    const navigate=useNavigate()
 
     // const getdata= () =>{
     //     axois.get("https://www.themealdb.com/api/json/v1/1/search.php?s=chicken")
@@ -112,7 +113,11 @@ const Recipes = () => {
                             {RecipesData.map(({ id, logo, catagory, img, name }) => {
 
                                 return (
-                                    <div key={id} className="divfood">
+                                    <Link to="/fetch">
+                                    <div key={id} className="divfood" onClick={()=>{let obj ={ id, logo, catagory, img, name }
+          localStorage.setItem("oneitemadd", JSON.stringify(obj))
+              navigate("/fetch")
+           }}>
                                         <div className='title'>
                                             <img src={logo} alt="" />
                                             <p>{catagory}</p>
@@ -136,6 +141,7 @@ const Recipes = () => {
                                         </div>
 
                                     </div>
+                                    </Link>
                                 )
 
                             })}
@@ -145,7 +151,7 @@ const Recipes = () => {
                 </div>
             </div>
             <div>
-                                <img style={{width:"80%", margin:'auto'}} src="https://www.kindmeal.my/images/ads/banner_janegoodall_message.jpg" alt="" />
+                                <img  className="lastimg" src="https://www.kindmeal.my/images/ads/banner_janegoodall_message.jpg" alt="" />
                             </div>
 
         </div>
