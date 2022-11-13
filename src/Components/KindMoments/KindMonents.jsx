@@ -16,12 +16,12 @@ return(
 <Box style={{marginLeft:'16%',border:'',height:'15rem',width:'50%'}}>
 
                     <p style={{fontSize:'26px',
-                    fontWeight:'400px',
+                    fontWeight:'',
                     color:'#444444',
                     fontFamily:'Roboto, Arial, Helvetica, sans-serif',
                     border:'',
                     display:'inline',
-                    marginLeft:'-24%'}}>  KindMoments </p>
+                    marginLeft:''}}>  KindMoments </p>
 
                     <span style={{border:'0.5px solid #888888',marginLeft:'1rem'}}> </span>
                     <span style={{fontSize:'26px',
@@ -31,25 +31,25 @@ return(
 
     <div style={{border:'',height:'10rem'}}>
 
-        <p className="p">Discover new, delicious meat-free cuisines enjoyed by other compassionate food lovers. 
+        <p className="text">Discover new, delicious meat-free cuisines enjoyed by other compassionate food lovers. 
          Share your interesting KindMoments, and build your own fans and followers to encourage kind,
         healthy meals .</p>
-<br />
-        <p className="p">Download our <Link style={{color:'blue',textDecoration:'none'}}>mobile app</Link> mobile app to easily showcase your 
+
+        <p className="text">Download our <Link style={{color:'blue',textDecoration:'none'}}>mobile app</Link> mobile app to easily showcase your 
         masterpieces and interact with food lovers.</p>
-<br />
-        <p className="p">Get started sharing your tasty moments now.</p>
+
+        <p className="text">Get started sharing your tasty moments now.</p>
     </div>
 
 
 </Box>
 
 
-<Box boxShadow='md' rounded='md' bg='white'mt='4%' w='19%'ml='8' h='8rem'>
-<Text fontSize='20' color='#444444'>Share Your KindMoment</Text>
-<Text fontSize='16px'>Interesting food or restaurant? Share with 1000s of food lovers!</Text>
+<Box boxShadow='md' rounded='md' bg='white'mt='4%' w='19%'ml='8' h='8.5rem'>
+<Text fontSize='20' ml='5' mt='-1' color='#444444'>Share Your KindMoment</Text>
+<Text fontSize='16px' ml='3' mt='-4'>Interesting food or restaurant? Share with 1000s of food lovers!</Text>
 
-<Button colorScheme='red' w='68%' h='2.2rem' mt='1'>Share</Button>
+<Button colorScheme='red' w='60%' h='2.2rem' ml='12'>Share</Button>
 
                 </Box >
     </div>
@@ -75,12 +75,14 @@ return(
     <Input placeholder="Search User or Shop"></Input>
     <Select value='All Location' >
     <option value='option1'>All Location</option>
-    <option value='option2'>Option 2</option>
-    <option value='option3'>Option 3</option>
-    <option value='option2'>Option 2</option>
-    <option value='option3'>Option 3</option>
-    <option value='option2'>Option 2</option>
-    <option value='option3'>Option 3</option>
+    <option value='option2'>Kalang Valey</option>
+    <option value='option3'>Kaula Lumpur</option>
+    <option value='option2'>Patna</option>
+    <option value='option3'>Delhi</option>
+    <option value='option2'>Mumbai</option>
+    <option value='option3'>Utter Pradesh</option>
+    <option value="">Kolkata</option>
+    <option value="">Punjab</option>
     </Select>
     <Button colorScheme='red' w='68%' h='2.2rem'>Search</Button>
 
@@ -90,7 +92,7 @@ return(
 {/* Pagnisation ke liye or yk button */}
 
 <div style={{marginTop:'2%', display:'flex',width:'75%',marginLeft:'14%'}}  border='1px solid red'>
-  <div style={{border:'',width:'50%',marginLeft:'-6%'}}>
+  <div style={{border:'1px solid red',height:'40px',width:'50%',marginLeft:'-6%'}}>
   <Pagination />
   </div>
 {/* <div  style={{border:'',width:'10%',

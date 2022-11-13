@@ -32,7 +32,8 @@ const FullPage = ()=>{
                 <h1 style={{display:"block",fontSize:'2rem',
 
                 width:'50%',border:'',marginTop:'-2%'}}>{Data.name}</h1>
-                 <span style={{fontSize:'20px',marginTop:'2%',marginLeft:'8%'}}>{Data.followers} Follower</span>
+                 <span style={{fontSize:'20px',marginTop:'2%',marginLeft:'8%'}}>
+                    {Data.followers} Follower</span>
             </div>
 
             <div className="follwerbtn">
@@ -69,20 +70,20 @@ const FullPage = ()=>{
             <Box className="rowimg" boxShadow='lg'>
                 <div className="llong">
                     <img id="row4img" src={Data.secondimg} alt="" />
-                    <span ><p style={{textAlign:'center'}}>{Data.name}</p></span>
+                    <span ><p style={{textAlign:'center',lineHeight:'-1%'}}>{Data.name}</p></span>
                    
                     </div>
                 <div className="llong">
                     <img id="row4img" src={Data.thirdimg} alt="" />
-                    <span ><p style={{textAlign:'center'}}>Yono Singh</p></span>
+                    <span ><p style={{textAlign:'center',lineHeight:'-1%'}}>Yono Singh</p></span>
                 </div>
                 <div className="llong">
                     <img id="row4img" src={Data.fourthimg} alt="" />
-                    <span ><p style={{textAlign:'center'}}>Kitchen Corner</p></span>
+                    <span ><p style={{textAlign:'center',lineHeight:'-1%'}}>Kitchen Corner</p></span>
                 </div>
                 <div className="llong">
                     <img id="row4img" src={Data.fifthimg} alt="" />
-                    <span ><p style={{textAlign:'center'}}>{Data.name}</p></span>
+                    <span ><p style={{textAlign:'center',lineHeight:'-1%'}}>{Data.name}</p></span>
                 </div>
             </Box>
         </div>

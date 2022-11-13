@@ -41,10 +41,10 @@
 }
 .bigimg{
     /* border: 2px solid blue; */
-    height: 1200px;
+    height:1300px;
     width: 100%;
     display: flex;
-   
+    margin-bottom: 1%;
 }
 .longimg{
     /* border: 5px solid gold; */
@@ -58,17 +58,18 @@
     /* border: 2px solid gold; */
     border-radius: 15px;
     margin-top: 2%;
-    height: 980px;
+    height: auto;
     width: 260px;  
     display: grid;
     grid-template-rows: repeat(4,1fr);
-    gap: 2rem;
+    gap: 1rem;
     margin-left: 5%;
 }
 .llong{
     /* border: 2px solid black; */
     height: 200px;
-    padding: 10px;
+    padding: 15px;
+    width: 225px;
 
 }
 /* img{
@@ -91,6 +92,8 @@
 #row4img{
     height: 100%;
     width: 100%;
+    margin-left: -2%;
     border-radius: 15px;
     padding: 10px;
+    /* border: 1px solid black; */
 }

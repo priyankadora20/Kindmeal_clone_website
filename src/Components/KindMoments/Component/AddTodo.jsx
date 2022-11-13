@@ -19,7 +19,11 @@ function AddTodo({ handleAddTodo }) {
         <Input onChange={handleChange}
           value={text}
           variant="outline"
-          placeholder="Enter Comment..." >
+           placeholder="Enter Comment..."
+            width='90%'
+         
+          >
+          
         </Input>
         <Button colorScheme='red' ml='7' mt='3' onClick={onClick}>
          Comment
