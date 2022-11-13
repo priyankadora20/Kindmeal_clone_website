@@ -13,6 +13,8 @@ import InsideMealdeal from "../Meals_Deals/InsideMealdeal";
 import Location from "../Meals_Deals/Location";
 import Meals_Deals from "../Meals_Deals/Meals_Deals";
 import Overview from "../Meals_Deals/Overview";
+import Fetch from "../Recipes/Fetch";
+import Recipes from "../Recipes/Recipes";
 import Rdisplay from "../ResturantDisplay/Rdisplay";
 import VideoDisplaypage from "../videodisplay/VideoDisplaypage";
 
@@ -22,7 +24,7 @@ const Routers = () => {
       <Route path="/" element={<Homepage/>} />
       <Route path="/mealDeals" element={<Meals_Deals/>} />
       <Route path="/kindmoments" element={<Instgram />} />
-      <Route path="/recipes" element="Recipes" />
+      <Route path="/recipes" element={<Recipes/>} />
       <Route path="/restaurant_login" element="Restaurant_login" />
       <Route path="/restaurant_signup" element={<RestaurantSignup />} />
       <Route path="/user_signup" element={<CoustomerSignup />} />
@@ -45,6 +47,7 @@ const Routers = () => {
               <Route path='/InsideMealdeal' element={<InsideMealdeal/>}/>
               <Route path='/Overview' element={<Overview/>}/>
               <Route path="/Location" element={<Location/>}/>
+              <Route path="/fetch" element={<Fetch/>}/>
     </Routes>
   );
 };
