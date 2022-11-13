@@ -1,15 +1,30 @@
 #bottomlocation{
     width: 90%;
-    min-height: 200px;
+    /* min-height: 200px; */
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(500px,2fr)) ;
+    grid-template-columns:repeat(auto-fit, minmax(300px,2fr)) ;
     margin: auto;
     gap: 2rem;
     margin-top: 2rem;
-   
+   margin-bottom: 3rem;
+   height: auto;
 }
 #bottomlocation>div{
     
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 2rem;
+}
+
+#bottomlocationimageimage{
+    width: 100%;
+    height: auto;
+}
+
+#bottomlocationimageimage>img{
+    width: 100%;
+    border-radius: 2rem;
+}
+
+h1, p, h3{
+    text-align: center;
 }

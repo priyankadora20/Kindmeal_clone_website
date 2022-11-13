@@ -19,8 +19,8 @@
     width: 90%;
     display: grid;
     height: auto;
-    grid-template-columns:repeat(auto-fit, minmax(150px,3fr)) ;
-    
+    grid-template-columns:repeat(auto-fit, minmax(100px,3fr)) ;
+    gap: 2rem;
     margin-top: 2rem;
     margin: auto;
 }
