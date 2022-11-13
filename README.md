@@ -50,4 +50,4 @@ fully resposive website
 ![s6](https://user-images.githubusercontent.com/105920094/201533034-d9670ada-285d-4bfa-b9b3-bbbfc7093d03.png)
 ![s7](https://user-images.githubusercontent.com/105920094/201533042-27494eca-cca3-415c-ac8f-313422a7c6ad.png)
 
-<h2 margin:"auto">Check our Website</h2>
+
