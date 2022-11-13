@@ -2,10 +2,16 @@
     justify-content: space-around;
     display:flex;
     width: 65%;
-    margin:10px auto;
+    margin:-1px auto;
+    cursor: pointer;
 }
+/* .footer{
+    width: 100%;
+    margin-bottom: -10px;
+    
+} */
 .fdd{
-    line-height: 20px;
+    line-height: 15px;
     font-size: 13px;
     color: white;
     text-align: left;
@@ -14,6 +20,9 @@
     line-height: 8px;
     font-size: 10px;
     color: white;
+    text-align: center;
+    padding: 30px;
+    
 }
 .headhead_head{
     font-weight: bold;

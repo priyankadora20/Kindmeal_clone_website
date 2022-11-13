@@ -8,7 +8,7 @@ export default function Footer() {
             {/* <div style={{width:"100%"  , backgroundColor:"#ececec"}}>
                 <img src='https://www.kindmeal.my/images/banner_whykindmeal.png' alt='img' />
             </div> */}
-            <div style={{width:"100%" , height:"350px" , backgroundColor:"#2bb673"}}>
+            <div style={{width:"100%"  , backgroundColor:"#2bb673"}}>
                 <div className='Foote-div' >
                     <div className='fdd'>
                         <h3 className='headhead_head'>General</h3>

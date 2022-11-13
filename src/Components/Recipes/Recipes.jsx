@@ -29,28 +29,7 @@ const Recipes = () => {
     // useEffect(() => {
     //     getdata()
     // }, [])
-    const [posts, setPosts] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const [page, setPage] = useState(1);
-  
-    useEffect(() => {
-      fetchAdUpdateData(page);
-    }, [page]);
-
-    const fetchAdUpdateData = async (page = 1) => {
-        try {
-          setLoading(true);
-          const data = await RecipesData();
-          setPosts(data);
-          setLoading(false);
-        } catch (error) {
-          setLoading(false);
-          console.log(error);
-        }
-      };
-    const handlePage = (changeBy) => {
-        setPage(page + changeBy);
-      };
+    
     return (
         <div>
             <div>
@@ -115,7 +94,7 @@ const Recipes = () => {
                                 return (
                                     <Link to="/fetch">
                                     <div key={id} className="divfood" onClick={()=>{let obj ={ id, logo, catagory, img, name }
-          localStorage.setItem("oneitemadd", JSON.stringify(obj))
+          localStorage.setItem("itemadd", JSON.stringify(obj))
               navigate("/fetch")
            }}>
                                         <div className='title'>

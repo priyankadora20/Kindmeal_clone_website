@@ -1,17 +1,29 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
+
 // import {AiOutlineLike} from "react-icons-id"
 
-const data = [
-  {
-    id: 17,
-    logo: "https://www.kindmeal.my/photos/member/35/35085-s.jpg",
-    catagory: "SynThiaSumireDT",
-    img: "https://www.kindmeal.my/photos/recipe/1039/1039459-58887-m.jpg",
-    name: "Stir-fried Broccoli Rice ",
-  },
-];
+// const Data = [
+//   {
+//     id: 17,
+//     logo: "https://www.kindmeal.my/photos/member/35/35085-s.jpg",
+//     catagory: "SynThiaSumireDT",
+//     img: "https://www.kindmeal.my/photos/recipe/1039/1039459-58887-m.jpg",
+//     name: "Stir-fried Broccoli Rice ",
+//   },
+// ];
 
 export default function Fetch() {
+
+  const [Data, setData] = useState([]);
+
+    const localStorageData = ()=>{
+        let valueData = JSON.parse(localStorage.getItem("itemadd")) || [];
+        setData(valueData)
+    }
+
+    useEffect(()=>{
+        localStorageData()
+    },[])
   const [count, setCount] = useState(0)
   const [follow, setFollow] = useState(0)
   return (
@@ -19,17 +31,15 @@ export default function Fetch() {
       <div>
         <div>
           <div>
-            {data.map(({ id, logo, catagory, img, name }) => {
-              return (
-                <div key={id}>
-                  <img className="fetch" src={img} alt="img" />
+                <div >
+                  <img className="fetch" src={Data.img} alt="img" />
 
                   <div className="reci">
                     <div className="fetch-recipe">
-                      <img src={logo} alt="logo" />
+                      <img src={Data.logo} alt="logo" />
                       <div>
                         <div className="recipesfllow">
-                          <h2 className="follow">{catagory}</h2>
+                          <h2 className="follow">{Data.catagory}</h2>
                           <h2 className="follow"> {follow} Followers</h2>
                         </div>
                         <div>
@@ -40,19 +50,17 @@ export default function Fetch() {
                     </div>
                   </div>
                 </div>
-              );
-            })}
+              
+            
           </div>
         </div>
         <div>
           <div>
-            {data.map(({ id, img, category, name }) => {
-              return (
-                <div key={id} className="div">
-                  <h1>{name}</h1>
+                <div  className="div">
+                  <h1>{Data.name}</h1>
                   <div className="div-fetch">
                     {" "}
-                    <img src={img} alt="img" />
+                    <img src={Data.img} alt="img" />
                     <div>
                       <div className="div-fetch">
                         <h2>
@@ -120,8 +128,6 @@ export default function Fetch() {
                     </div>
                   </div>
                 </div>
-              );
-            })}
           </div>
           <div>
             <div className="raterecipe" >
@@ -139,7 +145,7 @@ export default function Fetch() {
                 <p>No Rating</p>
                 <button className="red" >Comment</button>
               </div>
-              
+
             </div>
           </div>
           <div className="reci0">
