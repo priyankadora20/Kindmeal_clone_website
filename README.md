@@ -40,8 +40,7 @@ fully resposive website
 ![s2](https://user-images.githubusercontent.com/105920094/201532841-d75eb24d-19c5-4252-8b50-3f185e54936b.png)
 ![s3](https://user-images.githubusercontent.com/105920094/201532853-f9f60e54-c65d-4df4-82a4-168cd9a153a8.png)
 ![s4](https://user-images.githubusercontent.com/105920094/201532857-9df362d7-f12e-49e6-a75f-0e0e9272c080.png)
-![s5](https://user-images.githubusercontent.com/105920094/201532862-bfccc9d9-18ef-47f4-a53f-3458f4939f7b.png)
-![Uploading ![s7](https://user-images.githubusercontent.com/105920094/201532870-6abf8fe7-796b-470b-9008-7b8757824f66.png)
-s6.png…]()
+![s6](https://user-images.githubusercontent.com/105920094/201533034-d9670ada-285d-4bfa-b9b3-bbbfc7093d03.png)
+![s7](https://user-images.githubusercontent.com/105920094/201533042-27494eca-cca3-415c-ac8f-313422a7c6ad.png)
 
-<p>check our website on versal</p>
+<h4>check our website on versal</h4>
