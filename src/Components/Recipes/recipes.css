@@ -85,9 +85,13 @@
     width: 300px;
     margin: 20px;
     height: 380px;
+    text-decoration: none;
     background-image: url();
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.divfood:hover{
+    text-decoration: none;
 }
 .recdiv{
     width: 80%;
@@ -100,7 +104,7 @@
 .title{
     display: flex;
     height: 50px;
-    
+    text-decoration: none;
     justify-content: space-between;
 }
 .title>img{
@@ -132,6 +136,13 @@
     width: 25px;
     height: 25px;
     margin: auto;
+    text-decoration: none;
+}
+.text-d{
+    text-decoration: none;
+}
+.text-d:hover{
+    text-decoration: none;
 }
 .hot{
     display: flex;
@@ -204,6 +215,7 @@
     padding: 60px;
     gap: 30px;
     margin: auto;
+    text-decoration: none;
 }
 .div-fetch>img{
     width: 500px;
@@ -448,5 +460,11 @@
         text-align: left;
         margin:4px auto;
         padding: 20px;
+    }
+    .raterecipe{
+        width: 85%;
+        display: grid;
+        padding: 20px;
+        margin: auto;
     }
 }

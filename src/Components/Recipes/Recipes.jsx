@@ -92,7 +92,7 @@ const Recipes = () => {
                             {RecipesData.map(({ id, logo, catagory, img, name }) => {
 
                                 return (
-                                    <Link to="/fetch">
+                                    <Link to="/fetch" className='text-d'>
                                     <div key={id} className="divfood" onClick={()=>{let obj ={ id, logo, catagory, img, name }
           localStorage.setItem("itemadd", JSON.stringify(obj))
               navigate("/fetch")
