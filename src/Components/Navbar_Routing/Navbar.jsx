@@ -109,12 +109,13 @@ const Navbar = () => {
       Navigaters("/RestaurantDashboard");
     }
   }, [optionvalue]);
+
   // *********************        Main code start from here
 
   return (
     <div className="Maindiv">
       <div className="firstDiv">
-        <div className="img">
+        <div className="imgLogoclassName">
           <Link to={"/"} className="imglogo">
             <img
               src="https://www.kindmeal.my/images/logo-kindmeal.png"
@@ -128,21 +129,24 @@ const Navbar = () => {
           <a href="#">
             <img
               src="https://www.kindmeal.my/images/follow_blog_grey.png"
-              alt=""
+              alt="sfsdf"
+              className="anchortagimage"
             />
           </a>
           {/* secondimg */}
           <a href="https://www.facebook.com/KindMeal.my" target="_blank">
             <img
               src="https://www.kindmeal.my/images/follow_facebook_grey.png"
-              alt=""
+              alt="sdfsdf"
+              className="anchortagimage"
             />
           </a>
           {/* thirdimg */}
           <a href="https://twitter.com/KindMeal" target="_blank">
             <img
               src="https://www.kindmeal.my/images/follow_twitter_grey.png"
-              alt=""
+              alt="sdfsdfsf"
+              className="anchortagimage"
             />
           </a>
         </div>
@@ -199,7 +203,7 @@ const Navbar = () => {
             <ModalHeader>Log In To Your Account</ModalHeader>
             <ModalCloseButton />
             <ModalBody pb={6}>
-              <FormControl>
+              <FormControl fontFamily={"sans-serif"}>
                 <FormLabel>Email id</FormLabel>
                 <Input
                   placeholder="Enter Email id"
@@ -209,6 +213,8 @@ const Navbar = () => {
                   onChange={(e) => {
                     setemail(e.target.value);
                   }}
+                  textAlign="left"
+                  marginLeft="-4"
                 />
               </FormControl>
 
@@ -222,6 +228,8 @@ const Navbar = () => {
                   onChange={(e) => {
                     setpassword(e.target.value);
                   }}
+                  marginLeft="-4"
+                  textAlign="left"
                 />
               </FormControl>
             </ModalBody>
@@ -280,10 +288,7 @@ const Navbar = () => {
                 bg="white"
                 mb={5}
                 onClick={() => {
-                  return(
-                    Navigaters("/user_signup"), signupOnClose()
-                  )
-                  
+                  return Navigaters("/user_signup"), signupOnClose();
                 }}
                 cursor="pointer"
                 alignContent={"center"}
@@ -320,10 +325,7 @@ const Navbar = () => {
                 bg="white"
                 mb={5}
                 onClick={() => {
-                  return(
-                    Navigaters("/restaurant_signup"), signupOnClose()
-                  )
-                 
+                  return Navigaters("/restaurant_signup"), signupOnClose();
                 }}
                 cursor="pointer"
               >

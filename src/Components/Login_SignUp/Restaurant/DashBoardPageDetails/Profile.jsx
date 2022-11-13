@@ -64,16 +64,16 @@ const Profile = () => {
             md: "repeat(2, 1fr)",
             lg: "repeat(2, 1fr)",
           }}
-          gap={6}
+          // gap={6}
         >
           <Box>
-            <Text fontSize="xl">Total Item Added </Text>
-            <Text fontSize="100px" color="green.600">
+            <Text fontSize="4xl">Total Item Added </Text>
+            <Text fontSize="100px" color="green.600" mt={"-1"}>
               {AddedItem.length}
             </Text>
           </Box>
           <Box>
-            <Text fontSize={"xl"} mb="3">
+            <Text fontSize={"4xl"} mb="3" color={"red.400"}>
               Super Hero Rank
             </Text>
             <Flex justifyContent={"center"} alignItems="center">
@@ -162,27 +162,31 @@ const Profile = () => {
           textAlign="left"
           pl={5}
           boxShadow="dark-lg"
-          p="3"
+          // p="3"
           rounded="md"
           bg="yellow.100"
           border={"8px"}
           borderColor="orange.600"
+          height={"90%"}
         >
           <Text fontSize="4xl" as="b" color={"orange"}>
             Personal Profile
           </Text>
           <Flex gap={"2.8rem"}>
-            <Text>Name :</Text> <Text>{RestaurantDetails.Name}</Text>
+            <Text mb={"-1"}>Name :</Text>{" "}
+            <Text mb={"-1"}>{RestaurantDetails.Name}</Text>
           </Flex>
           <Flex gap={"2.3rem"}>
-            <Text>Gender :</Text> <Text> {RestaurantDetails.Gender}</Text>
+            <Text mb={"-1"}>Gender :</Text>{" "}
+            <Text mb={"-1"}> {RestaurantDetails.Gender}</Text>
           </Flex>
           <Flex gap={"1.1rem"}>
-            <Text>Birth Data :</Text>{" "}
-            <Text> {RestaurantDetails.BirthDate}</Text>
+            <Text mb={"-1"}>Birth Data :</Text>{" "}
+            <Text mb={"-1"}> {RestaurantDetails.BirthDate}</Text>
           </Flex>
           <Flex gap={"2.9rem"}>
-            <Text>Email :</Text> <Text> {RestaurantDetails.Email}</Text>
+            <Text mb={"-1"}>Email :</Text>{" "}
+            <Text mb={"-1"}> {RestaurantDetails.Email}</Text>
           </Flex>
           <Flex gap={"1.8rem"}>
             <Text>Country :</Text> <Text> {RestaurantDetails.Country}</Text>
@@ -203,16 +207,20 @@ const Profile = () => {
             Shop Details
           </Text>
           <Flex gap={"5rem"}>
-            <Text>Name :</Text> <Text>{ShopDetails.Shop_Name}</Text>
+            <Text mb={"-1"}>Name :</Text>{" "}
+            <Text mb={"-1"}>{ShopDetails.Shop_Name}</Text>
           </Flex>
           <Flex gap={"4.5rem"}>
-            <Text>Cuisine :</Text> <Text> {ShopDetails.Cuisine}</Text>
+            <Text mb={"-1"}>Cuisine :</Text>{" "}
+            <Text mb={"-1"}> {ShopDetails.Cuisine}</Text>
           </Flex>
           <Flex gap={"1.5rem"}>
-            <Text>Opening Time :</Text> <Text> {ShopDetails.Opening}</Text>
+            <Text mb={"-1"}>Opening Time :</Text>{" "}
+            <Text mb={"-1"}> {ShopDetails.Opening}</Text>
           </Flex>
           <Flex gap={"1.1rem"}>
-            <Text>Phone Number :</Text> <Text> {ShopDetails.Phone}</Text>
+            <Text mb={"-1"}>Phone Number :</Text>{" "}
+            <Text mb={"-1"}> {ShopDetails.Phone}</Text>
           </Flex>
           <Flex gap={"4.3rem"}>
             <Text>Address :</Text> <Text> {ShopDetails.Address}</Text>

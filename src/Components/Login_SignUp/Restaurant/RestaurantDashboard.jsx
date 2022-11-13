@@ -44,7 +44,7 @@ const RestaurantDashboard = () => {
         justifyContent={"center"}
         backdropBlur="8px"
         bgGradient="linear(to-r, black, yellow.400, black)"
-        mt={"-0.5"}
+        mt={"-0.2"}
       >
         <Image
           src={Banner}
@@ -52,6 +52,7 @@ const RestaurantDashboard = () => {
           borderBottomLeftRadius={"3xl"}
           borderBottomRightRadius={"3xl"}
           boxShadow="0px 27px 44px -4px black"
+          width="60%"
         />
       </Flex>
       <Flex
@@ -68,20 +69,15 @@ const RestaurantDashboard = () => {
           md: "grid",
           lg: "flex",
         }}
-        marginTop="-14"
+        marginTop="-10"
       >
         <Box>
           <Image
             src={shop_Img}
             alt="Dan Abramov"
-            boxSize="200px"
-            borderRadius="3xl"
-            width={{
-              sm: "40%",
-              md: "40%",
-              lg: "100%",
-            }}
-            // height="20%"
+            boxSize="150px"
+            borderRadius="full"
+            // width=
             margin={"auto"}
           />
         </Box>
@@ -91,7 +87,6 @@ const RestaurantDashboard = () => {
           margin="auto"
           marginRight={5}
           marginLeft={5}
-          // mt="4"
         >
           <Button colorScheme="teal" size="lg" onClick={ShowYourProfile}>
             Profile
