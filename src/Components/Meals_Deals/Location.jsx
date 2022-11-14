@@ -19,11 +19,14 @@ function Location(props) {
       </div>
 
       <div id="linksection">
-        
+
         <div>
           <a href="/Overview">
+            
             <button className="overviewbutton">
+
               <h3>Overview</h3>
+
             </button>
           </a>
         </div>
