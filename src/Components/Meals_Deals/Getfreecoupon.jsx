@@ -58,13 +58,16 @@ function Getfreecoupon(props) {
 
             <div>
             <a href='/Location'>
+
                 <button className='overviewbutton' >
 
             <h3>Location</h3>
+
                 </button>
             </a>
             </div>
             <div id='twitter' >
+                
                 <BsTwitter size={40} color="blue" />
             </div>
             <div id='sharebtn' >
