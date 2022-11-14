@@ -3,6 +3,7 @@ import "./Getfreecoupon.css";
 import { BsTwitter } from 'react-icons/bs';
 import { AiFillLike } from 'react-icons/ai';
 import { useSelector } from 'react-redux';
+
 import {FaStarHalfAlt,FaStar} from "react-icons/fa";
 
 function InsideMealdeal(props) {
