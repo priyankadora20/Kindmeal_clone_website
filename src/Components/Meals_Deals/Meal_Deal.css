@@ -1,7 +1,6 @@
 #Mealdealtop{
     background-color:#f0f0f0;
 }
-
 #topfooterimg>img{
     width: 100%;
 }
@@ -40,8 +39,7 @@
     margin-left: 4rem;
     font-weight: lighter;
     text-align: left;
-    line-height: 1.5rem;
-    
+    line-height: 1.5rem;  
 }
 #inputtags{
     width: 90%;
