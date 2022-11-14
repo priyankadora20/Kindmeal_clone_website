@@ -17,12 +17,14 @@ function InsideMealdeal(props) {
            </div>
            <div id='getfreecouponheading' >
             <h1>Hyderabad Recipes</h1>
+            
            </div>
 
            <div id='linksection'>
            <div>
 
             <a href='/Overview'>
+
             <button className='overviewbutton'><h3>Overview</h3></button>
             </a>
            </div>
@@ -31,7 +33,7 @@ function InsideMealdeal(props) {
             <a href="/InsideMealdeal" >
 
                 <button className='overviewbutton'>
-                    
+
                 <h3>Meal Deals</h3>
 
                 </button> 
