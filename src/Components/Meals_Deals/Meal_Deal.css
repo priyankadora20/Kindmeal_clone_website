@@ -48,8 +48,6 @@
     grid-template-columns: repeat(5,1fr);
     gap: 2rem;
     margin: auto;
-    
-
 }
 input{
    
