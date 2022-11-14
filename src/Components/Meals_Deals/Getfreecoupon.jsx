@@ -90,12 +90,14 @@ function Getfreecoupon(props) {
             <h4>Below are mouth-watering food and cuisine at Hyderabad Restaurant. Please click on the photos to view full details.</h4>
            </div>
            <div id='getfreecouponalldata'>
-            
+
              {
                 apidata.length>0 && apidata.map((el)=>{
                     return (
                         <div key={el.idMeal}>
+                            
                             <img src={el.strMealThumb} alt="" />
+
                             <h3>{el.strMeal}</h3>
 
                         </div>
