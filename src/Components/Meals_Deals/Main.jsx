@@ -12,12 +12,15 @@ function Main(props) {
           alt=""
         />
       </div>
+
       <Paginationmealdeal />
+
       <div id="nutritious">
+
         <Nutritious />
+        
       </div>
     </>
   );
 }
-
 export default Main;
