@@ -77,7 +77,7 @@ function Getfreecoupon(props) {
             </div>
             <div id='like'>
                 <AiFillLike size={40} color="blue" />
-                
+
             </div>
 
           
@@ -86,9 +86,11 @@ function Getfreecoupon(props) {
 
            </div>
            <div id="getfreemiddle">
+
             <h4>Below are mouth-watering food and cuisine at Hyderabad Restaurant. Please click on the photos to view full details.</h4>
            </div>
            <div id='getfreecouponalldata'>
+            
              {
                 apidata.length>0 && apidata.map((el)=>{
                     return (
