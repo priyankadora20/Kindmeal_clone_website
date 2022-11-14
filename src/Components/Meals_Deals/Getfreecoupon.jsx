@@ -67,11 +67,13 @@ function Getfreecoupon(props) {
             </a>
             </div>
             <div id='twitter' >
-                
+
                 <BsTwitter size={40} color="blue" />
             </div>
             <div id='sharebtn' >
+
                 <button>Share</button>
+                
             </div>
             <div id='like'>
                 <AiFillLike size={40} color="blue" />
