@@ -29,7 +29,9 @@ function InsideMealdeal(props) {
 
            <div>
             <a href="/InsideMealdeal" >
+
                 <button className='overviewbutton'>
+                    
                 <h3>Meal Deals</h3>
 
                 </button> 
@@ -43,7 +45,7 @@ function InsideMealdeal(props) {
                 <button className='overviewbutton'>
 
             <h3>Food Menu</h3>
-            
+
                 </button>
             </a>
             </div>
