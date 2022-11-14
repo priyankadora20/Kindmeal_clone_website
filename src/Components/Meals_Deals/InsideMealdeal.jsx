@@ -13,11 +13,14 @@ function InsideMealdeal(props) {
     return (
         <div>
              <div id='getfreecouponimg'>
+
             <img src="https://www.kindmeal.my/photos/shop/3/392-c.jpg" alt="" />
+            
            </div>
            <div id='getfreecouponheading' >
+
             <h1>Hyderabad Recipes</h1>
-            
+
            </div>
 
            <div id='linksection'>
