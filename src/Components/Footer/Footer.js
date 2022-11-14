@@ -5,9 +5,7 @@ export default function Footer() {
   return (
     <div>
         <div className='footer'>
-            {/* <div style={{width:"100%"  , backgroundColor:"#ececec"}}>
-                <img src='https://www.kindmeal.my/images/banner_whykindmeal.png' alt='img' />
-            </div> */}
+            {/*  */}
             <div style={{width:"100%"  , backgroundColor:"#2bb673"}}>
                 <div className='Foote-div' >
                     <div className='fdd'>
