@@ -73,10 +73,11 @@ function Getfreecoupon(props) {
             <div id='sharebtn' >
 
                 <button>Share</button>
-                
+
             </div>
             <div id='like'>
                 <AiFillLike size={40} color="blue" />
+                
             </div>
 
           
