@@ -8,14 +8,18 @@ function Location(props) {
     <div>
 
       <div id="getfreecouponimg">
-        
+
         <img src="https://www.kindmeal.my/photos/shop/4/482-c.jpg" alt="" />
+
       </div>
       <div id="getfreecouponheading">
+
         <h1>Hyderabad Recipes</h1>
+
       </div>
 
       <div id="linksection">
+        
         <div>
           <a href="/Overview">
             <button className="overviewbutton">
