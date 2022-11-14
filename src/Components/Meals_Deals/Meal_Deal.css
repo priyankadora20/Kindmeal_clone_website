@@ -99,7 +99,6 @@ select{
 }
 .browse:hover{
     background-color:green;
-
 }
 .Deal:hover{
     background-color: red;
@@ -117,7 +116,6 @@ select{
     width: 100%;
   }
   #nutritious>div{
-
     width: 90%;
     height: auto;
   
