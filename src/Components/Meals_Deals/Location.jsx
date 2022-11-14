@@ -6,7 +6,9 @@ import "./Location.css";
 function Location(props) {
   return (
     <div>
+
       <div id="getfreecouponimg">
+        
         <img src="https://www.kindmeal.my/photos/shop/4/482-c.jpg" alt="" />
       </div>
       <div id="getfreecouponheading">
