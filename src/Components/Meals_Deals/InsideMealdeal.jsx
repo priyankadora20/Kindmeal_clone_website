@@ -8,14 +8,14 @@ import {FaStarHalfAlt,FaStar} from "react-icons/fa";
 function InsideMealdeal(props) {
     let pages=useSelector((state)=>{
         return state.Meal_Deal.current
-        console.log(state)
+        
     })
     return (
         <div>
              <div id='getfreecouponimg'>
 
             <img src="https://www.kindmeal.my/photos/shop/3/392-c.jpg" alt="" />
-            
+
            </div>
            <div id='getfreecouponheading' >
 
