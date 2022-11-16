@@ -17,7 +17,7 @@ Member 3 : Sonu Gupta
   <br>
 Member 4 : Rajendra Patel
   <br>
-TeamLead : Priyanka Dora
+Team-Lead : Priyanka Dora
 </p>
 
 <h2> KITCHEN CORNER</H2>
