@@ -503,6 +503,56 @@ let initstate={
             name:"Kuala Lumpur & 7 Branches",
             title:"Freemori has been committed to be more creative for the breads, cakes, biscuits and pastries to provide consumers a uniq..",
         },
+        {
+            image:"https://www.kindmeal.my/photos/shop/5/591-cm.jpg",
+            name:"Petaling Jaya, Selangor",
+            title:"Wise Crafters is here to help the busy citizens, especially women to achieve personal health goals by offering natural h..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/4/443-cm.jpg",
+            name:"Kuala Lumpur, Wilayah Persekutuan",
+            title:"Have you ever imagined the combination of Pasta + Jalapenos and Tomato + Bingsu? You must not miss these creative Italia..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/6/626-cm.jpg",
+            name:"Banting, Selangor",
+            title:"BINGS. Our bingsu can't be perfect without U. What to do in Banting? You may drop by at the first Korean traditional ..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/4/459-cm.jpg",
+            name:"Shah Alam, Selangor",
+            title:"A cosy cafe in Setia Alam serving deliciously creative meals. Come say hi to our cute mascots, Mr & Ms Lush! Come as a ..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/6/610-cm.jpg",
+            name:"Petaling Jaya, Selangor",
+            title:"Lolla Paluza is a dessert bar and event space. Fresh baked waffles are the most seek after product after soft serve ice ..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/6/629-cm.jpg",
+            name:"Cheras, Kuala Lumpur",
+            title:"What food we have Sandwiches l Open toasts l Sides l Desserts l Drinks The homemade loaves for our sandwiches and open ..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/2/277-cm.jpg",
+            name:"Seri Kembangan, Selangor",
+            title:"Piccolo is Italian for small and most commonly refers to a half-sized flute and also a baby latte. Here at Piccolo Caf..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/5/569-cm.jpg",
+            name:"Petaling Jaya, Selangor",
+            title:"The Italian Job is a cozy restaurant that delights you with authentic Italian cuisine, featuring traditional wood-fire o..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/5/593-cm.jpg",
+            name:"Cheras & 1 Branch",
+            title:"Moment of JOY ™ was born in December 2020 from the passion of two foodies entrepreneurs that love healthy food. We are ..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/6/624-cm.jpg",
+            name:"Ipoh, Perak",
+            title:"-About Us Yishensu's operation of restaurant business namely_Yishen Vegetarian Restaurant and wholesale, manufacturing ..",
+        },
       
         
     ],
