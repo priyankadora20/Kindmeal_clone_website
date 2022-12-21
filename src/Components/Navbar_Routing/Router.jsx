@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Article from "../Article/Article";
+import { FeaturedRestaurant } from "../Directory/FeaturedRestaurant";
 import { Homepage } from "../Homepage/Homepage";
 import FullPage from "../KindMoments/FullPage";
 import { KindMonents } from "../KindMoments/KindMonents";
@@ -37,6 +38,7 @@ const Routers = () => {
       <Route path="/RestaurantDashboard" element={<RestaurantDashboard />} />
       <Route path="/Article" element={<Article/>} />
       <Route path="/fullpage" element={<FullPage />} />
+      <Route path="/featuredrestaurant" element={<FeaturedRestaurant/>}/>
 
 
       //Mealdealroutes
