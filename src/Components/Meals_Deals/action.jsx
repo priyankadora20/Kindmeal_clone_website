@@ -84,9 +84,74 @@ let initstate={
             title:"Established in 2008, Vegipai Café aims to serve delicious and healthy vegetarian food. We serve a variety of dishes in..",
         },
         {
-            image:"",
-            name:"",
-            title:"",
+            image:"https://www.kindmeal.my/photos/shop/5/521-cm.jpg",
+            name:"Petaling Jaya, Selangor",
+            title:"LOHAS begins with Vegetarianism. 樂活從素食開始 Popular local (Malaysian) and Asian fusion foods cooked with vegetarian ingred..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/5/565-cm.jpg",
+            name:"Kuala Lumpur, Wilayah Persekutuan",
+            title:"Berjaya Cafe, the epitome for the vegetarian lovers that brings the opulence, style, and is entwined with the gastronomi..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/4/486-cm.jpg",
+            name:"Kuala Lumpur, Wilayah Persekutuan",
+            title:"Cameleon Vegetarian Restaurant is a Chinese Vegetarian Restaurant that is located along Jalan Thamboosamy. Capable of se..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/5/598-cm.jpg",
+            name:"Bangsar, Kuala Lumpur",
+            title:"Vegan, Dairy, Egg Free & Plant based Ice Creams created in the kitchen of Chloe. It all started when her boy, who is sev..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/5/562-cm.jpg",
+            name:"Shah Alam , Selangor",
+            title:"Our mission is to promote a vegetarian lifestyle, No harm without killing, and to maintain a Healthier Life. 推广素食 ..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/3/305-cm.jpg",
+            name:"Kuala Lumpur, Wilayah Persekutuan",
+            title:"This a family business that is set to make comfort food healthy, clean and delightful! The Essence of the Wok is wel..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/5/512-cm.jpg",
+            name:"Klang, Selangor",
+            title:"Love Veggie promotes a creative healthy dining concept, instead of the traditional vegetarian approach. Dine on natural..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/6/603-cm.jpg",
+            name:"Kepong, Selangor",
+            title:"A modern dining concept with Western and Asian Cuisine is being served with remarkable cooling beverages. The young and ..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/5/599-cm.jpg",
+            name:"Kuala Lumpur, Wilayah Persekutuan",
+            title:"Hijau is a made with 100% plants inspired by Malay-Indo fusion cuisine. Our menu are 100% cruelty free and we are more ..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/6/607-cm.jpg",
+            name:"Johor Bahru, Johor",
+            title:"Serving delightful vegetarian Chinese, hotpot, Korean, Western brunch, dinner, Bites, Burgers, Cakes (2 days lead time) ..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/6/612-cm.jpg",
+            name:"Petaling Jaya, Selangor",
+            title:"What does GEKIL mean? Revolution? What is going on here? Let's find out... Oh... It turns out that there is a vegetaria..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/2/212-cm.jpg",
+            name:"Sri Petaling, Kuala Lumpur",
+            title:"Be Vegetarian. Go Green. Save the Planet. Imperial Art Cottage advocates these core principles by creating wholesome f..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/5/547-cm.jpg",
+            name:"Kuala Lumpur, Wilayah Persekutuan",
+            title:"Prince Cuisine indulges you with a taste of authentic Hong Kong food within the cozy atmosphere of our restaurant. Prep..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/3/335-cm.jpg",
+            name:"Kuala Lumpur, Wilayah Persekutuan",
+            title:"Black Cat Cafe offers flavors from around the world, natural, healthy and fresh. Breads, pizza dough, pasta are handmade..",
         },
         {
             image:"",
@@ -108,56 +173,7 @@ let initstate={
             name:"",
             title:"",
         },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
+        
     ],
     data:[
         {
