@@ -69,19 +69,19 @@ let initstate={
             title:"Honest Bakery Cafe is a local cafe in Subang Jaya that serves and promotes meat-free meals to encourage vegetarianism. ..",
         },
         {
-            image:"",
-            name:"",
-            title:"",
+            image:"https://www.kindmeal.my/photos/shop/5/587-cm.jpg",
+            name:"Petaling Jaya, Selangor",
+            title:"Alice Kitchen wishes to offer our personal rendition of fusion vegetarian and vegan gourmet cuisine with an innovative g..",
         },
         {
-            image:"",
-            name:"",
-            title:"",
+            image:"https://www.kindmeal.my/photos/shop/6/601-cm.jpg",
+            name:"Sri Petaling, Kuala Lumpur",
+            title:"Vegetarian is the next generation of food in the world. Live simple, Eat simple, Love simple. Simple Garden Cafe is loc..",
         },
         {
-            image:"",
-            name:"",
-            title:"",
+            image:"https://www.kindmeal.my/photos/shop/1/195-cm.jpg",
+            name:"Taman Desa, Off Jln. Kelang La.., Kuala Lumpur",
+            title:"Established in 2008, Vegipai Café aims to serve delicious and healthy vegetarian food. We serve a variety of dishes in..",
         },
         {
             image:"",
