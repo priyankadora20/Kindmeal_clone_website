@@ -5,7 +5,7 @@ export const FeaturedRestaurant = () => {
   return (
     <>
         <div id="featuredpagemain">
-            featured page
+            featured page to updated to my branch
         </div>
     </>
   )
