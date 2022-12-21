@@ -592,6 +592,79 @@ let initstate={
       
         
     ],
+
+    currentFeaturedpage:[
+        {
+            image:"https://www.kindmeal.my/photos/shop/4/498-cm.jpg",
+            name:"Subang Jaya , Selangor",
+            title:"Honest Bakery Cafe is a local cafe in Subang Jaya that serves and promotes meat-free meals to encourage vegetarianism. ..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/5/587-cm.jpg",
+            name:"Petaling Jaya, Selangor",
+            title:"Alice Kitchen wishes to offer our personal rendition of fusion vegetarian and vegan gourmet cuisine with an innovative g..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/6/601-cm.jpg",
+            name:"Sri Petaling, Kuala Lumpur",
+            title:"Vegetarian is the next generation of food in the world. Live simple, Eat simple, Love simple. Simple Garden Cafe is loc..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/1/195-cm.jpg",
+            name:"Taman Desa, Off Jln. Kelang La.., Kuala Lumpur",
+            title:"Established in 2008, Vegipai Café aims to serve delicious and healthy vegetarian food. We serve a variety of dishes in..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/5/521-cm.jpg",
+            name:"Petaling Jaya, Selangor",
+            title:"LOHAS begins with Vegetarianism. 樂活從素食開始 Popular local (Malaysian) and Asian fusion foods cooked with vegetarian ingred..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/5/565-cm.jpg",
+            name:"Kuala Lumpur, Wilayah Persekutuan",
+            title:"Berjaya Cafe, the epitome for the vegetarian lovers that brings the opulence, style, and is entwined with the gastronomi..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/4/486-cm.jpg",
+            name:"Kuala Lumpur, Wilayah Persekutuan",
+            title:"Cameleon Vegetarian Restaurant is a Chinese Vegetarian Restaurant that is located along Jalan Thamboosamy. Capable of se..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/5/598-cm.jpg",
+            name:"Bangsar, Kuala Lumpur",
+            title:"Vegan, Dairy, Egg Free & Plant based Ice Creams created in the kitchen of Chloe. It all started when her boy, who is sev..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/5/562-cm.jpg",
+            name:"Shah Alam , Selangor",
+            title:"Our mission is to promote a vegetarian lifestyle, No harm without killing, and to maintain a Healthier Life. 推广素食 ..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/3/305-cm.jpg",
+            name:"Kuala Lumpur, Wilayah Persekutuan",
+            title:"This a family business that is set to make comfort food healthy, clean and delightful! The Essence of the Wok is wel..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/5/512-cm.jpg",
+            name:"Klang, Selangor",
+            title:"Love Veggie promotes a creative healthy dining concept, instead of the traditional vegetarian approach. Dine on natural..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/6/603-cm.jpg",
+            name:"Kepong, Selangor",
+            title:"A modern dining concept with Western and Asian Cuisine is being served with remarkable cooling beverages. The young and ..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/5/599-cm.jpg",
+            name:"Kuala Lumpur, Wilayah Persekutuan",
+            title:"Hijau is a made with 100% plants inspired by Malay-Indo fusion cuisine. Our menu are 100% cruelty free and we are more ..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/6/607-cm.jpg",
+            name:"Johor Bahru, Johor",
+            title:"Serving delightful vegetarian Chinese, hotpot, Korean, Western brunch, dinner, Bites, Burgers, Cakes (2 days lead time) ..",
+        },
+    ],
     data:[
         {
             image:"https://www.kindmeal.my/photos/deal/6/698-4639-l.jpg",
