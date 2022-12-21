@@ -389,19 +389,19 @@ let initstate={
             title:"A stylish yet cozy coffee place operated passionately by an enthusiastic and experienced team in coffee, baking, cooking..",
         },
         {
-            image:"",
-            name:"",
-            title:"",
+            image:"https://www.kindmeal.my/photos/shop/3/327-cm.jpg",
+            name:"Puchong, Selangor",
+            title:"A place to keep you caffeinated! Located in the corner of IOI Boulevard Shopping Centre, a surge of coffee aroma fil..",
         },
         {
-            image:"",
-            name:"",
-            title:"",
+            image:"https://www.kindmeal.my/photos/shop/4/448-cm.jpg",
+            name:"Kuala Lumpur & 1 Branch",
+            title:"Simply Green Salad Gallery brings you delicious food that are both hearty and healthy. Each of our selections and menu ..",
         },
         {
-            image:"",
-            name:"",
-            title:"",
+            image:"https://www.kindmeal.my/photos/shop/2/281-cm.jpg",
+            name:"Ipoh, Perak",
+            title:"The Ficca's Cafe is a Coffee Specialist Cafe. It is a cozy cafe where we are not only drawn into the aroma of coffee, ..",
         },
         {
             image:"",
