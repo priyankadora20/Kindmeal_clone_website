@@ -553,6 +553,42 @@ let initstate={
             name:"Ipoh, Perak",
             title:"-About Us Yishensu's operation of restaurant business namely_Yishen Vegetarian Restaurant and wholesale, manufacturing ..",
         },
+
+        {
+            image:"https://www.kindmeal.my/photos/shop/2/251-cm.jpg",
+            name:"Petaling Jaya, Selangor",
+            title:"Chai Bar is a vibrant, new fast casual concept, serving made-to-order salads with an Asian twist. Offering over 70 ing..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/4/428-cm.jpg",
+            name:"Kuala Lumpur, Wilayah Persekutuan",
+            title:"Cozy cafe in a century-old building located in the heart of Chinatown. Our objective is to take your taste buds on a ro..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/1/163-cm.jpg",
+            name:"Kuala Lumpur, Selangor",
+            title:"We at Hotel Saravana Bhavan follow the perfect formula for success. Delicious food prepared under extremely hygienic con..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/2/292-cm.jpg",
+            name:"Kuala Lumpur & 3 Branches",
+            title:"A refreshing Meatless Dining Concept from Secret Recipe Cakes & Café Group. Extensive Menu range inspired by all fresh a..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/3/387-cm.jpg",
+            name:"Cheras, Kuala Lumpur",
+            title:"Pure Vegetarian Confinement meals with home delivery. 100% homemade with special recipes, provided in 14-day or 28-day .",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/3/325-cm.jpg",
+            name:"Georgetown, Pulau Pinang",
+            title:"THE FIRST 3D COFFEE ART IN PENANG! Want to indulge in our 3D coffee art? Come to our new place located in Beach Street!..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/1/171-cm.jpg",
+            name:"Kuala Lumpur & 2 Branches",
+            title:"Situated in the heart of Bangsar, Tedboy Bakery first open its doors in July 2012. Named after their first-born, owners ..",
+        },
       
         
     ],
