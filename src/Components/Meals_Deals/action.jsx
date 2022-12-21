@@ -485,74 +485,25 @@ let initstate={
         },
         {
             image:"https://www.kindmeal.my/photos/shop/1/194-cm.jpg",
-            name:"",
-            title:"",
+            name:"Bandar Baru Seri Petaling, Kuala Lumpur",
+            title:"The first Korea concept cafe in Seri Petaling! Do drop-by, sit back and relax while enjoying the Korean delicacies from..",
         },
         {
-            image:"",
-            name:"",
-            title:"",
+            image:"https://www.kindmeal.my/photos/shop/4/492-cm.jpg",
+            name:"Kepong, Kuala Lumpur",
+            title:"Greens Home Kitchen is a Malaysian-inspired vegetarian & vegan restaurant, with 90% of sauces home-made. We offer an ex..",
         },
         {
-            image:"",
-            name:"",
-            title:"",
+            image:"https://www.kindmeal.my/photos/shop/5/530-cm.jpg",
+            name:"Petaling Jaya, Selangor",
+            title:"Our first concept vegetarian cuisine cafe was established in 2012 located in Klang (The Taste Vegetarian). Vege Gen 素の..",
         },
         {
-            image:"",
-            name:"",
-            title:"",
+            image:"https://www.kindmeal.my/photos/shop/2/201-cm.jpg",
+            name:"Kuala Lumpur & 7 Branches",
+            title:"Freemori has been committed to be more creative for the breads, cakes, biscuits and pastries to provide consumers a uniq..",
         },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
-        {
-            image:"",
-            name:"",
-            title:"",
-        },
+      
         
     ],
     data:[
