@@ -404,6 +404,126 @@ let initstate={
             title:"The Ficca's Cafe is a Coffee Specialist Cafe. It is a cozy cafe where we are not only drawn into the aroma of coffee, ..",
         },
         {
+            image:"https://www.kindmeal.my/photos/shop/1/121-cm.jpg",
+            name:"Bangsar Baru, Kuala Lumpur",
+            title:"Milk and Butter brings you some of the most delicious cakes, desserts and western food in town.",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/1/128-cm.jpg",
+            name:"Petaling Jaya, Selangor",
+            title:"We are a new Halal certified frozen dairy food manufacturing company, specialise in ice cream cake and ice cream cup cak.",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/2/234-cm.jpg",
+            name:"Kota Kemuning, Selangor",
+            title:"Sips & Bites was opened in late August 2014 by a young couple. With the passion of food and arts, it is not surprising t..",
+        },
+        {
+            image:"https://www.kindmeal.my/photos/shop/5/560-cm.jpg",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
+            image:"",
+            name:"",
+            title:"",
+        },
+        {
             image:"",
             name:"",
             title:"",
