@@ -7,11 +7,11 @@ import { KindMonents } from './Components/KindMoments/KindMonents';
 function App() {
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
  
     <Routers />
   
-    <Footer/>
+    {/* <Footer/> */}
 
     </>
   );
