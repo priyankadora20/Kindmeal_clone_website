@@ -89,7 +89,9 @@ function Location(props) {
       </div>
       <div id="bottomlocation">
         <div>
-          <h1>Hyderabad Recipes</h1>
+          <h1>{
+            local.length>0 ?local[local.length-1].name:"Hyderabad Recipe Restaurant"
+            }</h1>
           <h3>Address</h3>
           <p>
             78-1, Jalan Putra,, 50350 Kuala Lumpur, Wilayah Persekutuan,

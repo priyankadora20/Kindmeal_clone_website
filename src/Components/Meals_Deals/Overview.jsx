@@ -107,14 +107,14 @@ function Overview(props) {
            </div>
 
            <div id='overviewtext'>
-            <h1>Welcome To Hyderabad recipes</h1>
-            <p>Hyderabad Recipes is an Indian fine dining restaurant serving authentic, world famous Haleem, Biryanies, BBQ, Indian breads and desserts.
-
-Our mission is to serve the best Hyderabadi cuisine, including the 'World's Favourite Biryani', in a comfortable and family-friendly environment.
-
-Our objective is to keenly listen to our guests with a view to continuously improve and improvise the signature experience across all our outlets.
-
-Our approach is to generate customer delight by serving gues…</p>
+            <h1>Welcome To {local.length>0? local[local.length-1].name : "Hyderabad Recipe Restaurant"}</h1>
+            <p>
+                {
+                    local.length>0 ?local[local.length-1].title:
+                
+                "Hyderabad Recipes is an Indian fine dining restaurant serving authentic, world famous Haleem, Biryanies, BBQ, Indian breads and desserts.Our mission is to serve the best Hyderabadi cuisine, including the World s Favourite Biryani, in a comfortable and family-friendly environment.Our objective is to keenly listen to our guests with a view to continuously improve and improvise the signature experience across all our outlets.Our approach is to generate customer delight by serving gues…"
+                }
+                </p>
            </div>
            <div id='overviewyummyfood' >
             <div>
