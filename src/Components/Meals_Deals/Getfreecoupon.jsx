@@ -17,7 +17,10 @@ function Getfreecoupon(props) {
     let apidata=useSelector((state)=>{
         return state.Meal_Deal.apidata
     })
-    console.log(apidata)
+    // console.log(apidata)
+    let viewshop=useSelector((state)=>{
+        console.log(state)
+    })
     
 
     return (
