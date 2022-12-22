@@ -396,6 +396,11 @@ const Navbar = () => {
               Article
             </Link>
           </li>
+          <li>
+            <Link to={"/featuredrestaurant"} className="link">
+              Directory
+            </Link>
+          </li>
           <div className="login_signup_insider">
             {showLogin ? (
               <div>

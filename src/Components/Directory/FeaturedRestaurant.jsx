@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { Viewshopdata } from '../Meals_Deals/actiontype'
@@ -13,15 +14,18 @@ export const FeaturedRestaurant = () => {
     })
    let dispatch=useDispatch()
    let navigate=useNavigate()
+   let local=JSON.parse(localStorage.getItem("movetorestaurant")) || []
     // console.log(Featuredpage)
     let handleviewshop=(el)=>{
-      dispatch(Viewshopdata(el))
+     dispatch(Viewshopdata(el))
+     local.push(el)
+      localStorage.setItem("movetorestaurant",JSON.stringify(local))
       navigate("/Getfreecoupon")
     }
    
-    // let state=useSelector((state)=>{
-    //     console.log(state)
-    // })
+    let state=useSelector((state)=>{
+        console.log(state)
+    })
   return (
     <>
         <div id="featuredpagemain">

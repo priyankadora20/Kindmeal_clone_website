@@ -21,10 +21,102 @@ function Getfreecoupon(props) {
     let viewshop=useSelector((state)=>{
         console.log(state)
     })
+    let local=JSON.parse(localStorage.getItem("movetorestaurant")) || []
     
 
     return (
+    <>
+    {
+        local.length>0 ? <div>
+
+        <div id='getfreecouponimg'>
+         <img src={local[local.length-1].image} alt="" />
+        </div>
+        <div id='getfreecouponheading' >
+         <h1>{local[local.length-1].name}</h1>
+        </div>
+
+        <div id='linksection'>
         <div>
+
+         <a href='/Overview'>
+         <button className='overviewbutton'><h3>Overview</h3></button>
+         </a>
+        </div>
+
+        <div>
+         <a href="/InsideMealdeal" >
+             <button className='overviewbutton'>
+             <h3>Meal Deals</h3>
+             </button> 
+
+        
+         </a>
+         </div>
+
+         <div>
+         <a href='/Getfreecoupon'>
+             <button className='overviewbutton'>
+
+         <h3>Food Menu</h3>
+             </button>
+         </a>
+         </div>
+
+         <div>
+         <a href='/Location'>
+
+             <button className='overviewbutton' >
+
+         <h3>Location</h3>
+
+             </button>
+         </a>
+         </div>
+         <div id='twitter' >
+
+             <BsTwitter size={40} color="blue" />
+         </div>
+         <div id='sharebtn' >
+
+             <button>Share</button>
+
+         </div>
+         <div id='like'>
+             <AiFillLike size={40} color="blue" />
+
+         </div>
+
+       
+
+        
+
+        </div>
+        <div id="getfreemiddle">
+
+         <h4>Below are mouth-watering food and cuisine at Hyderabad Restaurant. Please click on the photos to view full details.</h4>
+        </div>
+        <div id='getfreecouponalldata'>
+
+          {
+             apidata.length>0 && apidata.map((el)=>{
+                 return (
+                     <div key={el.idMeal}>
+                         
+                         <img src={el.strMealThumb} alt="" />
+
+                         <h3>{el.strMeal}</h3>
+
+                     </div>
+                 )
+             })
+          }
+        </div>
+         
+     </div>:
+    
+        <div>
+
            <div id='getfreecouponimg'>
             <img src="https://www.kindmeal.my/photos/shop/3/392-c.jpg" alt="" />
            </div>
@@ -110,6 +202,8 @@ function Getfreecoupon(props) {
            </div>
             
         </div>
+}
+        </>
     );
 }
 
