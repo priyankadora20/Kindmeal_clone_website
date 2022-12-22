@@ -6,7 +6,7 @@ import {useSelector} from "react-redux";
 import {useNavigate} from "react-router-dom";
 import { Box, Button, Text,Image ,Avatar} from "@chakra-ui/react";
 import "./instgram.css";
-import { KindMonents } from "./KindMonents";
+
 
 
 

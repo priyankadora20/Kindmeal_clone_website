@@ -67,7 +67,7 @@ return(
   </Button>
 
   <Button colorScheme='teal' variant='outline' w='9%'>
-    Follwing
+  Following
   </Button>
                     {/* 3 button ke bad ke liye  */}
 <Stack direction='row' w='54%'>
