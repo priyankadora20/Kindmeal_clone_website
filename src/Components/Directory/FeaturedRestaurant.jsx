@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 
 import "./FeaturedRestaurant.css"
+import { Paginationrestaurant } from './Paginationrestaurant'
 export const FeaturedRestaurant = () => {
     let Featuredpage=useSelector((state)=>{
         return state.Meal_Deal.currentFeaturedpage
@@ -21,6 +22,9 @@ export const FeaturedRestaurant = () => {
            <div>
             <button>Food Map</button>
            </div>
+        </div>
+        <div id="paginationrestaurant">
+            <Paginationrestaurant/>
         </div>
 
         <div id="featuredpagemiddle">

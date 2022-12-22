@@ -1,4 +1,4 @@
-import { Get, Search, Success } from "./Types"
+import { Get, Restaurant, Search, Success } from "./Types"
 
 let initstate={
     apidata:[],
@@ -1668,6 +1668,12 @@ let reducer=(state=initstate,action)=>{
             ...state,
             current:action.payload
 
+        }
+    }
+    if(action.type==Restaurant){
+        return {
+            ...state,
+            currentFeaturedpage:action.payload
         }
     }
     if(action.type==Get){

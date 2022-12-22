@@ -1,7 +1,7 @@
 #featuredpagemain{
     width: 90%;
     height: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px,3fr));
     margin: auto;
@@ -20,6 +20,7 @@
     vertical-align: middle;
     border-radius: 1rem;
     cursor: pointer;
+    border: none;
 }
 #featuredpagemain>div>button:hover{
     background-color: blue;
@@ -72,4 +73,11 @@
 #featuredpagebutton:hover{
     background-color: blue;
     cursor: pointer;
+}
+
+#paginationrestaurant{
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }

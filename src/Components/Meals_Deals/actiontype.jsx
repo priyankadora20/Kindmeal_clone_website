@@ -1,4 +1,4 @@
-import { Get, Search, Success } from "./Types"
+import { Get, Restaurant, Search, Success } from "./Types"
 import axios from "axios"
 let successdata=(payload)=>{
     console.log(payload)
@@ -21,6 +21,13 @@ let getsearch=(payload)=>{
     }
 }
 
+let Restaurantdata=(payload)=>{
+    return{
+        type:Restaurant,
+        payload
+    }
+}
+
 
 let getdata=()=>(dispatch)=>{
     axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=chicken`)
@@ -30,4 +37,4 @@ let getdata=()=>(dispatch)=>{
 
     })
 }
-export {getdata,successdata,getsearch}
+export {getdata,successdata,getsearch,Restaurantdata}
