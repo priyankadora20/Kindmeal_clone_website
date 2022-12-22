@@ -3,16 +3,38 @@ import { useSelector } from 'react-redux'
 
 import "./FeaturedRestaurant.css"
 export const FeaturedRestaurant = () => {
-    let state=useSelector((state)=>{
+    let Featuredpage=useSelector((state)=>{
         return state.Meal_Deal.Featuredrestaurantpage
     })
-    console.log(state)
+
+    console.log(Featuredpage)
+   
   return (
     <>
         <div id="featuredpagemain">
-            <h1>
-                Featured restaurant
-            </h1>
+           <div>
+            <button>Restaurants </button>
+           </div>
+           <div>
+            <button>Food menu</button>
+           </div>
+           <div>
+            <button>Food Map</button>
+           </div>
+        </div>
+
+        <div id="featuredpagemiddle">
+         {
+            Featuredpage.length>0 && Featuredpage.map((el)=>{
+                return (
+                    <div id='featuredpagemiddlediv'>
+                        <img src={el.image} alt="" />
+                        <h3>{el.name}</h3>
+                        <h3>{el.title}</h3>
+                    </div>
+                )
+            })
+         }
         </div>
     </>
   )
