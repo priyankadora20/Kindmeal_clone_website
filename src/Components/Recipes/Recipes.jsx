@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import axois from "axios";
+import React, {useState } from "react";
+
 
 import RecipesData from "./data";
 import "./recipes.css";

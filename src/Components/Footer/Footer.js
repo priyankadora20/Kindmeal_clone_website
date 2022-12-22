@@ -1,20 +1,25 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "./Footer.css"
 
 export default function Footer() {
   return (
     <div>
         <div className='footer'>
-            {/*  */}
+    
             <div style={{width:"100%"  , backgroundColor:"#2bb673"}}>
                 <div className='Foote-div' >
                     <div className='fdd'>
                         <h3 className='headhead_head'>General</h3>
                         <div className='fdd'>
-                            <p>
+                        <Link to="/">
+                       <p className='linkuse'>
                               Home
                             </p>
-                            <p>Sing Up</p>
+                        </Link> 
+                           <Link to="/user_signup">  
+                            <p className='linkuse'>Sing Up</p>
+                            </Link>
                             <p>Businesses/Restaurateures</p>
                             <p>Advertising</p>
                             <p>About KindMeal.my </p>
@@ -29,15 +34,21 @@ export default function Footer() {
                     <div className='fdd'>
                         <h3 className='headhead_head'>Features</h3>
                         <div className='fdd'>
-                            <p>
+                            <Link to="/mealDeals">
+                            <p className='linkuse'>
                                Meat-Free Deals
                             </p>
+                            </Link>
                             <p>Tasty Menus</p>
-                            <p>Kind Moments</p>
+                            <Link to="/kindmoments">
+                            <p className='linkuse'>Kind Moments</p>
+                            </Link>
                             <p>Member Recommendations</p>
                             <p>featured Restaurrants</p>
                             <p>Vegetarian & Vegan Directory</p>
-                            <p>Food Map</p>
+                            <Link to="/Location">
+                            <p className='linkuse'>Food Map</p>
+                            </Link>
                             <p>Become A Superhero</p>
                             <p>Vegan News & Vegetarian Articls</p>
                             <p>Latest Comments</p>
@@ -46,9 +57,15 @@ export default function Footer() {
                     <div className='fdd'>
                         <h3 className='headhead_head'>Social Media</h3>
                         <div>
-                            <p>KindMeal Widget</p>
-                            <p>Facebook</p>
-                            <p>Twitter</p>
+                            <Link to="/kindmoments">
+                            <p className='linkuse'>KindMeal Widget</p>
+                            </Link>
+                            <a href="https://www.facebook.com/KindMeal.my" target="_blank">
+                            <p className='linkuse'>Facebook</p>
+                            </a>
+                            <a href="https://twitter.com/KindMeal" target="_blank">
+                            <p className='linkuse'>Twitter</p>
+                            </a>
                             <p>Instagram</p>
                         </div>
                     </div>

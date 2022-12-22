@@ -78,12 +78,12 @@ return(
     <option value='option1'>All Location</option>
     <option value='option2'>Kalang Valey</option>
     <option value='option3'>Kaula Lumpur</option>
-    <option value='option2'>Patna</option>
-    <option value='option3'>Delhi</option>
-    <option value='option2'>Mumbai</option>
-    <option value='option3'>Utter Pradesh</option>
-    <option value="">Kolkata</option>
-    <option value="">Punjab</option>
+    <option value='option2'>Petaling Jaya</option>
+    <option value='option3'>Ampang</option>
+    <option value='option2'>Bangsar</option>
+    <option value='option3'>Banting</option>
+    <option value="">Cheras</option>
+    <option value="">Kepong</option>
     </Select>
     <Button colorScheme='red' w='68%' h='2.2rem'>Search</Button>
 
