@@ -29,8 +29,9 @@ export const FeaturedRestaurant = () => {
                 return (
                     <div id='featuredpagemiddlediv'>
                         <img src={el.image} alt="" />
-                        <h3>{el.name}</h3>
-                        <h3>{el.title}</h3>
+                        <h3 id='featuredpagenameh3'>{el.name}</h3>
+                        <h3 id='featuredpagetitleh3'>{el.title}</h3>
+                        <button id='featuredpagebutton'>View Shop</button>
                     </div>
                 )
             })

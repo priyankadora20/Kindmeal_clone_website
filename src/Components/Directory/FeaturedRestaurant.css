@@ -43,4 +43,32 @@
 }
 #featuredpagemiddlediv{
     border: 1px solid red;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+#featuredpagenameh3{
+    text-align: start;
+    color: rgb(221, 221, 156);
+}
+
+#featuredpagetitleh3{
+    text-align: start;
+    
+}
+#featuredpagebutton{
+    padding: 15px 40px 15px 40px;
+    margin: auto;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+#featuredpagebutton:hover{
+    background-color: blue;
+    cursor: pointer;
 }
