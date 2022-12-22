@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Buttondata, Menudata } from '../Meals_Deals/actiontype'
 import "./Foodmenu.css"
-export const Foodmenu = () => {
+ const Foodmenu = () => {
 let dispatch=useDispatch()
 
 let data=useSelector((state)=>{
@@ -124,3 +124,5 @@ console.log(data)
     </>
   )
 }
+
+export {Foodmenu}
