@@ -69,7 +69,7 @@ console.log(data)
     
   return (
     <>
-        <div id="featuredpagemain">
+        {/* <div id="featuredpagemain">
            <div>
             <button>Restaurants </button>
            </div>
@@ -79,7 +79,7 @@ console.log(data)
            <div>
             <button>Food Map</button>
            </div>
-        </div>
+        </div> */}
         <div id='foodmenupagebuttons'>
             <div>
                 <button name='chicken' onClick={onclickchicken}  >Chicken</button>
