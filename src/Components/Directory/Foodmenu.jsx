@@ -28,6 +28,20 @@ console.log(data)
             <button>Food Map</button>
            </div>
         </div>
+        <div id='foodmenupagebuttons'>
+            <div>
+                <button>Chicken</button>
+            </div>
+            <div>
+                <button>Arrabiata</button>
+            </div>
+            <div>
+                <button>Chicken Breast</button>
+            </div>
+            <div>
+                <button>Seafood</button>
+            </div>
+        </div>
 
         <div id='foodmenupagemain'>
             {
