@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import "./FeaturedRestaurant.css"
 export const FeaturedRestaurant = () => {
     let Featuredpage=useSelector((state)=>{
-        return state.Meal_Deal.Featuredrestaurantpage
+        return state.Meal_Deal.currentFeaturedpage
     })
 
     console.log(Featuredpage)
