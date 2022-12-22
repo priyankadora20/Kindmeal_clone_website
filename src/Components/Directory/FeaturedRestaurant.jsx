@@ -14,10 +14,12 @@ export const FeaturedRestaurant = () => {
     <>
         <div id="featuredpagemain">
            <div>
-            <button>Restaurants </button>
+            <button> <a href="/featuredrestaurant">Restaurants</a> </button>
            </div>
            <div>
-            <button>Food menu</button>
+            <button>
+                <a href="/menu">Food menu</a>
+            </button>
            </div>
            <div>
             <button>Food Map</button>
