@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Article from "../Article/Article";
 import { FeaturedRestaurant } from "../Directory/FeaturedRestaurant";
+import { Foodmenu } from "../Directory/Foodmenu";
 import { Homepage } from "../Homepage/Homepage";
 import FullPage from "../KindMoments/FullPage";
 import { KindMonents } from "../KindMoments/KindMonents";
@@ -50,6 +51,7 @@ const Routers = () => {
               <Route path='/Overview' element={<Overview/>}/>
               <Route path="/Location" element={<Location/>}/>
               <Route path="/fetch" element={<Fetch/>}/>
+              <Route path="/menu" element={<Foodmenu/>}/>
     </Routes>
   );
 };

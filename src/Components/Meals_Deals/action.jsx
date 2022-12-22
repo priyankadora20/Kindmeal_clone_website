@@ -1,4 +1,4 @@
-import { Get, Restaurant, Search, Success } from "./Types"
+import { Get, Menu, Restaurant, Search, Success } from "./Types"
 
 let initstate={
     apidata:[],
@@ -1659,6 +1659,7 @@ let initstate={
         
 
     ],
+    menu:[],
     throughsearch:''
 }
 
@@ -1674,6 +1675,12 @@ let reducer=(state=initstate,action)=>{
         return {
             ...state,
             currentFeaturedpage:action.payload
+        }
+    }
+    if(action.type==Menu){
+        return {
+            ...state,
+            menu:action.payload
         }
     }
     if(action.type==Get){

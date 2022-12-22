@@ -1,5 +1,6 @@
-import { Get, Restaurant, Search, Success } from "./Types"
+import { Get, Restaurant, Search, Success,Menu } from "./Types"
 import axios from "axios"
+// import { Menu } from "@chakra-ui/react"
 let successdata=(payload)=>{
     console.log(payload)
     return {
@@ -28,6 +29,13 @@ let Restaurantdata=(payload)=>{
     }
 }
 
+let Menumaindata=(payload)=>{
+    return {
+        type:Menu,
+        payload
+    }
+}
+
 
 let getdata=()=>(dispatch)=>{
     axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=chicken`)
@@ -37,4 +45,12 @@ let getdata=()=>(dispatch)=>{
 
     })
 }
-export {getdata,successdata,getsearch,Restaurantdata}
+
+let Menudata=()=>(dispatch)=>{
+    console.log("theja")
+    axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?f=c`)
+    .then((res)=>{
+       dispatch(Menumaindata(res.data.meals))
+    })
+}
+export {getdata,successdata,getsearch,Restaurantdata,Menudata}

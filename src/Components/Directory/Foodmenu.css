@@ -1,0 +1,19 @@
+
+#foodmenupagemain{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    margin-top: 3rem;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(500px,2fr));
+}
+#foodmenupagemain>div>img{
+    width: 100%;
+    border-radius: 1rem;
+
+}
+#foodmenupagemain>div{
+    border: 1px solid red;
+    border-radius: 1rem;
+}
