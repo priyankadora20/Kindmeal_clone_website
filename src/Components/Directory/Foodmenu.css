@@ -1,0 +1,63 @@
+
+#foodmenupagemain{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    margin-top: 3rem;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(470px,2fr));
+}
+#foodmenupagebutton{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(470px,2fr));
+}
+#foodmenupagemain>div>img{
+    width: 100%;
+    border-radius: 1rem;
+}
+#foodmenupagebutton>div>img{
+    width: 100%;
+    border-radius: 1rem;
+
+}
+#foodmenupagebutton>div{
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#foodmenupagemain>div{
+    /* border: 1px solid red; */
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#foodmenupagebuttons{
+    width: 90%;
+    height: auto;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,3fr));
+    margin: auto;
+    margin-top: 2rem;
+}
+
+#foodmenupagebuttons>div>button{
+    width: 70%;
+    height: 3rem;
+    line-height: 19px;
+    background-color: red;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 15px 8px 15px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+}

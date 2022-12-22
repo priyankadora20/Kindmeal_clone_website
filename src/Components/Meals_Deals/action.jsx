@@ -1,4 +1,4 @@
-import { Get, Search, Success } from "./Types"
+import { Button, Get, Menu, Restaurant, Search, Success } from "./Types"
 
 let initstate={
     apidata:[],
@@ -1659,6 +1659,8 @@ let initstate={
         
 
     ],
+    menu:[],
+    buttondata:[],
     throughsearch:''
 }
 
@@ -1668,6 +1670,25 @@ let reducer=(state=initstate,action)=>{
             ...state,
             current:action.payload
 
+        }
+    }
+    if(action.type==Button){
+        return{
+            ...state,
+            buttondata:action.payload,
+            menu:[]
+        }
+    }
+    if(action.type==Restaurant){
+        return {
+            ...state,
+            currentFeaturedpage:action.payload
+        }
+    }
+    if(action.type==Menu){
+        return {
+            ...state,
+            menu:action.payload
         }
     }
     if(action.type==Get){

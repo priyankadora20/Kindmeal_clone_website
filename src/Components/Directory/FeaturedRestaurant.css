@@ -1,6 +1,89 @@
 #featuredpagemain{
     width: 90%;
-    height: 100vh;
-    border: 1px solid red;
+    height: auto;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,3fr));
     margin: auto;
+    margin-top: 2rem;
+}
+#featuredpagemain>div>button{
+    width: 70%;
+    height: 3rem;
+    line-height: 19px;
+    background-color: red;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 15px 8px 15px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#featuredpagemain>div>button:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+#featuredpagemiddle{
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px,2fr));
+    margin: auto;
+    gap: 1rem;
+    margin-top: 3rem;
+    /* border: 1px solid red; */
+    margin-bottom: 3rem;
+
+}
+#featuredpagemiddlediv>img{
+    width: 100%;
+    height: 50vh;
+
+}
+#featuredpagemiddlediv{
+    /* border: 1px solid red; */
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#featuredpagenameh3{
+    text-align: start;
+    color: rgb(221, 221, 156);
+}
+
+#featuredpagetitleh3{
+    text-align: start;
+    
+}
+#featuredpagebutton{
+    padding: 15px 40px 15px 40px;
+    margin: auto;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+#featuredpagebutton:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+#paginationrestaurant{
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
