@@ -1,4 +1,4 @@
-import { Button, Get, Menu, Restaurant, Search, Success } from "./Types"
+import { Button, Get, Menu, Restaurant, Search, Singleviewapage, Success } from "./Types"
 
 let initstate={
     apidata:[],
@@ -1661,7 +1661,8 @@ let initstate={
     ],
     menu:[],
     buttondata:[],
-    throughsearch:''
+    throughsearch:'',
+    getcoupon:[]
 }
 
 let reducer=(state=initstate,action)=>{
@@ -1672,6 +1673,12 @@ let reducer=(state=initstate,action)=>{
 
         }
     }
+   if(action.type==Singleviewapage){
+    return {
+        ...state,
+        getcoupon:action.payload
+    }
+   }
     if(action.type==Button){
         return{
             ...state,

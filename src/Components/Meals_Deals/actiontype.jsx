@@ -1,4 +1,4 @@
-import { Get, Restaurant, Search, Success,Menu,Button } from "./Types"
+import { Get, Restaurant, Search, Success,Menu,Button, Singleviewapage } from "./Types"
 import axios from "axios"
 // import { Button } from "@chakra-ui/react"
 // import { Menu } from "@chakra-ui/react"
@@ -44,6 +44,14 @@ let Buttonmaindata=(payload)=>{
     }
 }
 
+let Viewshop=(payload)=>{
+    console.log(payload,"payload inside viewshop")
+    return {
+        type:Singleviewapage,
+        payload
+    }
+}
+
 
 let getdata=()=>(dispatch)=>{
     axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=chicken`)
@@ -53,7 +61,9 @@ let getdata=()=>(dispatch)=>{
 
     })
 }
-
+let Viewshopdata=(payload)=>(dispatch)=>{
+  Viewshop(payload)
+}
 
 let Buttondata=(payload)=>(dispatch)=>{
     axios.get(`https://www.themealdb.com/api/json/v1/1/${payload}`)
@@ -74,4 +84,4 @@ let Menudata=()=>(dispatch)=>{
        dispatch(Menumaindata(res.data.meals))
     })
 }
-export {getdata,successdata,Buttondata,getsearch,Restaurantdata,Menudata}
+export {getdata,Viewshopdata,successdata,Buttondata,getsearch,Restaurantdata,Menudata}
