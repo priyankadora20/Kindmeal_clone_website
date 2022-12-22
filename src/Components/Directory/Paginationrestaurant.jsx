@@ -32,6 +32,7 @@ export const Paginationrestaurant = () => {
 
   return (
     <div id="paginationbuttonbutton">
+        <h3 id='pagebutton' >Pages :</h3>
       {pages.map((el, index) => {
         return (
           <button
