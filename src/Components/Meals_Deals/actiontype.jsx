@@ -1,5 +1,6 @@
-import { Get, Restaurant, Search, Success,Menu } from "./Types"
+import { Get, Restaurant, Search, Success,Menu,Button } from "./Types"
 import axios from "axios"
+// import { Button } from "@chakra-ui/react"
 // import { Menu } from "@chakra-ui/react"
 let successdata=(payload)=>{
     console.log(payload)
@@ -36,6 +37,13 @@ let Menumaindata=(payload)=>{
     }
 }
 
+let Buttonmaindata=(payload)=>{
+    return {
+        type:Button,
+        payload
+    }
+}
+
 
 let getdata=()=>(dispatch)=>{
     axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=chicken`)
@@ -46,6 +54,19 @@ let getdata=()=>(dispatch)=>{
     })
 }
 
+
+let Buttondata=(payload)=>(dispatch)=>{
+    axios.get(`https://www.themealdb.com/api/json/v1/1/${payload}`)
+    .then((res)=>{
+        dispatch(Buttonmaindata(res.data.meals))
+    })
+    .catch((e)=>{
+        console.log("error occured")
+    })
+}
+
+
+
 let Menudata=()=>(dispatch)=>{
     console.log("theja")
     axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?f=c`)
@@ -53,4 +74,4 @@ let Menudata=()=>(dispatch)=>{
        dispatch(Menumaindata(res.data.meals))
     })
 }
-export {getdata,successdata,getsearch,Restaurantdata,Menudata}
+export {getdata,successdata,Buttondata,getsearch,Restaurantdata,Menudata}

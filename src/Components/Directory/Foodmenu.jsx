@@ -1,7 +1,8 @@
 import React from 'react'
+import { useState } from 'react'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Menudata } from '../Meals_Deals/actiontype'
+import { Buttondata, Menudata } from '../Meals_Deals/actiontype'
 import "./Foodmenu.css"
 export const Foodmenu = () => {
 let dispatch=useDispatch()
@@ -14,7 +15,58 @@ console.log(data)
     useEffect(()=>{
         dispatch(Menudata())
     },[])
-  
+
+    let [chicken,setchicken]=useState(false)
+    let [Arrabiata,setarrabiata]=useState(false)
+    let [breast,setbreast]=useState(false)
+    let [seafood,setseafood]=useState(false)
+
+    let onclickchicken=()=>{
+        setchicken(true)
+        setarrabiata(false)
+        setbreast(false)
+        setseafood(false)
+    }
+    let onclickarrabiata=()=>{
+        setarrabiata(true)
+        setbreast(false)
+        setchicken(false)
+        setseafood(false)
+    }
+    let onclickbreast=()=>{
+        setbreast(true)
+        setarrabiata(false)
+        setchicken(false)
+        setseafood(false)
+    }
+
+    let onclickseafood=()=>{
+        setbreast(false)
+        setarrabiata(false)
+        setseafood(true)
+         setchicken(false)
+    }
+
+    useEffect(()=>{
+        if(chicken){
+            dispatch(Buttondata("Search.php?s=Chicken"))
+        }
+        if(Arrabiata){
+            dispatch(Buttondata("filter.php?a=Canadian"))
+        }
+        if(breast){
+            dispatch(Buttondata("filter.php?i=chicken_breast"))
+        }
+        if(seafood){
+            dispatch(Buttondata("filter.php?c=Seafood"))
+        }
+    },[chicken,Arrabiata,breast,seafood])
+
+    let buttondata=useSelector((state)=>{
+        return state.Meal_Deal.buttondata
+    })
+
+    
   return (
     <>
         <div id="featuredpagemain">
@@ -30,20 +82,21 @@ console.log(data)
         </div>
         <div id='foodmenupagebuttons'>
             <div>
-                <button>Chicken</button>
+                <button name='chicken' onClick={onclickchicken}  >Chicken</button>
             </div>
             <div>
-                <button>Arrabiata</button>
+                <button name='chicken' onClick={onclickarrabiata} >Arrabiata</button>
             </div>
             <div>
-                <button>Chicken Breast</button>
+                <button name='chicken' onClick={onclickbreast} >Chicken Breast</button>
             </div>
             <div>
-                <button>Seafood</button>
+                <button name='chicken' onClick={onclickseafood} >Seafood</button>
             </div>
         </div>
 
         <div id='foodmenupagemain'>
+           
             {
                 data.length>0 && data.map((el)=>{
                     return (
@@ -53,6 +106,19 @@ console.log(data)
                         </div>
                     )
                 })
+            }
+
+        </div>
+        <div id='foodmenupagebutton'>
+        {
+                buttondata.length>0? buttondata.map((el)=>{
+                    return (
+                        <div>
+                        <img src={el.strMealThumb} alt="" />
+                        <h3>{el.strMeal}</h3>
+                    </div>
+                    )
+                }):""
             }
         </div>
     </>

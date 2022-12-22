@@ -8,10 +8,27 @@
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(470px,2fr));
 }
+#foodmenupagebutton{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    margin-top: 3rem;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(470px,2fr));
+}
 #foodmenupagemain>div>img{
     width: 100%;
     border-radius: 1rem;
+}
+#foodmenupagebutton>div>img{
+    width: 100%;
+    border-radius: 1rem;
 
+}
+#foodmenupagebutton>div{
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #foodmenupagemain>div{
     /* border: 1px solid red; */
