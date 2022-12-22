@@ -4,19 +4,42 @@ import { AiFillLike } from "react-icons/ai";
 import { p } from "@chakra-ui/react";
 import "./Location.css";
 function Location(props) {
+  let local=JSON.parse(localStorage.getItem("movetorestaurant")) || []
   return (
+    <>
+
+{
+            local.length>0?
+            <div>
+
+                <div id='getfreecouponimg'>
+
+                <img src={local[local.length-1].image} alt="" />
+
+                </div>
+                <div id='getfreecouponheading' >
+
+                <h1>{local[local.length-1].name}</h1>
+
+                </div>
+
+            </div>:
+            <div>
+                  <div id='getfreecouponimg'>
+
+<img src="https://www.kindmeal.my/photos/shop/3/392-c.jpg" alt="" />
+
+</div>
+<div id='getfreecouponheading' >
+
+<h1>Hyderabad Recipes</h1>
+
+</div>
+            </div>
+        }
     <div>
 
-      <div id="getfreecouponimg">
-
-        <img src="https://www.kindmeal.my/photos/shop/4/482-c.jpg" alt="" />
-
-      </div>
-      <div id="getfreecouponheading">
-
-        <h1>Hyderabad Recipes</h1>
-
-      </div>
+     
 
       <div id="linksection">
 
@@ -86,6 +109,7 @@ function Location(props) {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

@@ -11,18 +11,40 @@ function InsideMealdeal(props) {
         return state.Meal_Deal.current
         
     })
+    let local=JSON.parse(localStorage.getItem("movetorestaurant")) || []
     return (
+        <>
+        {
+            local.length>0?
+            <div>
+
+                <div id='getfreecouponimg'>
+
+                <img src={local[local.length-1].image} alt="" />
+
+                </div>
+                <div id='getfreecouponheading' >
+
+                <h1>{local[local.length-1].name}</h1>
+
+                </div>
+
+            </div>:
+            <div>
+                  <div id='getfreecouponimg'>
+
+<img src="https://www.kindmeal.my/photos/shop/3/392-c.jpg" alt="" />
+
+</div>
+<div id='getfreecouponheading' >
+
+<h1>Hyderabad Recipes</h1>
+
+</div>
+            </div>
+        }
         <div>
-             <div id='getfreecouponimg'>
-
-            <img src="https://www.kindmeal.my/photos/shop/3/392-c.jpg" alt="" />
-
-           </div>
-           <div id='getfreecouponheading' >
-
-            <h1>Hyderabad Recipes</h1>
-
-           </div>
+           
 
            <div id='linksection'>
            <div>
@@ -142,6 +164,7 @@ To take advantage of a deal, just click into it and obtain the corresponding cou
         </div>
             
         </div>
+        </>
     );
 }
 
