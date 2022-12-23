@@ -1,0 +1,16 @@
+
+.advertise>h1{
+ text-align: left;
+}
+.advertise>img{
+    width: 100%;
+}
+#advertiseimg{
+width: 100%;
+height: auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px,3fr));
+}
+#advertiseimg>div>img{
+    width: 100%;
+}
