@@ -95,10 +95,7 @@ return(
   <div style={{border:'',height:'40px',width:'50%',marginLeft:'-6%'}}>
   <Pagination />
   </div>
-{/* <div  style={{border:'',width:'10%',
-marginLeft:'45%'}} >
-<Button colorScheme='gray'>Next</Button>
-</div> */}
+
 </div>
 <Instgram />
 
