@@ -16,12 +16,16 @@
     /* border: 1px solid red; */
 }
 .imgdiv{
+    padding: 20px;
+    border-radius: 1rem;
     /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 .imgdiv>a{
-    border: 1px solid green;
-    margin-left: 2rem;
+    /* border: 1px solid green; */
+    margin-left: 1rem;
 }
 
 #help{

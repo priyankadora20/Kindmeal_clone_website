@@ -28,6 +28,56 @@ export const Help = () => {
            
         </div>
         <div>
+            <div>
+                <h1>General Help</h1>
+                <p>Wish to find out more on how to use KindMeal? Please check out our frequently-asked questions below. If you are unable to find your answer here, please contact us for further assistance.</p>
+            </div>
+            <hr />
+            <div>
+                <h1>What is KindMeal?</h1>
+                <p>KindMeal is Malaysia's (and possibly the world's!) pioneering meat-free lifestyle platform. We provide an effective platform to promote compassionate dining in a fun and effective way, that would allow you to save precious animal lives, improve your health, enjoy a cleaner environment and of course, save your hard-earned money.</p>
+            </div>
+            <div>
+                <h1></h1>
+                <p></p>
+            </div>
+            <div>
+                <h1></h1>
+                <p></p>
+            </div>
+            <div>
+                <h1></h1>
+                <p></p>
+            </div>
+            <div>
+                <h1></h1>
+                <p></p>
+            </div>
+            <div>
+                <h1></h1>
+                <p></p>
+            </div>
+            <div>
+                <h1></h1>
+                <p></p>
+            </div>
+            <div>
+                <h1></h1>
+                <p></p>
+            </div>
+            <div>
+                <h1></h1>
+                <p></p>
+            </div>
+            <div>
+                <h1></h1>
+                <p></p>
+            </div>
+            <div>
+                <h1></h1>
+                <p></p>
+            </div>
+            <hr />
 
         </div>
     </div>
