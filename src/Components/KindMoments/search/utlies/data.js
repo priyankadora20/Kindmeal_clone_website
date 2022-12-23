@@ -135,7 +135,89 @@ const instadata = [
         "img2":"https://www.kindmeal.my/photos/moment/24/24558-47537-l.jpg",
         "img3":"https://www.kindmeal.my/photos/moment/24/24558-47538-l.jpg",
         "img4":"https://www.kindmeal.my/photos/moment/24/24558-47539-l.jpg"
-    }
+    },
+    {
+        "id ":"11",
+        "name":"YinYin",
+        "profileimg":"https://www.kindmeal.my/photos/member/23/23028-m.jpg",
+        "bgimg":"https://www.kindmeal.my/photos/member/23/23028-c.jpg",
+        "date":"11-Nov-2022",
+        "followers":"8",
+        "title":"Today’s salad. Having a salad today as I know I’m gonna have cooked food tomorrow at Malaysia VegFest.",
+         "img":"https://www.kindmeal.my/photos/moment/24/24560-47541-l.jpg",
+        "img1":"https://www.kindmeal.my/photos/moment/24/24550-47507-l.jpg",
+        "img2":"https://www.kindmeal.my/photos/moment/24/24550-47504-l.jpg",
+        "img3":"https://www.kindmeal.my/photos/moment/24/24550-47505-l.jpg",
+        "img4":"https://www.kindmeal.my/photos/moment/24/24550-47506-l.jpg"
+    },
+    {
+        "id ":"12",
+        "name":"FatJedi",
+        "profileimg":"https://www.kindmeal.my/photos/member/0/1-m.jpg",
+        "date":"13-Nov-2022",
+        "followers":"50",
+        "title":"Discovered this nice new cafe on KindMeal!",
+        "bgimg":"https://www.kindmeal.my/photos/member/0/1-c.jpg",
+         "img":"https://www.kindmeal.my/photos/moment/24/24597-47663-l.jpg",
+        "img1":"https://www.kindmeal.my/photos/moment/24/24597-47664-l.jpg",
+        "img2":"https://www.kindmeal.my/photos/moment/24/24597-47665-l.jpg",
+        "img3":"https://www.kindmeal.my/photos/moment/24/24597-47666-l.jpg",
+        "img4":"https://www.kindmeal.my/photos/moment/24/24597-47667-l.jpg"
+    },
+    {
+        "id" :"13",
+        "name":"JasonFong",
+        "profileimg":"https://www.kindmeal.my/photos/member/22/22038-m.jpg",
+        "bgimg":"https://www.kindmeal.my/images/default_member_cover-3.jpg",
+        "date":"12-Nov-2022",
+        "followers":"25",
+        "title":"來這享用早午餐咯。有order了crispy chicken wrap, 香腸麵包和印尼友族rojak。這檔口在裡面counter旁邊哦",
+         "img":"https://www.kindmeal.my/photos/moment/24/24581-47607-l.jpg",
+        "img1":"https://www.kindmeal.my/photos/moment/24/24581-47608-l.jpg",
+        "img2":"https://www.kindmeal.my/photos/moment/24/24581-47609-l.jpg",
+        "img3":"https://www.kindmeal.my/photos/moment/24/24581-47610-l.jpg"
+    },
+    {
+        "id ":"14",
+        "name":"PiggyLoves",
+        "profileimg":"https://www.kindmeal.my/photos/member/10/10038-m.jpg",
+        "date":"10-Nov-2022",
+        "followers":"15",
+        "bgimg":"https://www.kindmeal.my/photos/member/10/10038-c.jpg",
+        "title":"Bought some vegetarian snacks during charity bazaar last Sunday at Ban Foo Buddhist Organisation PJ HQ.",
+        "img":"https://www.kindmeal.my/photos/moment/24/24576-47583-l.jpg",
+        "img1":"https://www.kindmeal.my/photos/moment/24/24576-47584-l.jpg",
+        "img2":"https://www.kindmeal.my/photos/moment/24/24576-47585-l.jpg",
+        "img3":"https://www.kindmeal.my/photos/moment/24/24576-47586-l.jpg"
+    },
+    {
+        "id" :"15",
+        "name":"CindyChang",
+        "followers":"150",
+        "profileimg":"https://www.kindmeal.my/photos/member/35/35238-m.jpg",
+        "title":"早餐在Puchong 剛开两个星期健康素食小炒在（大馬福建面茶餐室）年青小伙子炒的还不錯，路过的素友都去支持支持下为小老板加油加油",
+        "bgimg":"https://www.kindmeal.my/images/default_member_cover-3.jpg",
+        "date":"12-Nov-2022",
+        "img":"https://www.kindmeal.my/photos/moment/24/24558-47536-l.jpg",
+        "img1":"https://www.kindmeal.my/photos/moment/24/24558-47535-l.jpg",
+        "img2":"https://www.kindmeal.my/photos/moment/24/24558-47537-l.jpg",
+        "img3":"https://www.kindmeal.my/photos/moment/24/24558-47538-l.jpg",
+        "img4":"https://www.kindmeal.my/photos/moment/24/24558-47539-l.jpg"
+    },
+    {
+        "id ":"16",
+        "name":"YinYin",
+        "profileimg":"https://www.kindmeal.my/photos/member/23/23028-m.jpg",
+        "bgimg":"https://www.kindmeal.my/photos/member/23/23028-c.jpg",
+        "date":"11-Nov-2022",
+        "followers":"8",
+        "title":"Today’s salad. Having a salad today as I know I’m gonna have cooked food tomorrow at Malaysia VegFest.",
+         "img":"https://www.kindmeal.my/photos/moment/24/24560-47541-l.jpg",
+        "img1":"https://www.kindmeal.my/photos/moment/24/24550-47507-l.jpg",
+        "img2":"https://www.kindmeal.my/photos/moment/24/24550-47504-l.jpg",
+        "img3":"https://www.kindmeal.my/photos/moment/24/24550-47505-l.jpg",
+        "img4":"https://www.kindmeal.my/photos/moment/24/24550-47506-l.jpg"
+    },
   
 ]
 export {instadata}
