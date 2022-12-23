@@ -38,12 +38,15 @@
 
 .secondDiv{
     border: 2px solid rgb(255, 255, 255);
+    /* border: 1px solid yellow; */
     background-color: #2bb673;
     z-index: 10;
 }
 .secondDiv ul{
+    /* width: 100%; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    /* border: 1px solid red; */
     text-align: center;
     align-items: center;
     width: 50%;

@@ -4,6 +4,7 @@ import Article from "../Article/Article";
 import { FeaturedRestaurant } from "../Directory/FeaturedRestaurant";
 import { Foodmenu } from "../Directory/Foodmenu";
 import { Mobileapp } from "../Directory/Mobileapp";
+import { Help } from "../Help/Help";
 import { Homepage } from "../Homepage/Homepage";
 import FullPage from "../KindMoments/FullPage";
 import { KindMonents } from "../KindMoments/KindMonents";
@@ -42,6 +43,7 @@ const Routers = () => {
       <Route path="/fullpage" element={<FullPage />} />
       <Route path="/featuredrestaurant" element={<FeaturedRestaurant/>}/>
       <Route path="/mobileapp" element={<Mobileapp/>}/>
+      <Route path="/help" element={<Help/>}/>
 
       //Mealdealroutes
 

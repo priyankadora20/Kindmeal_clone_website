@@ -401,6 +401,16 @@ const Navbar = () => {
               Directory
             </Link>
           </li>
+          <li>
+            <Link to={"/mobileapp"} className="link">
+              Mobile App
+            </Link>
+          </li>
+          <li>
+            <Link to={"/help"} className="link">
+              Help
+            </Link>
+          </li>
           <div className="login_signup_insider">
             {showLogin ? (
               <div>
