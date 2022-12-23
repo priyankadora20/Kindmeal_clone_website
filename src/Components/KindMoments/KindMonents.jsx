@@ -1,14 +1,22 @@
 import {Link} from "react-router-dom";
-import React from "react";
-import { Box, Button, Input, Select, Stack, 
-  Text}
-   from "@chakra-ui/react";
+import React, { useEffect, useState } from "react";
+import { Box, Button, Input, Select, Stack, Text} from "@chakra-ui/react";
 import Pagination from "./Pagination";
 import "./instgram.css"
 import { Instgram } from "./instagram";
+import {instadata} from './search/utlies/data';
 
 
 const KindMonents =()=>{
+  const [inputText,setInputText] = useState("")
+
+  const handleInputTextChange =(e)=>{
+    setInputText(e.target.value)
+}
+
+useEffect(()=>{
+  
+},[inputText])
 return(
     <>
     <div style={{height:'15rem',width:'100%',  backgroundColor:'#f0f0f0',display:'flex'}} >
@@ -72,7 +80,7 @@ return(
 <Stack direction='row' w='54%'>
    <span style={{width:'100%'}}></span>
    
-    <Input placeholder="Search User or Shop"></Input>
+    <Input value={inputText} onChange={handleInputTextChange} placeholder="Search User or Shop"></Input>
     <Select value='All Location' >
     <option value='option1'>All Location</option>
     <option value='option2'>Kalang Valey</option>

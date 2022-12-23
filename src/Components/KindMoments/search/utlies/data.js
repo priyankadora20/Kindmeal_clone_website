@@ -1,5 +1,4 @@
-let instadata = [
-    
+const instadata = [
     {
         "id": "1",
         "profileimg":"https://www.kindmeal.my/photos/member/14/14287-m.jpg",
@@ -139,3 +138,4 @@ let instadata = [
     }
   
 ]
+export {instadata}
