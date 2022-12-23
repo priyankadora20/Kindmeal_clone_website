@@ -8,9 +8,7 @@
     gap:1rem;
     grid-template-columns: 25% 70%;
 }
-#helppagemain>div{
-    border: 1px solid yellow;
-}
+
 .imgdiv>img{
     width: 100%;
     /* border: 1px solid red; */
@@ -32,4 +30,16 @@
     text-align: center;
     font-weight: bold;
     font-size: 18px;
+}
+#helppageright>div>h1{
+    text-align: left;
+}
+#helppageright>div>p{
+    text-align: left;
+}
+#helppageright{
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }

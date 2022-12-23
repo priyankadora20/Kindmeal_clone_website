@@ -4,7 +4,10 @@ import Article from "../Article/Article";
 import { FeaturedRestaurant } from "../Directory/FeaturedRestaurant";
 import { Foodmenu } from "../Directory/Foodmenu";
 import { Mobileapp } from "../Directory/Mobileapp";
+import { Advertising } from "../Help/Advertising";
 import { Help } from "../Help/Help";
+import { Merchanthelp } from "../Help/Merchanthelp";
+import { Superhero } from "../Help/Superhero";
 import { Homepage } from "../Homepage/Homepage";
 import FullPage from "../KindMoments/FullPage";
 import { KindMonents } from "../KindMoments/KindMonents";
@@ -44,6 +47,9 @@ const Routers = () => {
       <Route path="/featuredrestaurant" element={<FeaturedRestaurant/>}/>
       <Route path="/mobileapp" element={<Mobileapp/>}/>
       <Route path="/help" element={<Help/>}/>
+      <Route path="/merchanthelp" element={<Merchanthelp/>}/>
+      <Route path="/advrertising" element={<Advertising/>}/>
+      <Route path="/superhero" element={<Superhero/>}/>
 
       //Mealdealroutes
 
