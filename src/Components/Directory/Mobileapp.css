@@ -1,0 +1,22 @@
+#moblepaagemain{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    background-color: rgb(252, 237, 237);
+    padding: 10px;
+}
+#insidemobileapp{
+    text-align: left;
+    line-height: 3rem;
+    
+}
+#mobilepagebottom{
+    width: 90%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 1rem;
+}
+#mobilepagebottom>img{
+    width: 100%;
+}
