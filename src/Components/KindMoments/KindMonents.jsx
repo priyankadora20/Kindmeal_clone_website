@@ -9,14 +9,27 @@ import {instadata} from './search/utlies/data';
 
 const KindMonents =()=>{
   const [inputText,setInputText] = useState("")
+  const [query,setQuery] = useState("")
+  const [suggestions,setSuggestions] = useState([]);
+
 
   const handleInputTextChange =(e)=>{
     setInputText(e.target.value)
 }
 
 useEffect(()=>{
-  
-},[inputText])
+  if(query==""){
+    setSuggestions([])
+  }else{
+    let inputText = query.toLowerCase()
+    let newSuggestions = instadata.filter(item=>{
+      return item.name.toLowerCase().indexOf(inputText) !== -1 ? true : false;
+    }).map((item)=>item.name);
+    setSuggestions(newSuggestions)
+  }
+    }, [query,inputText])
+
+
 return(
     <>
     <div style={{height:'15rem',width:'100%',  backgroundColor:'#f0f0f0',display:'flex'}} >
@@ -80,7 +93,7 @@ return(
 <Stack direction='row' w='54%'>
    <span style={{width:'100%'}}></span>
    
-    <Input value={inputText} onChange={handleInputTextChange} placeholder="Search User or Shop"></Input>
+    <Input value={inputText} onChange={handleInputTextChange} suggestions={suggestions} placeholder="Search User or Shop"></Input>
     <Select value='All Location' >
     <option value='option1'>All Location</option>
     <option value='option2'>Kalang Valey</option>
