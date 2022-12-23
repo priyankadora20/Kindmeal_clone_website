@@ -4,6 +4,7 @@ import Article from "../Article/Article";
 import { FeaturedRestaurant } from "../Directory/FeaturedRestaurant";
 import { Foodmenu } from "../Directory/Foodmenu";
 import { Mobileapp } from "../Directory/Mobileapp";
+import { About } from "../Help/About";
 import { Advertising } from "../Help/Advertising";
 import { Help } from "../Help/Help";
 import { Merchanthelp } from "../Help/Merchanthelp";
@@ -50,6 +51,7 @@ const Routers = () => {
       <Route path="/merchanthelp" element={<Merchanthelp/>}/>
       <Route path="/advrertising" element={<Advertising/>}/>
       <Route path="/superhero" element={<Superhero/>}/>
+      <Route path="/abouthelp" element={<About/>} />
 
       //Mealdealroutes
 

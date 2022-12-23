@@ -20,7 +20,7 @@ export const Superhero = () => {
             </div>
             <div className='imgdiv'>
              <img src="https://www.kindmeal.my/images/about_us.png" alt="" />
-             <a id='help' style={{color:"black",textAlign:"center"  }} href="/help"> About Kindmeal</a>
+             <a id='help' style={{color:"black",textAlign:"center"  }} href="/abouthelp"> About Kindmeal</a>
             </div>
             <div className='imgdiv'>
              <img src="https://www.kindmeal.my/images/about_hero.png" alt="" />
