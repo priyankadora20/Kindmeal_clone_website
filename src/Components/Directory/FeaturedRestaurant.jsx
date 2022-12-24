@@ -38,7 +38,9 @@ export const FeaturedRestaurant = () => {
             </button>
            </div>
            <div>
-            <button>Food Map</button>
+            <button>
+                <a href="/Overview">Food map </a>
+            </button>
            </div>
         </div>
         <div id="paginationrestaurant">
