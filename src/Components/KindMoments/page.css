@@ -1,6 +1,6 @@
 /* pagination css start */
 .btn_page12{
- border: 1px solid red;
+ /* border: 1px solid red; */
 height: 35px;
 display: flex;
 width: auto;
@@ -10,7 +10,7 @@ width: auto;
     margin-top: 2px;
 }
 .btn_long{
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 .btn_page1{
 
@@ -20,11 +20,11 @@ width: auto;
 
 }
 .btn_btn1{
-    border:1px solid blue;
+    /* border:1px solid blue; */
     margin-left: 320%;
 }
 .btn_btn2{
-    border:1px solid teal;
+    /* border:1px solid teal; */
     margin-left: 15%;
 }
 @media screen and (max-width:768px){
@@ -32,16 +32,35 @@ width: auto;
         margin-left: 1%;
     }
     .btn_page12{
-        width: 100%;
+        width: 140%;
+        margin-left: -14%;
     }
     .btn_btn1{
-margin-left: 30%;
-
+        margin-left: 80%;
+        margin-top: 4px;
     }
     .btn_btn2{
-margin-left: 7%;
+        margin-left: 10%;
+        margin-top: 5px;
     }
 }
 @media screen and (max-width:480px){
-    
+    .page_page{
+        margin-left: 1%;
+    }
+    .btn_long{
+        /* border: 1px solid green; */
+        width: 20%;
+    }
+    .btn_page12{
+        margin-top: 10%;
+        width: auto;
+        margin-left: -14%;
+    }
+    .btn_btn1{
+       display: none;
+    }
+    .btn_btn2{
+      display: none;
+    }
 }
