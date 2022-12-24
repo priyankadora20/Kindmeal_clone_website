@@ -31,8 +31,8 @@ function Instgram() {
     return (
  
    
-<div style={{ width: "100%" }}>
-  <div className='product-cards'>
+<div style={{ width: "" ,border:''}}>
+  <Box className='product-cards'>
 
   
   {
@@ -63,8 +63,7 @@ function Instgram() {
        </Box>
        <div style={{width:'21%',marginLeft:'38%'}} >
        <Button ml='' h='9' mt='1' colorScheme='red' w='' >View</Button>
-       </div>
-        
+       </div>  
   </div>
 
         <Image mt='1' h='275px' w="350px" src={property.img}  />
@@ -95,7 +94,7 @@ function Instgram() {
     })
   }
 
-</div>
+</Box>
 </div>
     
     )

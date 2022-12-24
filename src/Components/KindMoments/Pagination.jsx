@@ -1,9 +1,9 @@
-import { Button, ButtonGroup } from '@chakra-ui/react';
+import { Box, Button} from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { successdata } from './ActionTypes';
-// import "./kind.css"
-import { Success } from './Types';
+import "./page.css"
+
 
 function Pagination() {
     let data=useSelector((state)=>{
@@ -41,27 +41,35 @@ function Pagination() {
         dispatch(successdata(totalposts))
     }
     return (
-        <div>
-          <span style={{marginLeft:'15%'}}>Page:</span>  
+        <Box  className='btn_page12'>
+          <span className='page_page'>Page:</span>  
             {pages.map((el,index)=>{
 
             return (
-             <>
-           
- <button className='btn' style={{width:'2rem',color:'blue'}}  key={index} onClick={()=>handleclick(el)} >{el}</button>
-     
- </> 
+
+            <div className='btn_long'>
+ <button className='btn'
+ style={{width:'2rem',color:'blue'}}  
+ key={index} onClick={()=>handleclick(el)} >{el}</button>
+
+  
+</div>
             )
                    
         })}
-           <div>
-           <Button disabled={currentpage==1} style={{marginLeft:'170%',marginTop:'-10%',
+           <div className='btn_page1'>
+            <div  className='btn_btn1'>
+            <Button disabled={currentpage==1} style={{marginTop:'-10%',
            color:'gray',height:'35px',width:'80px'}}>Preview</Button>
-           
-            <Button onClick={()=>handleclick()} style={{marginLeft:'190%',marginTop:'-18%',
+            </div>
+          
+           <div className='btn_btn2'>
+           <Button onClick={()=>handleclick()}  style={{marginTop:'-18%',
             color:'gray',height:'35px',width:'80px'}} >Next</Button>
+           </div>
+           
             </div> 
-        </div>
+        </Box>
     );
 }
 
