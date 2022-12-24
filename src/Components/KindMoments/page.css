@@ -1,0 +1,47 @@
+/* pagination css start */
+.btn_page12{
+ border: 1px solid red;
+height: 35px;
+display: flex;
+width: auto;
+}
+.page_page{
+    margin-left: 15%;
+    margin-top: 2px;
+}
+.btn_long{
+    border: 1px solid green;
+}
+.btn_page1{
+
+display: flex;
+width: auto;
+
+
+}
+.btn_btn1{
+    border:1px solid blue;
+    margin-left: 320%;
+}
+.btn_btn2{
+    border:1px solid teal;
+    margin-left: 15%;
+}
+@media screen and (max-width:768px){
+    .page_page{
+        margin-left: 1%;
+    }
+    .btn_page12{
+        width: 100%;
+    }
+    .btn_btn1{
+margin-left: 30%;
+
+    }
+    .btn_btn2{
+margin-left: 7%;
+    }
+}
+@media screen and (max-width:480px){
+    
+}

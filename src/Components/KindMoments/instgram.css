@@ -6,7 +6,7 @@
     margin-top: 2%;
     margin-left: 14%;
     gap: 2rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
      width: 75%;
 }
 @media screen and (max-width:1024px){
@@ -28,7 +28,7 @@
         width: auto;
         height: auto;
         margin-top: 5%;
-        margin-left: 3%;
+        margin-left: 7.5%;
     }
 }
 
@@ -40,3 +40,4 @@
     
     
 };
+

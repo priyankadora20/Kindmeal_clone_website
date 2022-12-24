@@ -31,7 +31,7 @@ function Instgram() {
     return (
  
    
-<div style={{ width: "" ,border:'1px solid blue'}}>
+<div style={{ width: "" ,border:''}}>
   <Box className='product-cards'>
 
   
