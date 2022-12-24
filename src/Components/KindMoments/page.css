@@ -6,12 +6,10 @@ display: flex;
 width: auto;
 }
 .page_page{
-    margin-left: 15%;
+    margin-left: 8%;
     margin-top: 2px;
 }
-.btn_long{
-    /* border: 1px solid green; */
-}
+
 .btn_page1{
 
 display: flex;
