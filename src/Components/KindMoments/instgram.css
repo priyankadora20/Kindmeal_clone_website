@@ -15,6 +15,13 @@
     }
     
 }
+@media screen and (max-width:768px){
+    .product-cards{
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 2%;
+        width: auto;
+    }
+}
 
 
 
