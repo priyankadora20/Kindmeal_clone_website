@@ -39,7 +39,7 @@ fully resposive website
 </p>
 
 <h2>Deployed Link </h2>
-<p>Versal link : https://blessed-toes-567-ten.vercel.app/</p>
+<p>Versal link : https://kindmeal-clone-website.vercel.app/</p>
 
 <h2>ScreenShot of the clone Website.</h2>
 
@@ -50,4 +50,6 @@ fully resposive website
 ![s6](https://user-images.githubusercontent.com/105920094/201533034-d9670ada-285d-4bfa-b9b3-bbbfc7093d03.png)
 ![s7](https://user-images.githubusercontent.com/105920094/201533042-27494eca-cca3-415c-ac8f-313422a7c6ad.png)
 
+![Screenshot (37)](https://user-images.githubusercontent.com/105914391/209435359-68075904-8e7c-435b-bc6b-2b9f9f2943bd.png)
+![Screenshot (38)](https://user-images.githubusercontent.com/105914391/209435361-62184235-1d2d-45cc-8b4a-e7e098713291.png)
 
